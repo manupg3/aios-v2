@@ -1,6 +1,5 @@
 import CodeExample from "@/components/ui/CodeExample"
-import Cta from "
-/ui/Cta"
+import Cta from "./Cta"
 import Features from "@/components/ui/Features"
 import { GlobalDatabase } from "@/components/ui/GlobalDatabase"
 import Hero from "@/components/ui/Hero"
