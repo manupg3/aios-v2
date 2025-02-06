@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Tremor – Database
 
 `Database` is a website template from [Tremor](https://tremor.so). It's built
@@ -46,3 +47,6 @@ the resources listed below:
 - [Next.js](https://nextjs.org/docs) - Next.js documentation
 - [Radix UI](https://www.radix-ui.com) - Radix UI Website
 - [Shiki](https://shiki.style) - Shiki Website (Syntax highlighter)
+=======
+# aios-v2
+>>>>>>> 0aa5ce47e4a8e374d371d6e080d5baa3fcfc84ac
