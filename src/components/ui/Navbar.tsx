@@ -49,7 +49,13 @@ export function Navigation() {
                 className="px-2 py-1 text-gray-900 dark:text-gray-50"
                 href={siteConfig.baseLinks.about}
               >
-                Aboutt
+                About
+              </Link>
+              <Link
+                className="px-2 py-1 text-gray-900 dark:text-gray-50"
+                href={siteConfig.baseLinks.soluciones}
+              >
+                Soluciones
               </Link>
               <Link
                 className="px-2 py-1 text-gray-900 dark:text-gray-50"
@@ -57,6 +63,7 @@ export function Navigation() {
               >
                 Pricing
               </Link>
+    
               <Link
                 className="px-2 py-1 text-gray-900 dark:text-gray-50"
                 href={siteConfig.baseLinks.changelog}
