@@ -72,7 +72,7 @@ export function Navigation() {
             </div>
           </nav>
           <Button className="hidden h-10 font-semibold md:flex">
-            Book a demo
+            Book a demoo
           </Button>
           <div className="flex gap-x-2 md:hidden">
             <Button>Book demo</Button>

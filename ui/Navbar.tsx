@@ -61,7 +61,7 @@ export function Navigation() {
                 className="px-2 py-1 text-gray-900 dark:text-gray-50"
                 href={siteConfig.baseLinks.changelog}
               >
-                Changelog
+                Changelogg
               </Link>
             </div>
           </nav>
