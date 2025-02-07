@@ -4,7 +4,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../Accordion"
+} from "./Accordion"
 
 const faqs = [
   {
