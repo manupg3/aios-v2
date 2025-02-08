@@ -28,7 +28,12 @@
   --color-purple-600: #9333ea;
 }
 
-
+.mt-4.container-solutions-description span {
+  color: #2563eb;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Inter';
+}
 
 .span-badge-simple { background-color: var(--color-green-500); }
 .span-badge-empresarial { background-color: var(--color-blue-600); }

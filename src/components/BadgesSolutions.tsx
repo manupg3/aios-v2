@@ -61,9 +61,9 @@ export default function BadgeSolutions() {
       <div className="p-8 bg-white shadow rounded">
         {/* Título principal */}
         <span className="text-sm font-bold">Solución Simple</span>
-        <h2 className="text-2xl font-bold">Solución Simple</h2>
+        <h2 className="mt-2  bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-3xl font-bold tracking-tighter text-transparent dark:from-gray-50 dark:to-gray-300 sm:text-5xl">Solución Simple</h2>
         {/* Descripción principal */}
-        <p className="mt-2 text-gray-600">
+        <p className="mt-6 max-w-3xl text-lg leading-7 text-gray-600 dark:text-gray-400">
           Esta es la descripción principal de la solución simple.
         </p>
         {/* Área de dos columnas */}
@@ -90,8 +90,8 @@ export default function BadgeSolutions() {
     empresarial: (
       <div className="p-8 bg-white shadow rounded">
         <span className="text-sm font-bold">Solución Simple</span>
-        <h2 className="text-2xl font-bold">Solución Empresarial</h2>
-        <p className="mt-2 text-gray-600">
+        <h2 className="mt-2  bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-3xl font-bold tracking-tighter text-transparent dark:from-gray-50 dark:to-gray-300 sm:text-5xl">Solución Empresarial</h2>
+        <p className="mt-6 max-w-3xl text-lg leading-7 text-gray-600 dark:text-gray-400">
           Esta es la descripción principal de la solución empresarial.
         </p>
         <div className="mt-4 flex">
@@ -115,8 +115,8 @@ export default function BadgeSolutions() {
     ecommerce: (
       <div className="p-8 bg-white shadow rounded">
         <span className="text-sm font-bold">Solución Simple</span> 
-        <h2 className="text-2xl font-bold">Solución E-Commerce</h2>
-        <p className="mt-2 text-gray-600">
+        <h2 className="mt-2  bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-3xl font-bold tracking-tighter text-transparent dark:from-gray-50 dark:to-gray-300 sm:text-5xl">Solución E-Commerce</h2>
+        <p className="mt-6 max-w-3xl text-lg leading-7 text-gray-600 dark:text-gray-400">
           Esta es la descripción principal de la solución e-commerce.
         </p>
         <div className="mt-4 flex">
@@ -140,8 +140,8 @@ export default function BadgeSolutions() {
     mantenimiento: (
       <div className="p-8 bg-white shadow rounded">
         <span className="text-sm font-bold">Solución Simple</span>    
-        <h2 className="text-2xl font-bold">Mantenimiento Integral</h2>
-        <p className="mt-2 text-gray-600">
+        <h2 className="mt-2  bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-3xl font-bold tracking-tighter text-transparent dark:from-gray-50 dark:to-gray-300 sm:text-5xl">Mantenimiento Integral</h2>
+        <p className="mt-6 max-w-3xl text-lg leading-7 text-gray-600 dark:text-gray-400">
           Esta es la descripción principal del mantenimiento integral.
         </p>
         <div className="mt-4 flex">
@@ -165,8 +165,8 @@ export default function BadgeSolutions() {
     ia: (
       <div className="p-8 bg-white shadow rounded">
         <span className="text-sm font-bold">Solución Simple</span>      
-        <h2 className="text-2xl font-bold">Solución IA</h2>
-        <p className="mt-2 text-gray-600">
+        <h2 className="mt-2  bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-3xl font-bold tracking-tighter text-transparent dark:from-gray-50 dark:to-gray-300 sm:text-5xl">Solución IA</h2>
+        <p className="mt-6 max-w-3xl text-lg leading-7 text-gray-600 dark:text-gray-400">
           Esta es la descripción principal de la solución de IA.
         </p>
         <div className="mt-4 flex">
