@@ -69,8 +69,8 @@ export default function BadgeSolutions() {
         {/* Área de dos columnas */}
         <div className="mt-4 flex">
           {/* Columna izquierda (70%) */}
-          <div className="w-[70%] pr-4">
-            <h3 className="text-xl font-semibold">Detalles de la Solución</h3>
+          <div className="w-[70%] pr-4 container-col-left">
+            <h3 className="text-2xl font-semibold text-gray-950 dark:text-gray-50">Detalles de la Solución</h3>
             <p className="mt-2 text-gray-500">
               Aquí se muestra una descripción detallada para la columna izquierda.
             </p>
@@ -79,7 +79,7 @@ export default function BadgeSolutions() {
             </button>
           </div>
           {/* Columna derecha (30%) */}
-          <div className="w-[30%]">
+          <div className="w-[30%] container-col-right">
             <p className="text-gray-500">
               Información adicional en la columna derecha.
             </p>
@@ -95,8 +95,8 @@ export default function BadgeSolutions() {
           Esta es la descripción principal de la solución empresarial.
         </p>
         <div className="mt-4 flex">
-          <div className="w-[70%] pr-4">
-            <h3 className="text-xl font-semibold">Detalles Empresariales</h3>
+          <div className="w-[70%] pr-4 container-col-left">
+            <h3 className="text-2xl font-semibold text-gray-950 dark:text-gray-50">Detalles Empresariales</h3>
             <p className="mt-2 text-gray-500">
               Aquí se muestra una descripción detallada para la columna izquierda.
             </p>
@@ -104,7 +104,7 @@ export default function BadgeSolutions() {
               Conocer Más
             </button>
           </div>
-          <div className="w-[30%]">
+          <div className="w-[30%] container-col-right">
             <p className="text-gray-500">
               Información adicional en la columna derecha.
             </p>
@@ -120,8 +120,8 @@ export default function BadgeSolutions() {
           Esta es la descripción principal de la solución e-commerce.
         </p>
         <div className="mt-4 flex">
-          <div className="w-[70%] pr-4">
-            <h3 className="text-xl font-semibold">Detalles de E-Commerce</h3>
+          <div className="w-[70%] pr-4 container-col-left">
+            <h3 className="text-2xl font-semibold text-gray-950 dark:text-gray-50">Detalles de E-Commerce</h3>
             <p className="mt-2 text-gray-500">
               Aquí se muestra una descripción detallada para la columna izquierda.
             </p>
@@ -129,7 +129,7 @@ export default function BadgeSolutions() {
               Explorar
             </button>
           </div>
-          <div className="w-[30%]">
+          <div className="w-[30%] container-col-right">
             <p className="text-gray-500">
               Información adicional en la columna derecha.
             </p>
@@ -145,7 +145,7 @@ export default function BadgeSolutions() {
           Esta es la descripción principal del mantenimiento integral.
         </p>
         <div className="mt-4 flex">
-          <div className="w-[70%] pr-4 bg-gray-50  shadow-2xl shadow-black/10">
+          <div className="container-col-left w-[70%] pr-4 bg-gray-50  shadow-2xl shadow-black/10">
             <h3 className="text-2xl font-semibold text-gray-950 dark:text-gray-50">Detalles del Mantenimiento</h3>
             <p className="mt-4 max-w-sm text-gray-700 dark:text-gray-400">
               Aquí se muestra una descripción detallada para la columna izquierda.
@@ -154,8 +154,8 @@ export default function BadgeSolutions() {
               Solicitar Información
             </button>
           </div>
-          <div className="w-[30%]">
-            <p className="text-gray-500">
+          <div className="w-[30%] container-col-right">
+            <p className="mt-4 max-w-sm text-gray-700 dark:text-gray-400">
               Información adicional en la columna derecha.
             </p>
           </div>
@@ -170,17 +170,17 @@ export default function BadgeSolutions() {
           Esta es la descripción principal de la solución de IA.
         </p>
         <div className="mt-4 flex">
-          <div className="w-[70%] pr-4">
-            <h3 className="text-xl font-semibold">Detalles de la Solución IA</h3>
-            <p className="mt-2 text-gray-500">
+          <div className="w-[70%] pr-4 container-col-left">
+            <h3 className="text-2xl font-semibold text-gray-950 dark:text-gray-50">Detalles de la Solución IA</h3>
+            <p className="mt-4 max-w-sm text-gray-700 dark:text-gray-400">
               Aquí se muestra una descripción detallada para la columna izquierda.
             </p>
             <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded">
               Descubrir Más
             </button>
           </div>
-          <div className="w-[30%]">
-            <p className="text-gray-500">
+          <div className="w-[30%] container-col-right">
+            <p className="mt-4 max-w-sm text-gray-700 dark:text-gray-400">
               Información adicional en la columna derecha.
             </p>
           </div>

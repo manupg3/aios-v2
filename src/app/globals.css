@@ -27,7 +27,13 @@
   /* Morado - Tecnología */
   --color-purple-600: #9333ea;
 }
-
+.containr-col-left{
+  height: 250px;
+  display: flex
+;
+  flex-direction: column;
+  padding: 29px;
+}
 .mt-4.container-solutions-description span {
   color: #2563eb;
   font-size: 1rem;
