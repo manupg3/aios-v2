@@ -80,7 +80,7 @@
   transition: width 0.3s ease; /* Duración y tipo de transición */
 }
 
-.btn-card-simple:hover::after,  .btn-card-empresarial::after, .btn-card-ecommerce::after, .btn-card-mantenimiento::after, .btn-card-ia:after {
+.btn-card-simple:hover::after,  .btn-card-empresarial:hover::after, .btn-card-ecommerce:hover::after, .btn-card-mantenimiento:hover::after, .btn-card-ia:hover::after {
   width: 100%; /* Al hacer hover, la línea se expande hasta el ancho completo */
 }
 
@@ -98,7 +98,13 @@
 .container-col-left button{
   width: max-content;
 }
-
+.container-col-right
+{
+  padding: 29px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  
+}
 .container-col-right.simple{
    background: #10b981;
 }
