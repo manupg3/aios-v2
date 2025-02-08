@@ -138,16 +138,16 @@ export default function BadgeSolutions() {
       </div>
     ),
     mantenimiento: (
-      <div className="p-8 bg-white shadow rounded">
+      <div className="p-8 bg-white ">
         <span className="text-sm font-bold">Solución Simple</span>    
         <h2 className="mt-2  bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-3xl font-bold tracking-tighter text-transparent dark:from-gray-50 dark:to-gray-300 sm:text-5xl">Mantenimiento Integral</h2>
         <p className="mt-6 max-w-3xl text-lg leading-7 text-gray-600 dark:text-gray-400">
           Esta es la descripción principal del mantenimiento integral.
         </p>
         <div className="mt-4 flex">
-          <div className="w-[70%] pr-4">
-            <h3 className="text-xl font-semibold">Detalles del Mantenimiento</h3>
-            <p className="mt-2 text-gray-500">
+          <div className="w-[70%] pr-4 bg-gray-50  shadow-2xl shadow-black/10">
+            <h3 className="text-2xl font-semibold text-gray-950 dark:text-gray-50">Detalles del Mantenimiento</h3>
+            <p className="mt-4 max-w-sm text-gray-700 dark:text-gray-400">
               Aquí se muestra una descripción detallada para la columna izquierda.
             </p>
             <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded">
