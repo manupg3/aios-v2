@@ -16,19 +16,18 @@ export default function About() {
           animationFillMode: "backwards",
         }}
       >
-        <Badge>about database</Badge>
+        <Badge>soluciones para cada necesidad</Badge>
         <h1
           id="about-overview"
           className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300"
         >
           <Balancer>
-          Somos innovadores, construyendo el futuro digital que siempre imaginamos.
-          </Balancer>
+          Innovadores creando el futuro digital.
+        </Balancer>
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-gray-700 dark:text-gray-400">
-        La tecnología está transformando la forma en que las empresas se conectan, compiten y crecen, y el momento de actuar es ahora.
-        <br /> En el corazón de esta transformación están las soluciones web integrales: diseño intuitivo, código eficiente y experiencias que cautivan.
-        </p>
+        La tecnología redefine cómo las empresas crecen y se conectan.
+        <br /> Soluciones clave: diseño intuitivo, código eficaz y experiencias memorables
       </section>
       <TeamGallery />
       <Benefits />
