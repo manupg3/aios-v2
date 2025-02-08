@@ -33,6 +33,8 @@
 ;
   flex-direction: column;
   padding: 29px;
+  border-radius: 8px;
+  border: 1px solid #c2c2c252;
 }
 .container-col-left button{
   width: max-content;
