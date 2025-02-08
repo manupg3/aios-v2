@@ -2,6 +2,7 @@ import {
     RiNotificationFill,
     RiWifiLine,
     RiArrowDownLine,
+    RiCheckLine
   } from '@remixicon/react';
   
   export default function BadgeSolutions(){
@@ -9,54 +10,45 @@ import {
     return (
       <>
         <div className="flex flex-wrap justify-center gap-4">
-          <span className="inline-flex items-center gap-2.5 rounded-tremor-default bg-red-500 px-2.5 py-1.5 text-tremor-label font-medium text-tremor-content-inverted">
-            Solicion simple
-            <span className="h-5 w-px bg-red-400" />
-            <a href="#" className="inline-flex items-center gap-1.5">
-              Updates
-              <RiArrowDownLine className="size-4" aria-hidden={true} />
-            </a>
-          </span>
-          <span className="inline-flex items-center gap-2.5 rounded-tremor-default bg-emerald-500 px-2.5 py-1.5 text-tremor-label font-medium text-tremor-content-inverted">
+        <span className="inline-flex items-center gap-2.5 rounded-tremor-default bg-emerald-500 px-2.5 py-1.5 text-tremor-label font-medium text-tremor-content-inverted">
             <span className="inline-flex items-center gap-1.5">
-              <RiWifiLine className="size-4" aria-hidden={true} />
+              <RiCheckLine className="size-4" aria-hidden={true} />
+              Solucion Simple
+            </span>
+            <span className="h-5 w-px bg-emerald-400" />
+            <a href="#"><RiArrowDownLine className="size-4" aria-hidden={true} /></a>
+          </span>
+           <span className="inline-flex items-center gap-2.5 rounded-tremor-default bg-emerald-500 px-2.5 py-1.5 text-tremor-label font-medium text-tremor-content-inverted">
+            <span className="inline-flex items-center gap-1.5">
+              <RiCheckLine className="size-4" aria-hidden={true} />
               Solucion Empresarial
             </span>
             <span className="h-5 w-px bg-emerald-400" />
-            <a href="#">Edit</a>
+            <a href="#"><RiArrowDownLine className="size-4" aria-hidden={true} /></a>
           </span>
-          <span className="inline-flex items-center gap-2.5 rounded-tremor-default bg-[#000] px-2.5 py-1.5 text-tremor-label font-medium text-tremor-content-inverted">
+          <span className="inline-flex items-center gap-2.5 rounded-tremor-default bg-emerald-500 px-2.5 py-1.5 text-tremor-label font-medium text-tremor-content-inverted">
             <span className="inline-flex items-center gap-1.5">
-              <RiArrowDownLine className="size-4" aria-hidden={true} />
-              
+              <RiCheckLine className="size-4" aria-hidden={true} />
+              Solucion Ecommerce
             </span>
-            <span className="h-5 w-px bg-tremor-brand-subtle" />
-            <a href="#" className="inline-flex items-center gap-1.5">
-              Solucion E-Commerce
-              <RiArrowDownLine className="size-4" aria-hidden={true} />
-            </a>
+            <span className="h-5 w-px bg-emerald-400" />
+            <a href="#"><RiArrowDownLine className="size-4" aria-hidden={true} /></a>
           </span>
-          <span className="inline-flex items-center gap-2.5 rounded-tremor-default bg-[#000] px-2.5 py-1.5 text-tremor-label font-medium text-tremor-content-inverted">
+          <span className="inline-flex items-center gap-2.5 rounded-tremor-default bg-emerald-500 px-2.5 py-1.5 text-tremor-label font-medium text-tremor-content-inverted">
             <span className="inline-flex items-center gap-1.5">
-              <RiNotificationFill className="size-4" aria-hidden={true} />
-              
-            </span>
-            <span className="h-5 w-px bg-tremor-brand-subtle" />
-            <a href="#" className="inline-flex items-center gap-1.5">
+              <RiCheckLine className="size-4" aria-hidden={true} />
               Mantenimiento Integral
-              <RiArrowDownLine className="size-4" aria-hidden={true} />
-            </a>
-          </span>
-          <span className="inline-flex items-center gap-2.5 rounded-tremor-default bg-[#000] px-2.5 py-1.5 text-tremor-label font-medium text-tremor-content-inverted">
-            <span className="inline-flex items-center gap-1.5">
-              <RiNotificationFill className="size-4" aria-hidden={true} />
-              
             </span>
-            <span className="h-5 w-px bg-tremor-brand-subtle" />
-            <a href="#" className="inline-flex items-center gap-1.5">
+            <span className="h-5 w-px bg-emerald-400" />
+            <a href="#"><RiArrowDownLine className="size-4" aria-hidden={true} /></a>
+          </span>
+          <span className="inline-flex items-center gap-2.5 rounded-tremor-default bg-emerald-500 px-2.5 py-1.5 text-tremor-label font-medium text-tremor-content-inverted">
+            <span className="inline-flex items-center gap-1.5">
+              <RiCheckLine className="size-4" aria-hidden={true} />
               Solucion IA
-              <RiArrowDownLine className="size-4" aria-hidden={true} />
-            </a>
+            </span>
+            <span className="h-5 w-px bg-emerald-400" />
+            <a href="#"><RiArrowDownLine className="size-4" aria-hidden={true} /></a>
           </span>
         </div>
       </>
