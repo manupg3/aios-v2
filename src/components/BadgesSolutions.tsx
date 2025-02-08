@@ -60,6 +60,7 @@ export default function BadgeSolutions() {
     simple: (
       <div className="p-8 bg-white shadow rounded">
         {/* Título principal */}
+        <span className="text-sm font-bold">Solución Simple</span>
         <h2 className="text-2xl font-bold">Solución Simple</h2>
         {/* Descripción principal */}
         <p className="mt-2 text-gray-600">
@@ -88,6 +89,7 @@ export default function BadgeSolutions() {
     ),
     empresarial: (
       <div className="p-8 bg-white shadow rounded">
+        <span className="text-sm font-bold">Solución Simple</span>
         <h2 className="text-2xl font-bold">Solución Empresarial</h2>
         <p className="mt-2 text-gray-600">
           Esta es la descripción principal de la solución empresarial.
@@ -112,6 +114,7 @@ export default function BadgeSolutions() {
     ),
     ecommerce: (
       <div className="p-8 bg-white shadow rounded">
+        <span className="text-sm font-bold">Solución Simple</span> 
         <h2 className="text-2xl font-bold">Solución E-Commerce</h2>
         <p className="mt-2 text-gray-600">
           Esta es la descripción principal de la solución e-commerce.
@@ -136,6 +139,7 @@ export default function BadgeSolutions() {
     ),
     mantenimiento: (
       <div className="p-8 bg-white shadow rounded">
+        <span className="text-sm font-bold">Solución Simple</span>    
         <h2 className="text-2xl font-bold">Mantenimiento Integral</h2>
         <p className="mt-2 text-gray-600">
           Esta es la descripción principal del mantenimiento integral.
@@ -160,6 +164,7 @@ export default function BadgeSolutions() {
     ),
     ia: (
       <div className="p-8 bg-white shadow rounded">
+        <span className="text-sm font-bold">Solución Simple</span>      
         <h2 className="text-2xl font-bold">Solución IA</h2>
         <p className="mt-2 text-gray-600">
           Esta es la descripción principal de la solución de IA.
@@ -219,7 +224,7 @@ export default function BadgeSolutions() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 10 }}
           transition={{ duration: 0.3 }}
-          className="mt-4"
+          className="mt-4 container-solutions-description"
         >
           {activeTab ? (
             cardContents[activeTab]
