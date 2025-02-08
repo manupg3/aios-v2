@@ -22,12 +22,12 @@ export default function About() {
           className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300"
         >
           <Balancer>
-            We are engineers, building the database platform we always wanted
+          Somos innovadores, construyendo el futuro digital que siempre imaginamos.
           </Balancer>
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-gray-700 dark:text-gray-400">
-          Data is changing every aspect of running a business, and it is
-          happening now. <br /> Database is at the core of this revolution.
+        La tecnología está transformando la forma en que las empresas se conectan, compiten y crecen, y el momento de actuar es ahora.
+        <br /> En el corazón de esta transformación están las soluciones web integrales: diseño intuitivo, código eficiente y experiencias que cautivan.
         </p>
       </section>
       <TeamGallery />
