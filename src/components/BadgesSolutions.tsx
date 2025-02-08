@@ -67,7 +67,7 @@ export default function BadgeSolutions() {
           Esta es la descripción principal de la solución simple.
         </p>
         {/* Área de dos columnas */}
-        <div className="mt-4 flex gap-8">
+        <div className="mt-4 flex gap-4">
           {/* Columna izquierda (70%) */}
           <div className="container-col-left w-[70%] pr-4 bg-gray-50  shadow-2xl shadow-black/10">
             <h3 className="text-2xl font-semibold text-gray-950 dark:text-gray-50">Detalles de la Solución</h3>
