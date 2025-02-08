@@ -31,7 +31,7 @@ export default function About() {
         <br /> Soluciones clave: diseño intuitivo, código eficaz y experiencias memorables.
         </p>
       </section>
-      <section className="section-badge-solutions">
+      <section  className="section-badge-solutions">
       <BadgeSolutions />
       </section>
       <TeamGallery />

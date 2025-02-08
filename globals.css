@@ -11,6 +11,16 @@
   src: url("/fonts/NanumPenScript.woff2") format("woff2");
 }
 
+.section-badge-solutions{
+  margin-block:30px;
+}
+
+section.section-badge-solutions span {
+  font-size: 0.75rem;
+  font-family: 'inter';
+  color: #fff;
+  border-radius: .5rem;
+}
 .backdrop-blur {
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);

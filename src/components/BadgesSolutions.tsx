@@ -25,9 +25,9 @@ import {
             <span className="h-5 w-px bg-emerald-400" />
             <a href="#">Edit</a>
           </span>
-          <span className="inline-flex items-center gap-2.5 rounded-tremor-default bg-tremor-brand px-2.5 py-1.5 text-tremor-label font-medium text-tremor-content-inverted">
+          <span className="inline-flex items-center gap-2.5 rounded-tremor-default bg-[#000] px-2.5 py-1.5 text-tremor-label font-medium text-tremor-content-inverted">
             <span className="inline-flex items-center gap-1.5">
-              <RiNotificationFill className="size-4" aria-hidden={true} />1
+              <RiNotificationFill className="size-4" aria-hidden={true} />
               Notification
             </span>
             <span className="h-5 w-px bg-tremor-brand-subtle" />
