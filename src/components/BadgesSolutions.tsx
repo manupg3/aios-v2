@@ -3,12 +3,19 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { RiArrowDownLine, RiCheckLine } from '@remixicon/react';
 
-export default function BadgeSolutions() {
-  // Estado para el badge activo (null significa que no hay ninguno activo)
-  const [activeTab, setActiveTab] = useState(null);
+interface Badge {
+  key: string;
+  label: string;
+  classes: string;
+  info: string;
+}
 
-  // Datos de cada badge (se conservan los estilos originales)
-  const badges = [
+export default function BadgeSolutions() {
+  // Estado para el badge activo, tipado como string o null.
+  const [activeTab, setActiveTab] = useState<string | null>(null);
+
+  // Datos de cada badge (sin modificar los estilos originales)
+  const badges: Badge[] = [
     {
       key: 'simple',
       label: 'Solucion Simple',
@@ -47,9 +54,12 @@ export default function BadgeSolutions() {
   ];
 
   // Función que maneja el clic en la flecha del badge
-  const handleBadgeClick = (key, e) => {
+  const handleBadgeClick = (
+    key: string, 
+    e: React.MouseEvent<HTMLAnchorElement>
+  ) => {
     e.preventDefault();
-    // Si se hace clic en el badge activo, se cierra (vuelve null); de lo contrario se activa el nuevo
+    // Si se hace clic en el badge activo, se cierra (vuelve null); de lo contrario se activa el nuevo.
     setActiveTab(activeTab === key ? null : key);
   };
 
@@ -59,19 +69,19 @@ export default function BadgeSolutions() {
         {badges.map((badge) => (
           <span key={badge.key} className={badge.classes}>
             <span className="inline-flex items-center gap-1.5">
-              <RiCheckLine className="size-4" aria-hidden={true} />
+              <RiCheckLine className="size-4" aria-hidden="true" />
               {badge.label}
             </span>
             <span className="h-5 w-px bg-white" />
             <a href="#" onClick={(e) => handleBadgeClick(badge.key, e)}>
-              <RiArrowDownLine className="size-4" aria-hidden={true} />
+              <RiArrowDownLine className="size-4" aria-hidden="true" />
             </a>
           </span>
         ))}
       </div>
 
       {/* Card de información con animación */}
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence mode="wait">
         <motion.div
           key={activeTab || 'default'}
           initial={{ opacity: 0, y: 10 }}
