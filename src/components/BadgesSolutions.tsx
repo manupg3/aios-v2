@@ -1,58 +1,9 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { RiArrowDownLine, RiCheckLine, RiArrowRightSLine } from '@remixicon/react';
-import createGlobe from 'cobe';
+import { RiArrowDownLine, RiCheckLine } from '@remixicon/react';
 
-//
-// Componente GlobeCanvas
-//
-function GlobeCanvas() {
-  const canvasRef = useRef<HTMLCanvasElement | null>(null);
-
-  useEffect(() => {
-    let phi = 4;
-    let globe: ReturnType<typeof createGlobe> | null = null;
-
-    if (canvasRef.current) {
-      globe = createGlobe(canvasRef.current, {
-        devicePixelRatio: 2,
-        width: 800 * 2,
-        height: 800 * 2,
-        phi: 0,
-        theta: -0.3,
-        dark: 0,
-        diffuse: 1.2,
-        mapSamples: 30000,
-        mapBrightness: 13,
-        mapBaseBrightness: 0.01,
-        baseColor: [1, 1, 1],
-        glowColor: [1, 1, 1],
-        markerColor: [100, 100, 100],
-        markers: [],
-        onRender: function (state) {
-          state.phi = phi;
-          phi += 0.0005;
-        },
-      });
-    }
-
-    return () => {
-      if (globe) {
-        globe.destroy();
-      }
-    };
-  }, []);
-
-  return (
-    <canvas
-      ref={canvasRef}
-      style={{ width: 800, height: 800 }}
-      className="absolute -right-72 top-40 z-10 aspect-square size-full max-w-fit transition-transform group-hover:scale-[1.01] sm:top-12 lg:-right-60 lg:top-0"
-    />
-  );
-}
 
 //
 // Interfaz para los badges
@@ -67,7 +18,7 @@ interface Badge {
 // Componente principal: BadgeSolutions
 //
 export default function BadgeSolutions() {
-  // Estado para el badge activo (null significa ninguno seleccionado)
+  // Estado para el badge activo (null significa que no hay ninguno seleccionado)
   const [activeTab, setActiveTab] = useState<string | null>(null);
 
   // Datos de los badges (se conservan los estilos originales)
@@ -104,180 +55,135 @@ export default function BadgeSolutions() {
     },
   ];
 
+  // Mapeo de cada badge a su contenido (estructura de la card)
   const cardContents: Record<string, React.ReactElement> = {
-    simple: React.createElement(
-      "a",
-      {
-        href: "/simple",
-        className:
-          "group relative overflow-hidden rounded-b rounded-t-2xl bg-gray-50 p-8 shadow-2xl shadow-black/10 ring-1 ring-black/5 dark:bg-gray-900 dark:ring-white/5 lg:rounded-l-2xl lg:rounded-r",
-      },
-      React.createElement(
-        "div",
-        { className: "relative z-20" },
-        React.createElement(
-          "h3",
-          { className: "text-2xl font-semibold text-gray-950 dark:text-gray-50" },
-          "AI Chatbot Integration"
-        ),
-        React.createElement(
-          "p",
-          { className: "mt-4 max-w-sm text-gray-700 dark:text-gray-400" },
-          "Seamlessly integrate our advanced AI chatbots to handle customer queries instantly."
-        ),
-        React.createElement(
-          "div",
-          {
-            className:
-              "mt-12 flex w-fit items-center gap-0.5 rounded bg-white/10 px-2 py-1 text-blue-500 backdrop-blur-[3px]",
-          },
-          React.createElement("span", null, "Explore features"),
-          React.createElement(RiArrowRightSLine, {
-            className:
-              "mt-0.5 size-5 transition-all group-hover:translate-x-1 group-hover:opacity-100 sm:opacity-20",
-          })
-        )
-      ),
-      React.createElement(GlobeCanvas, null)
+    simple: (
+      <div className="p-8 bg-white shadow rounded">
+        {/* Título principal */}
+        <h2 className="text-2xl font-bold">Solución Simple</h2>
+        {/* Descripción principal */}
+        <p className="mt-2 text-gray-600">
+          Esta es la descripción principal de la solución simple.
+        </p>
+        {/* Área de dos columnas */}
+        <div className="mt-4 flex">
+          {/* Columna izquierda (70%) */}
+          <div className="w-[70%] pr-4">
+            <h3 className="text-xl font-semibold">Detalles de la Solución</h3>
+            <p className="mt-2 text-gray-500">
+              Aquí se muestra una descripción detallada para la columna izquierda.
+            </p>
+            <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded">
+              Ver Más
+            </button>
+          </div>
+          {/* Columna derecha (30%) */}
+          <div className="w-[30%]">
+            <p className="text-gray-500">
+              Información adicional en la columna derecha.
+            </p>
+          </div>
+        </div>
+      </div>
     ),
-    empresarial: React.createElement(
-      "a",
-      {
-        href: "/empresarial",
-        className:
-          "group relative overflow-hidden rounded-b rounded-t-2xl bg-white p-8 shadow-2xl shadow-gray-300 ring-1 ring-gray-200 lg:rounded-l-2xl lg:rounded-r",
-      },
-      React.createElement(
-        "div",
-        { className: "relative z-20" },
-        React.createElement(
-          "h3",
-          { className: "text-2xl font-semibold text-gray-800" },
-          "Enterprise Solutions"
-        ),
-        React.createElement(
-          "p",
-          { className: "mt-4 max-w-sm text-gray-600" },
-          "Enhance your business operations with tailored enterprise-grade solutions."
-        ),
-        React.createElement(
-          "div",
-          {
-            className:
-              "mt-12 flex w-fit items-center gap-0.5 rounded bg-gray-100 px-2 py-1 text-indigo-500",
-          },
-          React.createElement("span", null, "Learn more"),
-          React.createElement(RiArrowRightSLine, {
-            className: "mt-0.5 size-5 transition-all group-hover:translate-x-1",
-          })
-        )
-      ),
-      React.createElement(GlobeCanvas, null)
+    empresarial: (
+      <div className="p-8 bg-white shadow rounded">
+        <h2 className="text-2xl font-bold">Solución Empresarial</h2>
+        <p className="mt-2 text-gray-600">
+          Esta es la descripción principal de la solución empresarial.
+        </p>
+        <div className="mt-4 flex">
+          <div className="w-[70%] pr-4">
+            <h3 className="text-xl font-semibold">Detalles Empresariales</h3>
+            <p className="mt-2 text-gray-500">
+              Aquí se muestra una descripción detallada para la columna izquierda.
+            </p>
+            <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded">
+              Conocer Más
+            </button>
+          </div>
+          <div className="w-[30%]">
+            <p className="text-gray-500">
+              Información adicional en la columna derecha.
+            </p>
+          </div>
+        </div>
+      </div>
     ),
-    ecommerce: React.createElement(
-      "a",
-      {
-        href: "/ecommerce",
-        className:
-          "group relative overflow-hidden rounded-b rounded-t-2xl bg-gray-100 p-8 shadow-2xl shadow-gray-400 ring-1 ring-gray-300 lg:rounded-l-2xl lg:rounded-r",
-      },
-      React.createElement(
-        "div",
-        { className: "relative z-20" },
-        React.createElement(
-          "h3",
-          { className: "text-2xl font-semibold text-gray-900" },
-          "E-Commerce Platform"
-        ),
-        React.createElement(
-          "p",
-          { className: "mt-4 max-w-sm text-gray-700" },
-          "Boost your online sales with our robust and scalable e-commerce platform."
-        ),
-        React.createElement(
-          "div",
-          {
-            className:
-              "mt-12 flex w-fit items-center gap-0.5 rounded bg-gray-200 px-2 py-1 text-green-500",
-          },
-          React.createElement("span", null, "Shop now"),
-          React.createElement(RiArrowRightSLine, {
-            className: "mt-0.5 size-5 transition-all group-hover:translate-x-1",
-          })
-        )
-      ),
-      React.createElement(GlobeCanvas, null)
+    ecommerce: (
+      <div className="p-8 bg-white shadow rounded">
+        <h2 className="text-2xl font-bold">Solución E-Commerce</h2>
+        <p className="mt-2 text-gray-600">
+          Esta es la descripción principal de la solución e-commerce.
+        </p>
+        <div className="mt-4 flex">
+          <div className="w-[70%] pr-4">
+            <h3 className="text-xl font-semibold">Detalles de E-Commerce</h3>
+            <p className="mt-2 text-gray-500">
+              Aquí se muestra una descripción detallada para la columna izquierda.
+            </p>
+            <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded">
+              Explorar
+            </button>
+          </div>
+          <div className="w-[30%]">
+            <p className="text-gray-500">
+              Información adicional en la columna derecha.
+            </p>
+          </div>
+        </div>
+      </div>
     ),
-    mantenimiento: React.createElement(
-      "a",
-      {
-        href: "/mantenimiento",
-        className:
-          "group relative overflow-hidden rounded-b rounded-t-2xl bg-gray-200 p-8 shadow-2xl shadow-gray-500 ring-1 ring-gray-400 lg:rounded-l-2xl lg:rounded-r",
-      },
-      React.createElement(
-        "div",
-        { className: "relative z-20" },
-        React.createElement(
-          "h3",
-          { className: "text-2xl font-semibold text-gray-950" },
-          "Comprehensive Maintenance"
-        ),
-        React.createElement(
-          "p",
-          { className: "mt-4 max-w-sm text-gray-700" },
-          "Ensure uninterrupted operations with our comprehensive maintenance services."
-        ),
-        React.createElement(
-          "div",
-          {
-            className:
-              "mt-12 flex w-fit items-center gap-0.5 rounded bg-gray-300 px-2 py-1 text-red-500",
-          },
-          React.createElement("span", null, "Get in touch"),
-          React.createElement(RiArrowRightSLine, {
-            className: "mt-0.5 size-5 transition-all group-hover:translate-x-1",
-          })
-        )
-      ),
-      React.createElement(GlobeCanvas, null)
+    mantenimiento: (
+      <div className="p-8 bg-white shadow rounded">
+        <h2 className="text-2xl font-bold">Mantenimiento Integral</h2>
+        <p className="mt-2 text-gray-600">
+          Esta es la descripción principal del mantenimiento integral.
+        </p>
+        <div className="mt-4 flex">
+          <div className="w-[70%] pr-4">
+            <h3 className="text-xl font-semibold">Detalles del Mantenimiento</h3>
+            <p className="mt-2 text-gray-500">
+              Aquí se muestra una descripción detallada para la columna izquierda.
+            </p>
+            <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded">
+              Solicitar Información
+            </button>
+          </div>
+          <div className="w-[30%]">
+            <p className="text-gray-500">
+              Información adicional en la columna derecha.
+            </p>
+          </div>
+        </div>
+      </div>
     ),
-    ia: React.createElement(
-      "a",
-      {
-        href: "/ia",
-        className:
-          "group relative overflow-hidden rounded-b rounded-t-2xl bg-gray-300 p-8 shadow-2xl shadow-gray-600 ring-1 ring-gray-500 lg:rounded-l-2xl lg:rounded-r",
-      },
-      React.createElement(
-        "div",
-        { className: "relative z-20" },
-        React.createElement(
-          "h3",
-          { className: "text-2xl font-semibold text-gray-800" },
-          "AI Innovations"
-        ),
-        React.createElement(
-          "p",
-          { className: "mt-4 max-w-sm text-gray-700" },
-          "Discover how AI can transform your business with cutting-edge innovations."
-        ),
-        React.createElement(
-          "div",
-          {
-            className:
-              "mt-12 flex w-fit items-center gap-0.5 rounded bg-gray-400 px-2 py-1 text-yellow-500",
-          },
-          React.createElement("span", null, "Discover more"),
-          React.createElement(RiArrowRightSLine, {
-            className: "mt-0.5 size-5 transition-all group-hover:translate-x-1",
-          })
-        )
-      ),
-      React.createElement(GlobeCanvas, null)
+    ia: (
+      <div className="p-8 bg-white shadow rounded">
+        <h2 className="text-2xl font-bold">Solución IA</h2>
+        <p className="mt-2 text-gray-600">
+          Esta es la descripción principal de la solución de IA.
+        </p>
+        <div className="mt-4 flex">
+          <div className="w-[70%] pr-4">
+            <h3 className="text-xl font-semibold">Detalles de la Solución IA</h3>
+            <p className="mt-2 text-gray-500">
+              Aquí se muestra una descripción detallada para la columna izquierda.
+            </p>
+            <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded">
+              Descubrir Más
+            </button>
+          </div>
+          <div className="w-[30%]">
+            <p className="text-gray-500">
+              Información adicional en la columna derecha.
+            </p>
+          </div>
+        </div>
+      </div>
     ),
   };
-  
+
   // Función que maneja el clic en la flecha del badge
   const handleBadgeClick = (
     key: string,
