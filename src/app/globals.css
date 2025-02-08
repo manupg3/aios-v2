@@ -101,16 +101,37 @@
 .container-col-right
 {
   padding: 29px;
-  border-bottom-left-radius: 25px;
-  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
   
 }
 .container-col-right.simple{
    background: #10b981;
 }
-.container-col-right.simple p{
+.container-col-right.simple p, .container-col-right.empresarial p, .container-col-right.ecommerce p, .container-col-right.mantenimiento p, .container-col-right.ia p{
   color:#fff;
 }
+  
+.container-col-right.empresarial{
+  background: #2563eb;
+}
+
+.container-col-right.ecommerce
+{ 
+  background:  #f97316;
+}
+.container-col-right.mantenimiento
+{ 
+  background:  #4b5563;
+}
+
+.container-col-right.ia
+{ 
+  background:  #9333ea;
+}
+
+
+
 
 
 .mt-4.container-solutions-description span {
