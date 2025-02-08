@@ -27,6 +27,9 @@
   /* Morado - Tecnología */
   --color-purple-600: #9333ea;
 }
+.btn-card-simple{
+  color:#10B981;
+}
 .container-col-left{
   height: 250px;
   display: flex

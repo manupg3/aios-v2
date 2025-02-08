@@ -74,8 +74,8 @@ export default function BadgeSolutions() {
             <p className="mt-2 text-gray-500">
               Aquí se muestra una descripción detallada para la columna izquierda.
             </p>
-            <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded">
-              Ver Más
+            <button className="btn-card-simple mt-4 px-4 py-2 rounded">
+              Cotizar Solucion
             </button>
           </div>
           {/* Columna derecha (30%) */}
@@ -100,8 +100,8 @@ export default function BadgeSolutions() {
             <p className="mt-2 text-gray-500">
               Aquí se muestra una descripción detallada para la columna izquierda.
             </p>
-            <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded">
-              Conocer Más
+            <button className="btn-card-empresarial mt-4 px-4 py-2 rounded">
+            Cotizar Solucion
             </button>
           </div>
           <div className="w-[30%] container-col-right">
@@ -125,8 +125,8 @@ export default function BadgeSolutions() {
             <p className="mt-2 text-gray-500">
               Aquí se muestra una descripción detallada para la columna izquierda.
             </p>
-            <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded">
-              Explorar
+            <button className="btn-card-ecommerce mt-4 px-4 py-2 rounded">
+            Cotizar Solucion
             </button>
           </div>
           <div className="w-[30%] container-col-right">
@@ -150,8 +150,8 @@ export default function BadgeSolutions() {
             <p className="mt-4 max-w-sm text-gray-700 dark:text-gray-400">
               Aquí se muestra una descripción detallada para la columna izquierda.
             </p>
-            <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded">
-              Solicitar Información
+            <button className="btn-card-mantenimiento mt-4 px-4 py-2 rounded">
+            Cotizar Mantenimiento
             </button>
           </div>
           <div className="w-[30%] container-col-right">
@@ -175,9 +175,9 @@ export default function BadgeSolutions() {
             <p className="mt-4 max-w-sm text-gray-700 dark:text-gray-400">
               Aquí se muestra una descripción detallada para la columna izquierda.
             </p>
-            <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded w-max">
-              Descubrir Más
-            </button>
+            <button className="btn-card-ia mt-4 px-4 py-2 rounded w-max">
+            Cotizar Solucion
+          </button>
           </div>
           <div className="w-[30%] container-col-right">
             <p className="mt-4 max-w-sm text-gray-700 dark:text-gray-400">
