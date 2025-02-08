@@ -4,6 +4,7 @@ import Benefits from "@/components/ui/Benefits"
 import TeamGallery from "@/components/ui/TeamGallery"
 import { cx } from "@/lib/utils"
 import Balancer from "react-wrap-balancer"
+import BadgeSolutions from "@/components/BadgesSolutions"
 
 export default function About() {
   return (
@@ -29,6 +30,9 @@ export default function About() {
         La tecnología redefine cómo las empresas crecen y se conectan.
         <br /> Soluciones clave: diseño intuitivo, código eficaz y experiencias memorables.
         </p>
+      </section>
+      <section className="section-badge-solutions">
+      <BadgeSolutions />
       </section>
       <TeamGallery />
       <Benefits />
