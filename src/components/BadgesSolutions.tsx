@@ -1,5 +1,4 @@
 import {
-    RiArrowRightUpLine,
     RiNotificationFill,
     RiWifiLine,
     RiArrowDownLine,
