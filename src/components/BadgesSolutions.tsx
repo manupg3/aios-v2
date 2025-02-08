@@ -16,7 +16,7 @@ import {
             <span className="h-5 w-px bg-emerald-400" />
             <a href="#"><RiArrowDownLine className="size-4" aria-hidden={true} /></a>
           </span>
-           <span className="inline-flex items-center gap-2.5 rounded-tremor-default bg-emerald-500 px-2.5 py-1.5 text-tremor-label font-medium text-tremor-content-inverted">
+           <span className="span-badge-empresarial inline-flex items-center gap-2.5 rounded-tremor-default px-2.5 py-1.5 text-tremor-label font-medium text-tremor-content-inverted">
             <span className="inline-flex items-center gap-1.5">
               <RiCheckLine className="size-4" aria-hidden={true} />
               Solucion Empresarial
@@ -24,15 +24,15 @@ import {
             <span className="h-5 w-px bg-emerald-400" />
             <a href="#"><RiArrowDownLine className="size-4" aria-hidden={true} /></a>
           </span>
-          <span className="inline-flex items-center gap-2.5 rounded-tremor-default bg-emerald-500 px-2.5 py-1.5 text-tremor-label font-medium text-tremor-content-inverted">
+          <span className="span-badge-ecommerce inline-flex items-center gap-2.5 rounded-tremor-default px-2.5 py-1.5 text-tremor-label font-medium text-tremor-content-inverted">
             <span className="inline-flex items-center gap-1.5">
               <RiCheckLine className="size-4" aria-hidden={true} />
-              Solucion Ecommerce
+              Solucion E-Commerce
             </span>
             <span className="h-5 w-px bg-emerald-400" />
             <a href="#"><RiArrowDownLine className="size-4" aria-hidden={true} /></a>
           </span>
-          <span className="inline-flex items-center gap-2.5 rounded-tremor-default bg-emerald-500 px-2.5 py-1.5 text-tremor-label font-medium text-tremor-content-inverted">
+          <span className="span-badge-mantenimiento inline-flex items-center gap-2.5 rounded-tremor-default px-2.5 py-1.5 text-tremor-label font-medium text-tremor-content-inverted">
             <span className="inline-flex items-center gap-1.5">
               <RiCheckLine className="size-4" aria-hidden={true} />
               Mantenimiento Integral
@@ -40,7 +40,7 @@ import {
             <span className="h-5 w-px bg-emerald-400" />
             <a href="#"><RiArrowDownLine className="size-4" aria-hidden={true} /></a>
           </span>
-          <span className="inline-flex items-center gap-2.5 rounded-tremor-default bg-emerald-500 px-2.5 py-1.5 text-tremor-label font-medium text-tremor-content-inverted">
+          <span className="span-badge-ia inline-flex items-center gap-2.5 rounded-tremor-default px-2.5 py-1.5 text-tremor-label font-medium text-tremor-content-inverted">
             <span className="inline-flex items-center gap-1.5">
               <RiCheckLine className="size-4" aria-hidden={true} />
               Solucion IA

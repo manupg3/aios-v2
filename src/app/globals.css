@@ -10,9 +10,31 @@
   font-named-instance: "Regular";
   src: url("/fonts/NanumPenScript.woff2") format("woff2");
 }
-.section-badge-solutions{
-  margin-block:30px;
+
+:root {
+  /* Verde - Simplicidad */
+  --color-green-500: #22c55e;
+  
+  /* Azul - Profesionalismo */
+  --color-blue-600: #2563eb;
+  
+  /* Naranja - Energía */
+  --color-orange-500: #f97316;
+  
+  /* Gris - Neutralidad */
+  --color-gray-600: #4b5563;
+  
+  /* Morado - Tecnología */
+  --color-purple-600: #9333ea;
 }
+
+
+
+.span-badge-simple { background-color: var(--color-green-500); }
+.span-badge-empresarial { background-color: var(--color-blue-600); }
+.span-badge-ecommerce { background-color: var(--color-orange-500); }
+.span-badge-mantenimiento { background-color: var(--color-gray-600); }
+.span-badge-ia { background-color: var(--color-purple-600); }
 
 section.section-badge-solutions span {
   font-size: 0.75rem;
