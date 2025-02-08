@@ -1,6 +1,4 @@
 import {
-    RiNotificationFill,
-    RiWifiLine,
     RiArrowDownLine,
     RiCheckLine
   } from '@remixicon/react';
