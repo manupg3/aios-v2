@@ -79,7 +79,7 @@ export default function BadgeSolutions() {
             </button>
           </div>
           {/* Columna derecha (30%) */}
-          <div className="w-[30%] container-col-right">
+          <div className="w-[30%] container-col-right simple">
             <p className="text-gray-500">
               Información adicional en la columna derecha.
             </p>
@@ -104,7 +104,7 @@ export default function BadgeSolutions() {
             Cotizar Solucion
             </button>
           </div>
-          <div className="w-[30%] container-col-right">
+          <div className="w-[30%] container-col-right empresarial">
             <p className="text-gray-500">
               Información adicional en la columna derecha.
             </p>
@@ -129,7 +129,7 @@ export default function BadgeSolutions() {
             Cotizar Solucion
             </button>
           </div>
-          <div className="w-[30%] container-col-right">
+          <div className="w-[30%] container-col-right ecommerce">
             <p className="text-gray-500">
               Información adicional en la columna derecha.
             </p>
@@ -154,7 +154,7 @@ export default function BadgeSolutions() {
             Cotizar Mantenimiento
             </button>
           </div>
-          <div className="w-[30%] container-col-right">
+          <div className="w-[30%] container-col-right mantenimiento">
             <p className="mt-4 max-w-sm text-gray-700 dark:text-gray-400">
               Información adicional en la columna derecha.
             </p>
@@ -179,7 +179,7 @@ export default function BadgeSolutions() {
             Cotizar Solucion
           </button>
           </div>
-          <div className="w-[30%] container-col-right">
+          <div className="w-[30%] container-col-right ia">
             <p className="mt-4 max-w-sm text-gray-700 dark:text-gray-400">
               Información adicional en la columna derecha.
             </p>

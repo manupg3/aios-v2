@@ -28,25 +28,40 @@
   --color-purple-600: #9333ea;
 }
 .btn-card-simple{
-  color:#10B981;
-  padding-left: 0px;
+  color: #10b981;
+  padding-left: 0;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  border-radius: 0px;
 }
 .btn-card-empresarial{
    color:#2563eb;
-   padding-left: 0px;
+  padding-left: 0;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  border-radius: 0px;
 }
 
 .btn-card-ecommerce{
   color:#f97316;
-  padding-left: 0px;
+  padding-left: 0;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  border-radius: 0px;
 }
 .btn-card-mantenimiento{
   color:#4b5563;
-  padding-left: 0px;
+  padding-left: 0;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  border-radius: 0px;  
 }
 .btn-card-ia{
   color:#9333ea;
-  padding-left: 0px;
+  padding-left: 0;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  border-radius: 0px;
 }
 .btn-card-simple, .btn-card-empresarial, .btn-card-ecommerce, .btn-card-mantenimiento, .btn-card-ia {
   position: relative; /* Necesario para posicionar el pseudoelemento */
@@ -54,7 +69,7 @@
   overflow: hidden;
 }
 
-.btn-card-simple::after {
+.btn-card-simple::after,  .btn-card-empresarial::after, .btn-card-ecommerce::after, .btn-card-mantenimiento::after, .btn-card-ia::after {
   content: "";
   position: absolute;
   bottom: 0; /* Ubica la línea en la parte inferior */
@@ -65,7 +80,7 @@
   transition: width 0.3s ease; /* Duración y tipo de transición */
 }
 
-.btn-card-simple:hover::after {
+.btn-card-simple:hover::after,  .btn-card-empresarial::after, .btn-card-ecommerce::after, .btn-card-mantenimiento::after, .btn-card-ia:after {
   width: 100%; /* Al hacer hover, la línea se expande hasta el ancho completo */
 }
 
@@ -76,12 +91,22 @@
 ;
   flex-direction: column;
   padding: 29px;
-  border-radius: 8px;
+  border-bottom-left-radius: 25px;
   border: 1px solid #c2c2c252;
+  border-top-left-radius: 25px;
 }
 .container-col-left button{
   width: max-content;
 }
+
+.container-col-right.simple{
+   background: #10b981;
+}
+.container-col-right.simple p{
+  color:#fff;
+}
+
+
 .mt-4.container-solutions-description span {
   color: #2563eb;
   font-size: 1rem;
