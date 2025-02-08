@@ -29,7 +29,47 @@
 }
 .btn-card-simple{
   color:#10B981;
+  padding-left: 0px;
 }
+.btn-card-empresarial{
+   color:#2563eb;
+   padding-left: 0px;
+}
+
+.btn-card-ecommerce{
+  color:#f97316;
+  padding-left: 0px;
+}
+.btn-card-mantenimiento{
+  color:#4b5563;
+  padding-left: 0px;
+}
+.btn-card-ia{
+  color:#9333ea;
+  padding-left: 0px;
+}
+.btn-card-simple, .btn-card-empresarial, .btn-card-ecommerce, .btn-card-mantenimiento, .btn-card-ia {
+  position: relative; /* Necesario para posicionar el pseudoelemento */
+  display: inline-block; /* Para que el pseudoelemento se posicione respecto al botón */
+  overflow: hidden;
+}
+
+.btn-card-simple::after {
+  content: "";
+  position: absolute;
+  bottom: 0; /* Ubica la línea en la parte inferior */
+  left: 0;
+  width: 0;
+  height: 2px; /* Altura de la línea de subrayado */
+  background-color: currentColor; /* Utiliza el color actual del texto */
+  transition: width 0.3s ease; /* Duración y tipo de transición */
+}
+
+.btn-card-simple:hover::after {
+  width: 100%; /* Al hacer hover, la línea se expande hasta el ancho completo */
+}
+
+
 .container-col-left{
   height: 250px;
   display: flex
