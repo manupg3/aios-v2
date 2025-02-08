@@ -27,7 +27,8 @@ export default function About() {
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-gray-700 dark:text-gray-400">
         La tecnología redefine cómo las empresas crecen y se conectan.
-        <br /> Soluciones clave: diseño intuitivo, código eficaz y experiencias memorables
+        <br /> Soluciones clave: diseño intuitivo, código eficaz y experiencias memorables.
+        </p>
       </section>
       <TeamGallery />
       <Benefits />
