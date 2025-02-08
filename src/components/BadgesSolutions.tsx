@@ -69,7 +69,7 @@ export default function BadgeSolutions() {
         {/* Área de dos columnas */}
         <div className="mt-4 flex">
           {/* Columna izquierda (70%) */}
-          <div className="w-[70%] pr-4 container-col-left">
+          <div className="container-col-left w-[70%] pr-4 bg-gray-50  shadow-2xl shadow-black/10">
             <h3 className="text-2xl font-semibold text-gray-950 dark:text-gray-50">Detalles de la Solución</h3>
             <p className="mt-2 text-gray-500">
               Aquí se muestra una descripción detallada para la columna izquierda.
@@ -95,7 +95,7 @@ export default function BadgeSolutions() {
           Esta es la descripción principal de la solución empresarial.
         </p>
         <div className="mt-4 flex">
-          <div className="w-[70%] pr-4 container-col-left">
+          <div className="container-col-left w-[70%] pr-4 bg-gray-50  shadow-2xl shadow-black/10">
             <h3 className="text-2xl font-semibold text-gray-950 dark:text-gray-50">Detalles Empresariales</h3>
             <p className="mt-2 text-gray-500">
               Aquí se muestra una descripción detallada para la columna izquierda.
@@ -120,7 +120,7 @@ export default function BadgeSolutions() {
           Esta es la descripción principal de la solución e-commerce.
         </p>
         <div className="mt-4 flex">
-          <div className="w-[70%] pr-4 container-col-left">
+          <div className="container-col-left w-[70%] pr-4 bg-gray-50  shadow-2xl shadow-black/10">
             <h3 className="text-2xl font-semibold text-gray-950 dark:text-gray-50">Detalles de E-Commerce</h3>
             <p className="mt-2 text-gray-500">
               Aquí se muestra una descripción detallada para la columna izquierda.
@@ -170,7 +170,7 @@ export default function BadgeSolutions() {
           Esta es la descripción principal de la solución de IA.
         </p>
         <div className="mt-4 flex">
-          <div className="w-[70%] pr-4 container-col-left">
+          <div className="container-col-left w-[70%] pr-4 bg-gray-50  shadow-2xl shadow-black/10">
             <h3 className="text-2xl font-semibold text-gray-950 dark:text-gray-50">Detalles de la Solución IA</h3>
             <p className="mt-4 max-w-sm text-gray-700 dark:text-gray-400">
               Aquí se muestra una descripción detallada para la columna izquierda.
