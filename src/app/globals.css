@@ -104,14 +104,17 @@
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px; 
 }
+.container-col-left h3{
+  margin-right: 5px;
+}
 .container-col-left h3 span{
   border: 1px solid #10b981;
-  color: #10b981;
-  font-size: 12px;
+  color: #10b981 !important;
+  font-size: 12px !important;
   padding: 3px 11px;
-  border-radius: 50px;
-  font-weight: 600;
-  margin-inline: 10px;
+  border-radius: 50px !important;
+  font-weight: 600 !important;
+  margin-inline: 4px;
 }
 .container-col-right.simple{
    background: #10b981;
