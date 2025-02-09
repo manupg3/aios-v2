@@ -236,19 +236,21 @@ export default function BadgeSolutions() {
       {/* Sección de badges */}
       <div className="flex flex-wrap justify-center gap-4">
         {badges.map((badge) => (
-      <a href="#" onClick={(e) => handleBadgeClick(badge.key, e)}>
-      
-          <span key={badge.key} className={badge.classes}>
+          <span 
+          key={badge.key} className={badge.classes}>
+            <a href="#" onClick={(e) => handleBadgeClick(badge.key, e)}>
+             
             <span className="inline-flex items-center gap-1.5">
               <RiCheckLine className="size-4" aria-hidden="true" />
               {badge.label}
             </span>
+            </a>
             <span className="h-5 w-px bg-white" />
-              <RiArrowDownLine className="size-4" aria-hidden="true" />
+            
+             <RiArrowDownLine className="size-4" aria-hidden="true" />
+            
           </span>
-          </a>
-      
-      ))}
+        ))}
       </div>
 
       {/* Card de contenido con animación */}
