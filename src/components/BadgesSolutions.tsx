@@ -111,7 +111,7 @@ export default function BadgeSolutions() {
                 <span>Panel Empresarial</span> 
                 </h3>
             <p className="mt-2 text-gray-500">
-              Aquí se muestra una descripción detallada para la columna izquierda.
+            Impulsa tu empresa con una solución empresarial a medida, diseñada para ofrecer páginas ilimitadas, integraciones avanzadas e IA aplicada. Optimiza procesos, mejora la experiencia del cliente y expande tu negocio sin límites.
             </p>
             <button className="btn-card-empresarial mt-4 px-4 py-2 rounded">
             Cotizar Solucion
@@ -143,11 +143,8 @@ export default function BadgeSolutions() {
                 <span>Integraciones IA</span>
                 </h3>
             <p className="mt-2 text-gray-500">
-            Potencia tu negocio con nuestra solución Todo en Uno:
-             páginas ilimitadas, medios flexibles de envío y pago,
-              potenciadores de ventas e IA integrada para análisis de
-               datos y chatbots. Optimiza la experiencia del cliente y maximiza tus resultados.
-             </p>
+            Impulsa tu negocio con nuestra solución Todo en Uno: páginas ilimitadas, envíos y pagos flexibles
+            , IA para análisis y chatbots, optimizando la experiencia del cliente y maximizando resultados.</p>
             <button className="btn-card-ecommerce mt-4 px-4 py-2 rounded">
             Cotizar Solucion
             </button>
@@ -165,8 +162,8 @@ export default function BadgeSolutions() {
         <span className="text-sm font-bold">Mantenimiento Integral</span>    
         <h2 className="mt-2  bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-3xl font-bold tracking-tighter text-transparent dark:from-gray-50 dark:to-gray-300 sm:text-5xl">Tu web o aplicacion actualizado y optimizado</h2>
         <p className="mt-6 max-w-3xl text-lg leading-7 text-gray-600 dark:text-gray-400">
-        Ofrecemos mantenimiento integral para sitios web, e-commerce y aplicaciones, garantizando un óptimo rendimiento, actualizaciones continuas y la seguridad necesaria para que tu negocio se mantenga siempre a la vanguardia.
-        </p>
+        Mantén tu plataforma actualizada y optimizada para un rendimiento óptimo. Ofrecemos mantenimiento para sitios empresariales, e-commerce y soluciones a medida, asegurando estabilidad y resultados efectivos.
+       </p>
         <div className="mt-4 flex gap-4">
           <div className="container-col-left w-[70%] pr-4 bg-gray-50  shadow-2xl shadow-black/10">
           <h3 className="text-2xl font-semibold text-gray-950 dark:text-gray-50">
@@ -209,7 +206,7 @@ export default function BadgeSolutions() {
                 <span>Configuracion Simple</span>
                 </h3>
             <p className="mt-4 max-w-sm text-gray-700 dark:text-gray-400">
-            Maximiza la eficiencia con chatbots inteligentes, analizadores de ventas y la integración de ChatGPT–DeepSeek. Nuestra configuración simple agiliza la implementación y potencia los resultados de tu negocio.
+            Optimiza tu negocio con chatbots, analizadores de ventas e integración de IA, con una configuración simple para maximizar resultados.
             </p>
             <button className="btn-card-ia mt-4 px-4 py-2 rounded w-max">
             Cotizar Solucion
@@ -217,7 +214,8 @@ export default function BadgeSolutions() {
           </div>
           <div className="w-[30%] container-col-right ia">
             <p className="mt-4 max-w-sm text-gray-700 dark:text-gray-400">
-            Ideal para quienes desean integrar Inteligencia Artificial de forma rápida y eficaz, nuestras soluciones se crean totalmente a medida, con un diseño profesional y tecnología de vanguardia. Creamos implementaciones personalizadas y escalables, facilitando la toma de decisiones y potenciando la competitividad de tu negocio.
+            Ideal para quienes buscan integrar IA de manera ágil y efectiva, desarrollamos soluciones a medida, escalables y diseñadas con tecnología de vanguardia para optimizar decisiones y mejorar la competitividad.
+
             </p>
           </div>
         </div>
