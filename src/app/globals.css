@@ -115,6 +115,11 @@
   border-radius: 50px !important;
   font-weight: 600 !important;
   margin-inline: 4px;
+  position: relative;
+  top:-3px;
+}
+.container-col-left h3 span:first-child{
+  margin-left:5px;
 }
 .container-col-right.simple{
    background: #10b981;
