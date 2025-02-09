@@ -112,6 +112,16 @@
   color:#fff;
 }
   
+.container-col-right.simple {
+  background: linear-gradient(
+    135deg,
+    rgba(52, 211, 153, 0.6) 0%,  /* Verde esmeralda claro */
+    #10b981 100%
+  );
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(167, 243, 208, 0.4);
+}
+
 .container-col-right.empresarial {
   background: linear-gradient(
     135deg,

@@ -61,19 +61,20 @@ export default function BadgeSolutions() {
       <div className="p-8 bg-white shadow rounded">
         {/* Título principal */}
         <span className="text-sm font-bold">Solución Simple</span>
-        <h2 className="mt-2  bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-3xl font-bold tracking-tighter text-transparent dark:from-gray-50 dark:to-gray-300 sm:text-5xl">Solución Simple</h2>
+        <h2 className="mt-2  bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-3xl font-bold tracking-tighter text-transparent dark:from-gray-50 dark:to-gray-300 sm:text-5xl">          Transforma tu presencia digital.
+        </h2>
         {/* Descripción principal */}
         <p className="mt-6 max-w-3xl text-lg leading-7 text-gray-600 dark:text-gray-400">
-          Esta es la descripción principal de la solución simple.
+        Desarrollamos páginas clave en tiempo record, landings conversionales, 
+        one pages estratégicas y sitios básicos con diseños optimizados para resultados inmediatos.
         </p>
         {/* Área de dos columnas */}
         <div className="mt-4 flex gap-4">
           {/* Columna izquierda (70%) */}
           <div className="container-col-left w-[70%] pr-4 bg-gray-50  shadow-2xl shadow-black/10">
-            <h3 className="text-2xl font-semibold text-gray-950 dark:text-gray-50">Detalles de la Solución</h3>
+            <h3 className="text-2xl font-semibold text-gray-950 dark:text-gray-50">1 a 3 Páginas: La Solución Web Más Simple</h3>
             <p className="mt-2 text-gray-500">
-              Aquí se muestra una descripción detallada para la columna izquierda.
-            </p>
+            Para quienes desean dar sus primeros pasos en el entorno digital o necesitan una presencia en línea de forma rápida y efectiva, nuestras Soluciones Web Simples ofrecen exactamente lo necesario sin complicaciones. Ideal para emprendimientos y pequeños negocios, este tipo de sitio incluye de 1 a 3 páginas esenciales (Inicio, Sobre Nosotros y Contacto, por ejemplo), con un diseño profesional y adaptado para dispositivos móviles.            </p>
             <button className="btn-card-simple mt-4 px-4 py-2 rounded">
               Cotizar Solucion
             </button>
@@ -94,7 +95,7 @@ export default function BadgeSolutions() {
         <p className="mt-6 max-w-3xl text-lg leading-7 text-gray-600 dark:text-gray-400">
           Esta es la descripción principal de la solución empresarial.
         </p>
-        <div className="mt-4 flex gap-8">
+        <div className="mt-4 flex gap-4">
           <div className="container-col-left w-[70%] pr-4 bg-gray-50  shadow-2xl shadow-black/10">
             <h3 className="text-2xl font-semibold text-gray-950 dark:text-gray-50">Detalles Empresariales</h3>
             <p className="mt-2 text-gray-500">
@@ -119,7 +120,7 @@ export default function BadgeSolutions() {
         <p className="mt-6 max-w-3xl text-lg leading-7 text-gray-600 dark:text-gray-400">
           Esta es la descripción principal de la solución e-commerce.
         </p>
-        <div className="mt-4 flex gap-8">
+        <div className="mt-4 flex gap-4">
           <div className="container-col-left w-[70%] pr-4 bg-gray-50  shadow-2xl shadow-black/10">
             <h3 className="text-2xl font-semibold text-gray-950 dark:text-gray-50">Detalles de E-Commerce</h3>
             <p className="mt-2 text-gray-500">
@@ -144,7 +145,7 @@ export default function BadgeSolutions() {
         <p className="mt-6 max-w-3xl text-lg leading-7 text-gray-600 dark:text-gray-400">
           Esta es la descripción principal del mantenimiento integral.
         </p>
-        <div className="mt-4 flex gap-8">
+        <div className="mt-4 flex gap-4">
           <div className="container-col-left w-[70%] pr-4 bg-gray-50  shadow-2xl shadow-black/10">
             <h3 className="text-2xl font-semibold text-gray-950 dark:text-gray-50">Detalles del Mantenimiento</h3>
             <p className="mt-4 max-w-sm text-gray-700 dark:text-gray-400">
@@ -169,7 +170,7 @@ export default function BadgeSolutions() {
         <p className="mt-6 max-w-3xl text-lg leading-7 text-gray-600 dark:text-gray-400">
           Esta es la descripción principal de la solución de IA.
         </p>
-        <div className="mt-4 flex gap-8">
+        <div className="mt-4 flex gap-4">
           <div className="container-col-left w-[70%] pr-4 bg-gray-50  shadow-2xl shadow-black/10">
             <h3 className="text-2xl font-semibold text-gray-950 dark:text-gray-50">Detalles de la Solución IA</h3>
             <p className="mt-4 max-w-sm text-gray-700 dark:text-gray-400">
