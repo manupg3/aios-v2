@@ -121,7 +121,10 @@
   backdrop-filter: blur(2px);
   border: 1px solid rgba(167, 243, 208, 0.4);
 }
-
+.container-col-left p{
+  max-width: 500px;
+  padding-top: 7px;
+}
 .container-col-right.empresarial {
   background: linear-gradient(
     135deg,
