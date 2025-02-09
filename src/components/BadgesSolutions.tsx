@@ -111,7 +111,7 @@ export default function BadgeSolutions() {
                 <span>Panel Empresarial</span> 
                 </h3>
             <p className="mt-2 text-gray-500">
-            Impulsa tu empresa con una solución empresarial a medida, diseñada para ofrecer páginas ilimitadas, integraciones avanzadas e IA aplicada. Optimiza procesos, mejora la experiencia del cliente y expande tu negocio sin límites.
+            Impulsa tu empresa con una solución empresarial a medida, con páginas ilimitadas, integraciones avanzadas e IA para optimizar procesos y expandir tu negocio.
             </p>
             <button className="btn-card-empresarial mt-4 px-4 py-2 rounded">
             Cotizar Solucion
@@ -162,8 +162,8 @@ export default function BadgeSolutions() {
         <span className="text-sm font-bold">Mantenimiento Integral</span>    
         <h2 className="mt-2  bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-3xl font-bold tracking-tighter text-transparent dark:from-gray-50 dark:to-gray-300 sm:text-5xl">Tu web o aplicacion actualizado y optimizado</h2>
         <p className="mt-6 max-w-3xl text-lg leading-7 text-gray-600 dark:text-gray-400">
-        Mantén tu plataforma actualizada y optimizada para un rendimiento óptimo. Ofrecemos mantenimiento para sitios empresariales, e-commerce y soluciones a medida, asegurando estabilidad y resultados efectivos.
-       </p>
+        Ofrecemos mantenimiento integral para sitios web, e-commerce y aplicaciones, garantizando un óptimo rendimiento, actualizaciones continuas y la seguridad necesaria para que tu negocio se mantenga siempre a la vanguardia.
+        </p>
         <div className="mt-4 flex gap-4">
           <div className="container-col-left w-[70%] pr-4 bg-gray-50  shadow-2xl shadow-black/10">
           <h3 className="text-2xl font-semibold text-gray-950 dark:text-gray-50">
@@ -175,7 +175,7 @@ export default function BadgeSolutions() {
                 <span>Multiples Plataformas</span>
                 </h3>
             <p className="mt-4 max-w-sm text-gray-700 dark:text-gray-400">
-            Mantén cada plataforma actualizada y optimizada para asegurar rendimiento de primer nivel. Desde landings de alto impacto hasta sitios empresariales, e-commerce y soluciones a medida, garantizamos una experiencia fluida y resultados tangibles para tu negocio.
+            Mantén tu plataforma actualizada y optimizada para un rendimiento superior. Brindamos soporte para sitios empresariales, e-commerce y soluciones a medida, asegurando estabilidad y resultados.
             </p>
             <button className="btn-card-mantenimiento mt-4 px-4 py-2 rounded">
             Cotizar Mantenimiento
