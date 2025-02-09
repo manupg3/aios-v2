@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { RiArrowDownLine, RiCheckLine } from '@remixicon/react';
-
+import Link from 'next/link';
 
 //
 // Interfaz para los badges
@@ -238,13 +238,13 @@ export default function BadgeSolutions() {
         {badges.map((badge) => (
           <span 
           key={badge.key} className={badge.classes}>
-            <a href="/#badge-solutions" onClick={(e) => handleBadgeClick(badge.key, e)}>
+            <Link href="/#badge-solutions" onClick={(e) => handleBadgeClick(badge.key, e)}>
              
             <span className="inline-flex items-center gap-1.5">
               <RiCheckLine className="size-4" aria-hidden="true" />
               {badge.label}
             </span>
-            </a>
+            </Link>
             <span className="h-5 w-px bg-white" />
             
              <RiArrowDownLine className="size-4" aria-hidden="true" />
