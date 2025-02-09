@@ -143,7 +143,10 @@ export default function BadgeSolutions() {
                 <span>Integraciones IA</span>
                 </h3>
             <p className="mt-2 text-gray-500">
-            Potencia tu negocio con nuestra solución Todo En Uno: disfruta de páginas ilimitadas, medios de envío y pago flexibles, y múltiples potenciadores de ventas. Además, integramos IA para análisis de datos y chatbots, optimizando la experiencia del cliente y maximizando tus resultados.
+            Potencia tu negocio con nuestra solución Todo en Uno:
+             páginas ilimitadas, medios flexibles de envío y pago,
+              potenciadores de ventas e IA integrada para análisis de
+               datos y chatbots. Optimiza la experiencia del cliente y maximiza tus resultados.
              </p>
             <button className="btn-card-ecommerce mt-4 px-4 py-2 rounded">
             Cotizar Solucion
