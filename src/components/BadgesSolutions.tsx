@@ -227,7 +227,6 @@ export default function BadgeSolutions() {
     key: string,
     e: React.MouseEvent<HTMLAnchorElement>
   ) => {
-    e.preventDefault();
     setActiveTab(activeTab === key ? null : key);
   };
 
