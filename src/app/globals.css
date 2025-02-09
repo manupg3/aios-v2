@@ -104,6 +104,9 @@
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px; 
 }
+.container-imgs-hero{
+  height: 541px;
+}
 .container-col-left h3{
   margin-right: 5px;
   white-space: normal;

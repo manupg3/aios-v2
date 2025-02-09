@@ -43,7 +43,7 @@ export default function HeroImage() {
   return (
     <section aria-label="Hero Image Slideshow" className="flow-root relative">
       {/* Contenedor para superponer todas las imágenes en la misma posición */}
-      <div className="relative overflow-hidden rounded-2xl bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
+      <div className="container-imgs-hero relative overflow-hidden rounded-2xl bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
         {/* Cada imagen se ubica con position absolute, 
             mostrando solo la imagen que coincida con `currentIndex` */}
         {images.map((img, i) => (
