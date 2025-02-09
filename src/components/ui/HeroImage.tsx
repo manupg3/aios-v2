@@ -11,17 +11,17 @@ interface ImageProps {
 
 const images: ImageProps[] = [
   {
-    lightSrc: "/images/hero1-light.webp",
+    lightSrc: "/images/simple-1.png",
     darkSrc: "/images/hero1-dark.webp",
     alt: "Vista previa 1 de la aplicación",
   },
   {
-    lightSrc: "/images/hero2-light.webp",
+    lightSrc: "/images/business-1.png",
     darkSrc: "/images/hero2-dark.webp",
     alt: "Vista previa 2 de la aplicación",
   },
   {
-    lightSrc: "/images/hero3-light.webp",
+    lightSrc: "/images/ecommerce-1.png",
     darkSrc: "/images/hero3-dark.webp",
     alt: "Vista previa 3 de la aplicación",
   },
