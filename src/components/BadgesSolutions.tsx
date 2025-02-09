@@ -74,7 +74,7 @@ export default function BadgeSolutions() {
           <div className="container-col-left w-[70%] pr-4 bg-gray-50  shadow-2xl shadow-black/10">
             <h3 className="text-2xl font-semibold text-gray-950 dark:text-gray-50">1 a 3 Páginas: La Solución Web Más Simple</h3>
             <p className="mt-2 text-gray-500">
-            Para quienes desean dar sus primeros pasos en el entorno digital o necesitan una presencia en línea de forma rápida y efectiva, nuestras Soluciones Web Simples ofrecen exactamente lo necesario sin complicaciones. Ideal para emprendimientos y pequeños negocios, este tipo de sitio incluye de 1 a 3 páginas esenciales (Inicio, Sobre Nosotros y Contacto, por ejemplo), con un diseño profesional y adaptado para dispositivos móviles.            </p>
+            Para quienes desean dar sus primeros pasos en el entorno digital o necesitan una presencia en línea de forma rápida y efectiva, nuestras Soluciones Web Simples ofrecen exactamente lo necesario sin complicaciones.</p>
             <button className="btn-card-simple mt-4 px-4 py-2 rounded">
               Cotizar Solucion
             </button>
@@ -82,8 +82,7 @@ export default function BadgeSolutions() {
           {/* Columna derecha (30%) */}
           <div className="w-[30%] container-col-right simple">
             <p className="text-gray-500">
-              Información adicional en la columna derecha.
-            </p>
+            Ideal para emprendimientos y pequeños negocios, este tipo de sitio incluye de 1 a 3 páginas esenciales (Inicio, Sobre Nosotros y Contacto, por ejemplo), con un diseño profesional y adaptado para dispositivos móviles.            </p>
           </div>
         </div>
       </div>
