@@ -225,7 +225,6 @@ export default function BadgeSolutions() {
   // Función que maneja el clic en la flecha del badge
   const handleBadgeClick = (
     key: string,
-    e: React.MouseEvent<HTMLAnchorElement>
   ) => {
     setActiveTab(activeTab === key ? null : key);
   };
