@@ -175,8 +175,7 @@ export default function BadgeSolutions() {
                 <span>Multiples Plataformas</span>
                 </h3>
             <p className="mt-4 max-w-sm text-gray-700 dark:text-gray-400">
-            Mantén tu plataforma actualizada y optimizada para un rendimiento superior. Brindamos soporte para sitios empresariales, e-commerce y soluciones a medida, asegurando estabilidad y resultados.
-            </p>
+            Mantén tu plataforma actualizada y optimizada. Ofrecemos soporte para sitios empresariales, e-commerce y soluciones a medida, garantizando estabilidad y resultados.</p>
             <button className="btn-card-mantenimiento mt-4 px-4 py-2 rounded">
             Cotizar Mantenimiento
             </button>
