@@ -230,10 +230,7 @@ export default function BadgeSolutions() {
     e.preventDefault();
     setActiveTab(activeTab === key ? null : key);
 
-    const section = document.getElementById('badge-solutions');
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
+
   
   };
 
@@ -272,9 +269,9 @@ export default function BadgeSolutions() {
           {activeTab ? (
             cardContents[activeTab]
           ) : (
-            <div className="p-4 bg-white shadow rounded">
-              Selecciona una solución
-            </div>
+            <div  className="p-4 bg-white shadow rounded center">
+                Explora las distintas soluciones a continuación para conocer en detalle cada propuesta 
+           </div>
           )}
         </motion.div>
       </AnimatePresence>
