@@ -225,8 +225,16 @@ export default function BadgeSolutions() {
   // Función que maneja el clic en la flecha del badge
   const handleBadgeClick = (
     key: string,
+    e: React.MouseEvent<HTMLAnchorElement>
   ) => {
+    e.preventDefault();
     setActiveTab(activeTab === key ? null : key);
+
+    const section = document.getElementById('badge-solutions');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  
   };
 
   return (
