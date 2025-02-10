@@ -41,17 +41,17 @@ export const GlobalDatabase: FunctionComponent = () => {
 
   const features = [
     {
-      name: "Global Clusters",
-      description: "Enable low-latency global access, enhancing performance.",
+      name: "Soluciones Web",
+      description: "Desarrollo de webs y ecommerce rápidos y adaptativos.",
     },
     {
-      name: "Serverless Triggers",
-      description: "Trigger functions automatically for dynamic app behavior.",
+      name: "Mantenimiento Integral",
+      description: "Actualizaciones y seguridad para apps y webs continuas.",
     },
     {
-      name: "Monitoring & Alerts",
+      name: "Soluciones IA",
       description:
-        "Monitor health with key metrics or integrate third-party tools.",
+        "Monitoreo con métricas clave e integración de herramientas externas.",
     },
   ]
 
@@ -71,7 +71,7 @@ export const GlobalDatabase: FunctionComponent = () => {
           id="global-database-title"
           className="z-10 mt-6 inline-block bg-gradient-to-b from-white to-indigo-100 bg-clip-text px-2 text-center text-5xl font-bold tracking-tighter text-transparent md:text-8xl"
         >
-          El mundo <br /> conocera tu marca
+          El Mundo <br /> Conocera Tu Marca
         </h2>
         <canvas
           className="absolute top-[7.1rem] z-20 aspect-square size-full max-w-fit md:top-[12rem]"
