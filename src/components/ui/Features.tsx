@@ -7,12 +7,12 @@ const stats = [
     value: "+100",
   },
   {
-    name: "Soluciones IA",
-    value: "Pensadas para cada solucion",
+    name: "Pensadas para cada solucion",
+    value: "Soluciones IA",
   },
   {
-    name: "Mantenimiento Integral",
-    value: "Siempre actualizado y seguro",
+    name: "Siempre actualizado y seguro",
+    value: "Mantenimiento Integral",
   },
 ]
 
