@@ -10,7 +10,7 @@ import CodeExampleTabs from "./CodeExampleTabs"
 
 const features = [
   {
-    name: "Para todo tipo de soluciones web",
+    name: "Para todo tipo de sitio web",
     description:
       "Desde una landing page, web empresarial, e-commerce y sitios a medida.",
     icon: RiStackLine,
@@ -22,13 +22,13 @@ const features = [
     icon: RiPlugLine,
   },
   {
-    name: "Analiza todas las variables de tu tienda",
+    name: "Analizador de Tendencias",
     description:
       "Analiza y da sugerencias de improvement a partir de tus ventas y clientes.",
     icon: RiLinksLine,
   },
   {
-    name: "Integracion con multiples plataformas",
+    name: "Integracion multi-plataforma",
     description:
       "Integramos nuestras soluciones con la plataforma que utilizes.",
     icon: RiShieldKeyholeLine,
