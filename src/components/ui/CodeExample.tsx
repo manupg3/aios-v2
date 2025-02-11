@@ -1,4 +1,3 @@
-// CodeExample.tsx
 import Image from "next/image"
 import {
   RiLinksLine,
@@ -8,11 +7,6 @@ import {
 } from "@remixicon/react"
 import { Badge } from "../Badge"
 import CodeExampleTabs from "./CodeExampleTabs"
-
-// Importa tus imágenes (ajusta la ruta según corresponda)
-import imageTab1 from "@/public/images/chatbot-ai-2.png"
-import imageTab2 from "@/public/images/trend-analyzer.png"
-
 
 const features = [
   {
@@ -57,11 +51,12 @@ export default function CodeExample() {
       <p className="mt-6 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
         Soluciones de IA fluidas que se adaptan a cualquier sitio web, desde blogs hasta empresas. Aprovecha la automatización inteligente para mejorar experiencias, sin importar la complejidad o enfoque de tu plataforma.
       </p>
+
       <CodeExampleTabs
         tab1={
           <div className="relative h-[31rem]">
             <Image
-              src={imageTab1}
+              src="/images/chatbot-ai-2.png"  // <<-- Use the public path here
               alt="Ejemplo de imagen 1"
               fill
               style={{ objectFit: "cover" }}
@@ -71,7 +66,7 @@ export default function CodeExample() {
         tab2={
           <div className="relative h-[31rem]">
             <Image
-              src={imageTab2}
+              src="/images/trend-analyzer.png" // <<-- Use the public path here
               alt="Ejemplo de imagen 2"
               fill
               style={{ objectFit: "cover" }}
@@ -79,6 +74,7 @@ export default function CodeExample() {
           </div>
         }
       />
+
       <dl className="mt-24 grid grid-cols-4 gap-10">
         {features.map((item) => (
           <div
