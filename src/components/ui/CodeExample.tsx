@@ -13,6 +13,7 @@ import CodeExampleTabs from "./CodeExampleTabs"
 import imageTab1 from "@/public/images/chatbot-ai-2.png"
 import imageTab2 from "@/public/images/trend-analyzer.png"
 
+
 const features = [
   {
     name: "Use Database with your stack",
