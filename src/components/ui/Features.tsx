@@ -7,12 +7,12 @@ const stats = [
     value: "+100",
   },
   {
-    name: "Pensadas para cada solucion",
-    value: "IA",
+    name: "Solucines IA",
+    value: "+2",
   },
   {
-    name: "Siempre actualizado y seguro",
-    value: "Mantenimiento",
+    name: "Optmizamos Tu Negocio",
+    value: "x10",
   },
 ]
 
