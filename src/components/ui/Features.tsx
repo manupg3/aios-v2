@@ -30,8 +30,10 @@ export default function Features() {
         Creamos soluciones web premium
       </h2>
       <p className="mt-6 max-w-3xl text-lg leading-7 text-gray-600 dark:text-gray-400">
-      Soluciones web premium: desarrollo personalizado con IA, integración multiplataforma y
-       seguridad robusta. Máximo rendimiento sin interrupciones.  
+      Creamos sitios web personalizados potenciados con IA, 
+      ofreciendo integración multiplataforma y mantenimiento proactivo. 
+      Garantizamos seguridad avanzada, actualizaciones continuas y rendimiento óptimo para
+      operaciones fluidas sin interrupciones.  
       </p>
       <dl className="mt-12 grid grid-cols-1 gap-y-8 md:grid-cols-3 md:border-y md:border-gray-200 md:py-14 dark:border-gray-800">
         {stats.map((stat, index) => (
