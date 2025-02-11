@@ -11,7 +11,7 @@ const stats = [
     value: "+2",
   },
   {
-    name: "Optmizamos Tu Negocio",
+    name: "Optimizamos Tu Negocio",
     value: "x10",
   },
 ]
