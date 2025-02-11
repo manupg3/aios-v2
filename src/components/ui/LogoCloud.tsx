@@ -9,7 +9,7 @@ export default function LogoCloud() {
       <p className="text-lg font-medium tracking-tighter text-gray-800 dark:text-gray-200">
         Trusted by the world&rsquo;s best engineering teams
       </p>
-      <div className="grid grid-cols-2 gap-10 gap-y-4 text-gray-900 md:grid-cols-4 md:gap-x-20 dark:text-gray-200">
+      <div className="grid grid-cols-2 gap-10 gap-y-4 text-gray-900 md:grid-cols-5 md:gap-x-20 dark:text-gray-200">
         <img 
           src="/images/wordpress-logo.svg" 
           alt="wordpress" 
@@ -26,7 +26,7 @@ export default function LogoCloud() {
           className="w-28 h-auto"
         />
         <img 
-          src="/images/openai-log.svg" 
+          src="/images/openai-logo.svg" 
           alt="Catalog" 
           className="w-28 h-auto"
         />
