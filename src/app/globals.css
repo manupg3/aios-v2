@@ -111,6 +111,9 @@
   margin-right: 5px;
   white-space: normal;
 }
+.container-imgs-stack img{
+  width: 4rem;
+}
 .badge-hero-ia span {
   font-size: 14px;
   color: #7272ff;
