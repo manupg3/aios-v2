@@ -10,27 +10,27 @@ import CodeExampleTabs from "./CodeExampleTabs"
 
 const features = [
   {
-    name: "Use Database with your stack",
+    name: "Para todo tipo de soluciones web",
     description:
-      "We offer client and server libraries in everything from React and Ruby to iOS.",
+      "Desde una landing page, web empresarial, e-commerce y sitios a medida.",
     icon: RiStackLine,
   },
   {
-    name: "Try plug & play options",
+    name: "Atencion al cliente automatizada",
     description:
-      "Customize and deploy data infrastructure directly from the Database Dashboard.",
+      "Que la IA se encargue de contestar las preguntas, dudas de tus clientes.",
     icon: RiPlugLine,
   },
   {
-    name: "Explore pre-built integrations",
+    name: "Analiza todas las variables de tu tienda",
     description:
-      "Connect Database to over a hundred tools including Stripe, Salesforce, or Quickbooks.",
+      "Analiza y da sugerencias de improvement a partir de tus ventas y clientes.",
     icon: RiLinksLine,
   },
   {
-    name: "Security & privacy",
+    name: "Integracion con multiples plataformas",
     description:
-      "Database supports PII data encrypted with AES-256 at rest or explicit user consent flows.",
+      "Integramos nuestras soluciones con la plataforma que utilizes.",
     icon: RiShieldKeyholeLine,
   },
 ]
