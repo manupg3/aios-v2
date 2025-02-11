@@ -29,7 +29,7 @@ Desde proyectos personales y tiendas online hasta soluciones empresariales.
         style={{ animationDuration: "1100ms" }}
       >
         <Button className="h-10 font-semibold">
-          <Link href="#">Start 14-day trial</Link>
+          <Link href="#">Comenzar Ahora</Link>
         </Button>
         <Button
           asChild
@@ -47,7 +47,7 @@ Desde proyectos personales y tiendas online hasta soluciones empresariales.
                 className="size-5 shrink-0 text-gray-900 dark:text-gray-50"
               />
             </span>
-            Watch video
+            ¿Cómo Funciona?
           </Link>
         </Button>
       </div>

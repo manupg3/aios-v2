@@ -1,4 +1,5 @@
-import Code from "@/components/Code"
+// CodeExample.tsx
+import Image from "next/image"
 import {
   RiLinksLine,
   RiPlugLine,
@@ -8,53 +9,9 @@ import {
 import { Badge } from "../Badge"
 import CodeExampleTabs from "./CodeExampleTabs"
 
-const code = `CREATE TABLE Customers (
-    customer_id SERIAL PRIMARY KEY,
-    name VARCHAR(255),
-    gender CHAR(1),
-    rewards_member BOOLEAN
-);
-
-CREATE TABLE Orders (
-    order_id SERIAL PRIMARY KEY,
-    sales_date DATE,
-    customer_id INT REFERENCES Customers(customer_id)
-);
-
-CREATE TABLE Items (
-    item_id SERIAL PRIMARY KEY,
-    name VARCHAR(255),
-    price DECIMAL(10, 2)
-);
-
-CREATE TABLE Order_Items (
-    order_id INT REFERENCES Orders(order_id),
-    item_id INT REFERENCES Items(item_id),
-);`
-
-const code2 = `async function fetchCustomerOrders() {
-    const result = await prisma.orders.findMany({
-        where: {
-            customer: {
-                name: 'Jack Beanstalk'
-            },
-            segmentation: {
-                type: 'young professional',
-                joinedYear: 2024,
-                region: 'us-west-01',
-            }
-        },
-        include: {
-            customer: true,
-            order_items: {
-                include: {
-                    item: true
-                }
-            }
-        }
-    });
-    return result;
-}`
+// Importa tus imágenes (ajusta la ruta según corresponda)
+import imageTab1 from "@/public/images/example1.jpg"
+import imageTab2 from "@/public/images/example2.jpg"
 
 const features = [
   {
@@ -89,28 +46,36 @@ export default function CodeExample() {
       aria-labelledby="code-example-title"
       className="mx-auto mt-28 w-full max-w-6xl px-3"
     >
-      <Badge>Developer-first</Badge>
+      <Badge>Potenciado con IA</Badge>
       <h2
         id="code-example-title"
         className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300"
       >
-        Built by developers, <br /> for developers
+        Construido para innovar,<br /> potenciado por IA
       </h2>
       <p className="mt-6 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
-        Rich and expressive query language that allows you to filter and sort by
-        any field, no matter how nested it may be.
+        Soluciones de IA fluidas que se adaptan a cualquier sitio web, desde blogs hasta empresas. Aprovecha la automatización inteligente para mejorar experiencias, sin importar la complejidad o enfoque de tu plataforma.
       </p>
       <CodeExampleTabs
         tab1={
-          <Code code={code} lang="sql" copy={false} className="h-[31rem]" />
+          <div className="relative h-[31rem]">
+            <Image
+              src={imageTab1}
+              alt="Ejemplo de imagen 1"
+              fill
+              style={{ objectFit: "cover" }}
+            />
+          </div>
         }
         tab2={
-          <Code
-            code={code2}
-            lang="javascript"
-            copy={false}
-            className="h-[31rem]"
-          />
+          <div className="relative h-[31rem]">
+            <Image
+              src={imageTab2}
+              alt="Ejemplo de imagen 2"
+              fill
+              style={{ objectFit: "cover" }}
+            />
+          </div>
         }
       />
       <dl className="mt-24 grid grid-cols-4 gap-10">

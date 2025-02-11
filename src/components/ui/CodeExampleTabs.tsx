@@ -1,3 +1,4 @@
+// CodeExampleTabs.tsx
 "use client"
 import * as Tabs from "@radix-ui/react-tabs"
 import { RiCodeSSlashLine, RiShapesLine } from "@remixicon/react"
