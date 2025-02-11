@@ -10,7 +10,7 @@ import { Badge } from "../Badge"
 import CodeExampleTabs from "./CodeExampleTabs"
 
 // Importa tus imágenes (ajusta la ruta según corresponda)
-import imageTab1 from "@/public/images/chatbot-ia-2.png"
+import imageTab1 from "@/public/images/chatbot-ai-2.png"
 import imageTab2 from "@/public/images/trend-analyzer.png"
 
 const features = [
