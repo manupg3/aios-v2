@@ -74,12 +74,12 @@ export default function Cta() {
               </div>
             </div>
             <p className="mt-4 text-xs text-gray-600 sm:text-sm dark:text-gray-400">
-              Not sure where to start?{" "}
+              ¿No estas seguro cual elegir?{" "}
               <a
-                href="#"
+                href="/soluciones"
                 className="font-semibold text-indigo-600 hover:text-indigo-500 dark:text-indigo-500 dark:hover:text-indigo-400"
               >
-                Talk to sales
+                Mirar soluciones
               </a>
             </p>
           </div>
