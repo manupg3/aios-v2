@@ -61,7 +61,7 @@ export default function Cta() {
                     id="email"
                     className="h-10 w-full min-w-0 flex-auto"
                     inputClassName="h-full"
-                    placeholder="Your Work Email "
+                    placeholder="Tu Mejor Email "
                   />
                   <Button
                     className="h-10 w-full sm:w-fit sm:flex-none"
