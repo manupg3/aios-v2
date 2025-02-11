@@ -35,12 +35,12 @@ export default function Cta() {
                 id="cta-title"
                 className="inline-block bg-gradient-to-t from-gray-900 to-gray-800 bg-clip-text p-2 text-4xl font-bold tracking-tighter text-transparent md:text-6xl dark:from-gray-50 dark:to-gray-300"
               >
-                Ready to get started?
+                ¿Listo para empezar?
               </h3>
               <p className="mx-auto mt-4 max-w-2xl text-gray-600 sm:text-lg dark:text-gray-400">
                 <Balancer>
-                  Launch a new cluster or migrate to Database with zero
-                  downtime.
+                  Llevemos tu negocio al proximo nivel integrando nuestras 
+                  Soluciones.
                 </Balancer>
               </p>
             </div>
@@ -51,7 +51,7 @@ export default function Cta() {
                   onSubmit={(e) => e.preventDefault()}
                 >
                   <label htmlFor="email" className="sr-only">
-                    Email address
+                    Email 
                   </label>
                   <Input
                     name="email"
@@ -68,7 +68,7 @@ export default function Cta() {
                     type="submit"
                     variant="primary"
                   >
-                    Get started
+                    Empezar Ahora
                   </Button>
                 </form>
               </div>
