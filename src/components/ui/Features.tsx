@@ -8,11 +8,11 @@ const stats = [
   },
   {
     name: "Pensadas para cada solucion",
-    value: "Soluciones IA",
+    value: "IA",
   },
   {
     name: "Siempre actualizado y seguro",
-    value: "Mantenimiento Integral",
+    value: "Mantenimiento",
   },
 ]
 
@@ -30,9 +30,8 @@ export default function Features() {
         Creamos soluciones web premium
       </h2>
       <p className="mt-6 max-w-3xl text-lg leading-7 text-gray-600 dark:text-gray-400">
-      Desarrollamos y mantenemos sitios web a medida, optimizados con IA para automatización inteligente. 
-      Ofrecemos integración multiplataforma, seguridad robusta y actualizaciones continuas,
-       garantizando rendimiento óptimo y mínima interrupción en cualquier entorno digital.
+      Soluciones web premium: desarrollo personalizado con IA, integración multiplataforma y
+       seguridad robusta. Máximo rendimiento sin interrupciones.  
       </p>
       <dl className="mt-12 grid grid-cols-1 gap-y-8 md:grid-cols-3 md:border-y md:border-gray-200 md:py-14 dark:border-gray-800">
         {stats.map((stat, index) => (
