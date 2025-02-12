@@ -1,7 +1,6 @@
 // 'use client';
 
 import { RiCheckboxCircleFill } from '@remixicon/react';
-import { ProgressBar } from '@tremor/react';
 import { useEffect, useState } from 'react'; 
 
 const steps = [
