@@ -1,5 +1,6 @@
 export default function LogoCloud() {
   return (
+    
     <section
       id="logo-cloud"
       aria-label="Company logos"
