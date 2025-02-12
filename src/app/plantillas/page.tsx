@@ -42,27 +42,27 @@ export default function Plantillas() {
       <div className="tabs flex justify-center space-x-4 mb-4">
         <button 
           onClick={() => setActiveTab(0)}
-          className={`px-4 py-2 rounded border-b-2 ${
+          className={`px-4 py-2 border-b-2 ${
             activeTab === 0 ? 'text-blue-500 border-blue-500' : 'text-gray-500 border-transparent'
           }`}
         >
-          Tab 1
+          Solucion Simple
         </button>
         <button 
           onClick={() => setActiveTab(1)}
-          className={`px-4 py-2 rounded border-b-2 ${
+          className={`px-4 py-2 border-b-2 ${
             activeTab === 1 ? 'text-blue-500 border-blue-500' : 'text-gray-500 border-transparent'
           }`}
         >
-          Tab 2
+          Solucion Empresarial
         </button>
         <button 
           onClick={() => setActiveTab(2)}
-          className={`px-4 py-2 rounded border-b-2 ${
+          className={`px-4 py-2 border-b-2 ${
             activeTab === 2 ? 'text-blue-500 border-blue-500' : 'text-gray-500 border-transparent'
           }`}
         >
-          Tab 3
+          Solucion E-Commerce
         </button>
       </div>
         <div className="tab-content">
