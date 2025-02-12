@@ -34,6 +34,8 @@ export default function Plantillas() {
       <section className="container-bento">
       <Bento
         topLeft={{ src: '/images/business-1.png', alt: 'Imagen 1' }}
+        topRight={{ src: '/images/simple-1.png', alt: 'Imagen 2' }}
+        bottomLeft={{ src: '/images/simple-1.png', alt: 'Imagen 3' }}
         bottomRight={{ src: '/images/ecommerce-1.png', alt: 'Imagen 4' }}
       />
 
