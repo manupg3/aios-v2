@@ -30,7 +30,7 @@
     object-fit: cover;
     display: block;
     border-radius: 10px;
-
+    box-shadow: 1px 1px 10px 1px #c2c2c29e;
   }
   img.img-top-right {
     object-position: left !important;

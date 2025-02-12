@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { Badge } from "@/components/Badge"
 import { Button } from "@/components/Button"
 import Benefits from "@/components/ui/Benefits"
@@ -7,6 +8,8 @@ import Balancer from "react-wrap-balancer"
 import Bento from "@/components/ui/bento"
 
 export default function Plantillas() {
+  const [activeTab, setActiveTab] = useState(0)
+
   return (
     <div className="mt-36 flex flex-col overflow-hidden px-3">
       <section
@@ -23,25 +26,69 @@ export default function Plantillas() {
           className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300"
         >
           <Balancer>
-          Diseños innovadores y de vanguardia.
-        </Balancer>
+            Diseños innovadores y de vanguardia.
+          </Balancer>
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-gray-700 dark:text-gray-400">
-        Impulsamos la creatividad con soluciones tecnológicas innovadoras.  
-       <br /> Desde el diseño hasta la funcionalidad, creamos experiencias digitales que marcan la diferencia.
+          Impulsamos la creatividad con soluciones tecnológicas innovadoras.  
+          <br /> 
+          Desde el diseño hasta la funcionalidad, creamos experiencias digitales que marcan la diferencia.
         </p>
       </section>
-      <section className="container-bento">
-      <Bento
-        topLeft={{ src: '/images/business-1.png', alt: 'Imagen 1' }}
-        topRight={{ src: '/images/simple-1.png', alt: 'Imagen 2' }}
-        bottomLeft={{ src: '/images/simple-1.png', alt: 'Imagen 3' }}
-        bottomRight={{ src: '/images/ecommerce-1.png', alt: 'Imagen 4' }}
-      />
 
+      {/* Sección de Tabs con el componente Bento */}
+      <section className="container-bento">
+        <div className="tabs flex justify-center space-x-4 mb-4">
+          <button 
+            onClick={() => setActiveTab(0)}
+            className={`px-4 py-2 rounded ${activeTab === 0 ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'}`}
+          >
+            Tab 1
+          </button>
+          <button 
+            onClick={() => setActiveTab(1)}
+            className={`px-4 py-2 rounded ${activeTab === 1 ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'}`}
+          >
+            Tab 2
+          </button>
+          <button 
+            onClick={() => setActiveTab(2)}
+            className={`px-4 py-2 rounded ${activeTab === 2 ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'}`}
+          >
+            Tab 3
+          </button>
+        </div>
+        <div className="tab-content">
+          {activeTab === 0 && (
+            <Bento
+              topLeft={{ src: '/images/business-1.png', alt: 'Imagen 1' }}
+              topRight={{ src: '/images/simple-1.png', alt: 'Imagen 2' }}
+              bottomLeft={{ src: '/images/simple-1.png', alt: 'Imagen 3' }}
+              bottomRight={{ src: '/images/ecommerce-1.png', alt: 'Imagen 4' }}
+            />
+          )}
+          {activeTab === 1 && (
+            <Bento
+              topLeft={{ src: '/images/business-2.png', alt: 'Imagen 5' }}
+              topRight={{ src: '/images/simple-2.png', alt: 'Imagen 6' }}
+              bottomLeft={{ src: '/images/simple-2.png', alt: 'Imagen 7' }}
+              bottomRight={{ src: '/images/ecommerce-2.png', alt: 'Imagen 8' }}
+            />
+          )}
+          {activeTab === 2 && (
+            <Bento
+              topLeft={{ src: '/images/business-3.png', alt: 'Imagen 9' }}
+              topRight={{ src: '/images/simple-3.png', alt: 'Imagen 10' }}
+              bottomLeft={{ src: '/images/simple-3.png', alt: 'Imagen 11' }}
+              bottomRight={{ src: '/images/ecommerce-3.png', alt: 'Imagen 12' }}
+            />
+          )}
+        </div>
       </section>
+
       <TeamGallery />
       <Benefits />
+
       <section aria-labelledby="vision-title" className="mx-auto mt-40">
         <h2
           id="vision-title"
