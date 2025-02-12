@@ -59,6 +59,12 @@ export function Navigation() {
               </Link>
               <Link
                 className="px-2 py-1 text-gray-900 dark:text-gray-50"
+                href={siteConfig.baseLinks.plantillas}
+              >
+                Plantillas
+              </Link>
+              <Link
+                className="px-2 py-1 text-gray-900 dark:text-gray-50"
                 href={siteConfig.baseLinks.pricing}
               >
                 Pricing

@@ -8,6 +8,7 @@ export const siteConfig = {
     changelog: "/changelog",
     pricing: "/pricing",
     soluciones: "/soluciones",
+    plantillas: "/plantillas",
     imprint: "/imprint",
     privacy: "/privacy",
     terms: "/terms",
