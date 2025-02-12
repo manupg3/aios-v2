@@ -52,9 +52,7 @@ export default function StepsComponent() {
 
   return (
     <div className="container-steps-modal sm:mx-auto sm:max-w-lg">
-      <h3 className="text-tremor-title font-semibold text-tremor-content-strong dark:text-dark-tremor-content-strong">
-        Nuestras 4 Etapas
-      </h3>
+      
       <p className="mt-1 text-tremor-default leading-6 text-tremor-content dark:text-dark-tremor-content">
   
       </p>
