@@ -39,26 +39,32 @@ export default function Plantillas() {
 
       {/* Sección de Tabs con el componente Bento */}
       <section className="container-bento">
-        <div className="tabs flex justify-center space-x-4 mb-4">
-          <button 
-            onClick={() => setActiveTab(0)}
-            className={`px-4 py-2 rounded ${activeTab === 0 ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'}`}
-          >
-            Tab 1
-          </button>
-          <button 
-            onClick={() => setActiveTab(1)}
-            className={`px-4 py-2 rounded ${activeTab === 1 ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'}`}
-          >
-            Tab 2
-          </button>
-          <button 
-            onClick={() => setActiveTab(2)}
-            className={`px-4 py-2 rounded ${activeTab === 2 ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'}`}
-          >
-            Tab 3
-          </button>
-        </div>
+      <div className="tabs flex justify-center space-x-4 mb-4">
+        <button 
+          onClick={() => setActiveTab(0)}
+          className={`px-4 py-2 rounded border-b-2 ${
+            activeTab === 0 ? 'text-blue-500 border-blue-500' : 'text-gray-500 border-transparent'
+          }`}
+        >
+          Tab 1
+        </button>
+        <button 
+          onClick={() => setActiveTab(1)}
+          className={`px-4 py-2 rounded border-b-2 ${
+            activeTab === 1 ? 'text-blue-500 border-blue-500' : 'text-gray-500 border-transparent'
+          }`}
+        >
+          Tab 2
+        </button>
+        <button 
+          onClick={() => setActiveTab(2)}
+          className={`px-4 py-2 rounded border-b-2 ${
+            activeTab === 2 ? 'text-blue-500 border-blue-500' : 'text-gray-500 border-transparent'
+          }`}
+        >
+          Tab 3
+        </button>
+      </div>
         <div className="tab-content">
           {activeTab === 0 && (
             <Bento
