@@ -30,4 +30,11 @@
     object-fit: cover;
     display: block;
   }
+  .img-top-right
+  {
+    object-position: right;
+    border-radius: 10px;
+  }
+  
+
   

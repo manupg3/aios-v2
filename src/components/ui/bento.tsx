@@ -25,14 +25,14 @@ interface ImageProps {
           <img src={topLeft.src} alt={topLeft.alt || 'Imagen superior izquierda'} />
         </div>
         <div className={styles.topRight}>
-          <img src={topRight.src} alt={topRight.alt || 'Imagen superior derecha'} />
+          <img className='img-top-right' src={topRight.src} alt={topRight.alt || 'Imagen superior derecha'} />
         </div>
       </div>
 
       {/* Fila inferior: Derecha más grande que la izquierda */}
       <div className={styles.bottomRow}>
         <div className={styles.bottomLeft}>
-          <img src={bottomLeft.src} alt={bottomLeft.alt || 'Imagen inferior izquierda'} />
+          <img className='img-bottom-left' src={bottomLeft.src} alt={bottomLeft.alt || 'Imagen inferior izquierda'} />
         </div>
         <div className={styles.bottomRight}>
           <img src={bottomRight.src} alt={bottomRight.alt || 'Imagen inferior derecha'} />
