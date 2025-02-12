@@ -6,29 +6,29 @@ import { useEffect, useState } from 'react';
 const steps = [
   {
     id: '1.',
-    title: 'Set up your organization',
+    title: 'Definicion y Planificacion',
     description:
-      'You successfully created your account. You can edit your account details anytime.',
+      'Definimos el tipo de solucion, alcance, funciones, tiempos, etc.',
     href: '#',
   },
   {
     id: '2.',
-    title: 'Connect to data source',
+    title: 'Desarrollo Y Testeo Funcional',
     description:
-      'The platform supports more than 50 databases and data warehouses.',
+      'En base a la etapa 1 se desarrolla la solucion y se testea por completo.',
     href: '#',
   },
   {
     id: '3.',
-    title: 'Create metrics',
-    description: 'Create metrics using custom SQL or our intuitive query mask.',
+    title: 'Aprobacion Del Cliente',
+    description: 'El cliente tiene un tiempo para probar y aprobar lo acordado en la etapa 1.',
     href: '#',
   },
   {
     id: '4.',
-    title: 'Create report',
+    title: 'Tu Solucion Lista Para El Mundo',
     description:
-      'Transform metrics into visualizations and arrange them visually.',
+      'Una vez aprobado, se desplega la solucion cubriendo todos los puntos escenciales.',
     href: '#',
   },
 ];
@@ -53,7 +53,7 @@ export default function StepsComponent() {
   return (
     <div className="container-steps-modal sm:mx-auto sm:max-w-lg">
       <h3 className="text-tremor-title font-semibold text-tremor-content-strong dark:text-dark-tremor-content-strong">
-        Simplificamos el proceso en 4 pasos
+        Nuestras 4 Etapas
       </h3>
       <p className="mt-1 text-tremor-default leading-6 text-tremor-content dark:text-dark-tremor-content">
   
