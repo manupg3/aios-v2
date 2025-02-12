@@ -94,21 +94,6 @@ export default function StepsComponent() {
           </li>
         ))}
       </ul>
-      <div className="mt-6 rounded-tremor-default bg-tremor-background-muted p-4 dark:bg-dark-tremor-background-muted">
-        <h4 className="text-tremor-default font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong">
-          Need help?
-        </h4>
-        <p className="mt-1 text-tremor-default text-tremor-content dark:text-dark-tremor-content">
-          Connect with a member of our team at{' '}
-          <a
-            href="mailto:support@company.com"
-            className="font-medium text-tremor-brand dark:text-dark-tremor-brand"
-          >
-            support@company.com
-          </a>
-          .
-        </p>
-      </div>
     </div>
   );
 }

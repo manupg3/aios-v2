@@ -98,12 +98,23 @@
 .container-col-left button{
   width: max-content;
 }
+.container-steps-modal h3 {
+  text-align: left;
+  font-size: 20px;
+}
+ul.mt-4.space-y-4.ul-steps-modal li {
+  text-align: left;
+}
+ul.mt-4.space-y-4.ul-steps-modal li h3{
+  font-size: 18px !important;
+}
 .container-col-right
 {
   padding: 29px;
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px; 
 }
+
 .container-imgs-hero{
   height: 541px;
 }
