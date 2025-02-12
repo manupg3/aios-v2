@@ -1,0 +1,33 @@
+/* Bento.module.css */
+
+.bentoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Espacio vertical entre filas */
+  }
+  
+  .topRow,
+  .bottomRow {
+    display: grid;
+    gap: 16px; /* Espacio entre columnas */
+  }
+  
+  /* Fila superior: la columna izquierda es 2 veces mayor que la derecha */
+  .topRow {
+    grid-template-columns: 2fr 1fr;
+  }
+  
+  /* Fila inferior: la columna derecha es 2 veces mayor que la izquierda */
+  .bottomRow {
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  /* Aseguramos que las imágenes se adapten al contenedor */
+  .topRow img,
+  .bottomRow img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+  
