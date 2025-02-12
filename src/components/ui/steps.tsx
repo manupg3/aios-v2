@@ -51,16 +51,15 @@ export default function StepsComponent() {
   }, []);
 
   return (
-    <div className="sm:mx-auto sm:max-w-lg">
+    <div className="container-steps-modal sm:mx-auto sm:max-w-lg">
       <h3 className="text-tremor-title font-semibold text-tremor-content-strong dark:text-dark-tremor-content-strong">
-        Getting started
+        Simplificamos el proceso en 4 pasos
       </h3>
       <p className="mt-1 text-tremor-default leading-6 text-tremor-content dark:text-dark-tremor-content">
-        Follow the steps to set up your workspace. This allows you to create
-        your first dashboard.
+  
       </p>
     
-      <ul role="list" className="mt-4 space-y-4">
+      <ul role="list" className="mt-4 space-y-4 ul-steps-modal">
         {steps.map((step, index) => (
           <li
             key={step.id}
