@@ -2,7 +2,7 @@
 
 import { RiCheckboxCircleFill } from '@remixicon/react';
 import { ProgressBar } from '@tremor/react';
-import { useEffect, useState } from 'react'; // Importar hooks necesarios
+import { useEffect, useState } from 'react'; 
 
 const steps = [
   {
@@ -46,7 +46,7 @@ export default function StepsComponent() {
         }
         return prev + 1;
       });
-    }, 3000);
+    }, 1500);
 
     return () => clearInterval(interval); // Limpiar intervalo al desmontar
   }, []);
@@ -60,16 +60,7 @@ export default function StepsComponent() {
         Follow the steps to set up your workspace. This allows you to create
         your first dashboard.
       </p>
-      <div className="mt-4 flex items-center justify-end space-x-4">
-        <span className="text-tremor-default text-tremor-content dark:text-dark-tremor-content">
-          Step {currentStep}/{steps.length}
-        </span>
-        <ProgressBar 
-          value={(currentStep / steps.length) * 100} 
-          showAnimation={false} 
-          className="w-32" 
-        />
-      </div>
+    
       <ul role="list" className="mt-4 space-y-4">
         {steps.map((step, index) => (
           <li
