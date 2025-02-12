@@ -10,13 +10,11 @@ interface ImageProps {
   // Interfaz para las propiedades del componente Bento
   interface BentoProps {
     topLeft: ImageProps;
-    topRight: ImageProps;
-    bottomLeft: ImageProps;
     bottomRight: ImageProps;
   }
 
 
-  const Bento: React.FC<BentoProps> = ({ topLeft, topRight, bottomLeft, bottomRight }) => {
+  const Bento: React.FC<BentoProps> = ({ topLeft, bottomRight }) => {
     return (
     <div className={styles.bentoContainer}>
       {/* Fila superior: Izquierda más grande que la derecha */}
@@ -25,14 +23,14 @@ interface ImageProps {
           <img src={topLeft.src} alt={topLeft.alt || 'Imagen superior izquierda'} />
         </div>
         <div className={styles.topRight}>
-          <img src={topRight.src} alt={topRight.alt || 'Imagen superior derecha'} />
+        <h2>TITLE</h2>   
         </div>
       </div>
 
       {/* Fila inferior: Derecha más grande que la izquierda */}
       <div className={styles.bottomRow}>
         <div className={styles.bottomLeft}>
-          <img src={bottomLeft.src} alt={bottomLeft.alt || 'Imagen inferior izquierda'} />
+        <h2>TITLE</h2>   
         </div>
         <div className={styles.bottomRight}>
           <img src={bottomRight.src} alt={bottomRight.alt || 'Imagen inferior derecha'} />
