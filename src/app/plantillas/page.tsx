@@ -72,8 +72,8 @@ export default function Plantillas() {
                   alt: 'Imagen 1',
                   cardContent: (
                     <div>
-                      <h3 className="text-lg font-bold">Plantilla Lumine</h3>
-                      <p>Detalles y características exclusivas.</p>
+                      <h3 className="text-lg font-bold">Lumine</h3>
+                      <p>Lumine es una plantilla limpia y luminosa, que destaca con elegancia.</p>
                       <a href="#" target="_blank">Ver Demo</a>  
                     </div>
                   ),
@@ -83,8 +83,8 @@ export default function Plantillas() {
                   alt: 'Imagen 2',
                   cardContent: (
                     <div>
-                      <h3 className="text-lg font-bold">Plantilla Astra</h3>
-                      <p>Todo lo que necesitas en un solo lugar.</p>
+                      <h3 className="text-lg font-bold">Astra</h3>
+                      <p>Astra es una plantilla moderna y versátil, ideal para sitios web simples y profesionales.</p>
                       <a href="#" target="_blank">Ver Demo</a>  
                     </div>
                   ),
@@ -94,8 +94,8 @@ export default function Plantillas() {
                   alt: 'Imagen 3',
                   cardContent: (
                     <div>
-                      <h3 className="text-lg font-bold">Plantilla Glow</h3>
-                      <p>Explicación detallada de la solución.</p>
+                      <h3 className="text-lg font-bold">Glow</h3>
+                      <p>Glow es una plantilla cálida y acogedora, que transmite confort y bienestar.</p>
                       <a href="#" target="_blank">Ver Demo</a>  
                     </div>
                   ),
@@ -105,8 +105,8 @@ export default function Plantillas() {
                   alt: 'Imagen 4',
                   cardContent: (
                     <div>
-                      <h3 className="text-lg font-bold">Plantilla Flux</h3>
-                      <p>Optimizada para ventas en línea.</p>
+                      <h3 className="text-lg font-bold">Flux</h3>
+                      <p>Flux es una plantilla dinámica y visualmente impactante, que capta la atención.</p>
                       <a href="#" target="_blank">Ver Demo</a>  
                     </div>
                   ),
