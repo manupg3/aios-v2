@@ -1,41 +1,67 @@
-// Bento.js
 import React from 'react';
 import styles from './Bento.module.css';
 
 interface ImageProps {
-    src: string;
-    alt?: string;
-  }
-  
-  // Interfaz para las propiedades del componente Bento
-  interface BentoProps {
-    topLeft: ImageProps;
-    topRight: ImageProps;
-    bottomLeft: ImageProps;
-    bottomRight: ImageProps;
-  }
+  src: string;
+  alt?: string;
+  cardContent?: React.ReactNode; // Ahora puede recibir cualquier contenido HTML/JSX
+}
 
+interface BentoProps {
+  topLeft: ImageProps;
+  topRight: ImageProps;
+  bottomLeft: ImageProps;
+  bottomRight: ImageProps;
+}
 
-  const Bento: React.FC<BentoProps> = ({ topLeft, topRight, bottomLeft, bottomRight }) => {
-    return (
+const Bento: React.FC<BentoProps> = ({ topLeft, topRight, bottomLeft, bottomRight }) => {
+  return (
     <div className={styles.bentoContainer}>
-      {/* Fila superior: Izquierda más grande que la derecha */}
+      {/* Fila superior */}
       <div className={styles.topRow}>
         <div className={styles.topLeft}>
-          <img src={topLeft.src} alt={topLeft.alt || 'Imagen superior izquierda'} />
+          <div className={styles.imageContainer}>
+            <img src={topLeft.src} alt={topLeft.alt || 'Imagen superior izquierda'} />
+            {topLeft.cardContent && (
+              <div className={styles.card}>
+                {topLeft.cardContent}
+              </div>
+            )}
+          </div>
         </div>
         <div className={styles.topRight}>
-          <img className='img-top-right' src={topRight.src} alt={topRight.alt || 'Imagen superior derecha'} />
+          <div className={styles.imageContainer}>
+            <img src={topRight.src} alt={topRight.alt || 'Imagen superior derecha'} />
+            {topRight.cardContent && (
+              <div className={styles.card}>
+                {topRight.cardContent}
+              </div>
+            )}
+          </div>
         </div>
       </div>
 
-      {/* Fila inferior: Derecha más grande que la izquierda */}
+      {/* Fila inferior */}
       <div className={styles.bottomRow}>
         <div className={styles.bottomLeft}>
-          <img className='img-bottom-left' src={bottomLeft.src} alt={bottomLeft.alt || 'Imagen inferior izquierda'} />
+          <div className={styles.imageContainer}>
+            <img src={bottomLeft.src} alt={bottomLeft.alt || 'Imagen inferior izquierda'} />
+            {bottomLeft.cardContent && (
+              <div className={styles.card}>
+                {bottomLeft.cardContent}
+              </div>
+            )}
+          </div>
         </div>
         <div className={styles.bottomRight}>
-          <img src={bottomRight.src} alt={bottomRight.alt || 'Imagen inferior derecha'} />
+          <div className={styles.imageContainer}>
+            <img src={bottomRight.src} alt={bottomRight.alt || 'Imagen inferior derecha'} />
+            {bottomRight.cardContent && (
+              <div className={styles.card}>
+                {bottomRight.cardContent}
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>
