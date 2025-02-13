@@ -27,36 +27,6 @@
   /* Morado - Tecnología */
   --color-purple-600: #9333ea;
 }
-.bentoContainer {
-  /* Tus estilos existentes */
-}
-
-.imageContainer {
-  position: relative;
-}
-
-/* Estilos para la card flotante */
-.card {
-  position: absolute;
-  top: 10px; /* Ajusta la posición según necesites */
-  left: 10px;
-  background-color: rgba(255, 255, 255, 0.95);
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-  z-index: 10;
-}
-
-/* Mostrar la card al hacer hover */
-.imageContainer:hover .card {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-/* Puedes agregar o modificar más estilos según tu diseño */
 
 .tabs button{
   font-size: 22px;

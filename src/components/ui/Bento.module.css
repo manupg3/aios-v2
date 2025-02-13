@@ -39,6 +39,39 @@
 img.img-bottom-left {
     object-position: right !important;
 }
+
+.bentoContainer {
+  /* Tus estilos existentes */
+}
+
+/* Contenedor para cada imagen: permite posicionar el tooltip de forma absoluta */
+.imageContainer {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip por defecto: oculto y con transición */
+.tooltip {
+  position: absolute;
+  bottom: 110%;  /* Se muestra por encima de la imagen */
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+/* Mostrar el tooltip al hacer hover sobre la imagen */
+.imageContainer:hover .tooltip {
+  opacity: 1;
+}
+
   
 
   
