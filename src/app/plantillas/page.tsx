@@ -31,8 +31,8 @@ export default function Plantillas() {
           </Balancer>
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-gray-700 dark:text-gray-400">
-          Impulsamos la creatividad con soluciones tecnológicas innovadoras.  
-          <br /> 
+          Impulsamos la creatividad con soluciones tecnológicas innovadoras.
+          <br />
           Desde el diseño hasta la funcionalidad, creamos experiencias digitales que marcan la diferencia.
         </p>
       </section>
@@ -40,27 +40,24 @@ export default function Plantillas() {
       {/* Sección de Tabs con el componente Bento */}
       <section className="container-bento">
         <div className="tabs flex justify-center space-x-4 mb-4 mt-8">
-          <button 
+          <button
             onClick={() => setActiveTab(0)}
-            className={`px-4 py-2 border-b-2 ${
-              activeTab === 0 ? 'btn-tabs-plantillas border-blue-500' : 'text-gray-500 border-transparent'
-            }`}
+            className={`px-4 py-2 border-b-2 ${activeTab === 0 ? 'btn-tabs-plantillas border-blue-500' : 'text-gray-500 border-transparent'
+              }`}
           >
             Solucion Simple
           </button>
-          <button 
+          <button
             onClick={() => setActiveTab(1)}
-            className={`px-4 py-2 border-b-2 ${
-              activeTab === 1 ? 'btn-tabs-plantillas ' : 'text-gray-500 border-transparent'
-            }`}
+            className={`px-4 py-2 border-b-2 ${activeTab === 1 ? 'btn-tabs-plantillas ' : 'text-gray-500 border-transparent'
+              }`}
           >
             Solucion Empresarial
           </button>
-          <button 
+          <button
             onClick={() => setActiveTab(2)}
-            className={`px-4 py-2 border-b-2 ${
-              activeTab === 2 ? 'btn-tabs-plantillas ' : 'text-gray-500 border-transparent'
-            }`}
+            className={`px-4 py-2 border-b-2 ${activeTab === 2 ? 'btn-tabs-plantillas ' : 'text-gray-500 border-transparent'
+              }`}
           >
             Solucion E-Commerce
           </button>
@@ -68,72 +65,148 @@ export default function Plantillas() {
         <div className="tab-content">
           {activeTab === 0 && (
             <div key="tab0" className="animate-fade-in">
-              <div className='container-badges-bento-tabs'><span>Landings</span><span>Up To 3 Pages</span><span>Emprendedores</span><span>Integracion IA</span><span>Pequeños Negocios</span></div>  
+              <div className='container-badges-bento-tabs'><span>Landings</span><span>Up To 3 Pages</span><span>Emprendedores</span><span>Integracion IA</span><span>Pequeños Negocios</span></div>
               <Bento
-                topLeft={{ src: '/images/business-1.png', alt: 'Imagen 1' }}
-                topRight={{ src: '/images/simple-1.png', alt: 'Imagen 2' }}
-                bottomLeft={{ src: '/images/simple-1.png', alt: 'Imagen 3' }}
-                bottomRight={{ src: '/images/ecommerce-1.png', alt: 'Imagen 4' }}
+                topLeft={{
+                  src: '/images/business-1.png',
+                  alt: 'Imagen 1',
+                  cardContent: (
+                    <div>
+                      <h3 className="text-lg font-bold">Plantilla Lumine</h3>
+                      <p>Detalles y características exclusivas.</p>
+                      <a href="#" target="_blank">Ver Demo</a>  
+                    </div>
+                  ),
+                }}
+                topRight={{
+                  src: '/images/simple-1.png',
+                  alt: 'Imagen 2',
+                  cardContent: (
+                    <div>
+                      <h3 className="text-lg font-bold">Plantilla Astra</h3>
+                      <p>Todo lo que necesitas en un solo lugar.</p>
+                      <a href="#" target="_blank">Ver Demo</a>  
+                    </div>
+                  ),
+                }}
+                bottomLeft={{
+                  src: '/images/simple-1.png',
+                  alt: 'Imagen 3',
+                  cardContent: (
+                    <div>
+                      <h3 className="text-lg font-bold">Plantilla Glow</h3>
+                      <p>Explicación detallada de la solución.</p>
+                      <a href="#" target="_blank">Ver Demo</a>  
+                    </div>
+                  ),
+                }}
+                bottomRight={{
+                  src: '/images/ecommerce-1.png',
+                  alt: 'Imagen 4',
+                  cardContent: (
+                    <div>
+                      <h3 className="text-lg font-bold">Plantilla Flux</h3>
+                      <p>Optimizada para ventas en línea.</p>
+                      <a href="#" target="_blank">Ver Demo</a>  
+                    </div>
+                  ),
+                }}
               />
             </div>
           )}
           {activeTab === 1 && (
             <div key="tab1" className="animate-fade-in">
-              <div className='container-badges-bento-tabs'><span>Paginas Ilimitadas</span><span>Diseños Premium</span><span>Medianas y Grandes Empresas</span><span>Integracion IA</span><span>Integraciones de Terceros</span></div>  
+              <div className='container-badges-bento-tabs'><span>Paginas Ilimitadas</span><span>Diseños Premium</span><span>Medianas y Grandes Empresas</span><span>Integracion IA</span><span>Integraciones de Terceros</span></div>
               <Bento
-                topLeft={{ src: '/images/business-2.png', alt: 'Imagen 5' }}
-                topRight={{ src: '/images/simple-2.png', alt: 'Imagen 6' }}
-                bottomLeft={{ src: '/images/simple-2.png', alt: 'Imagen 7' }}
-                bottomRight={{ src: '/images/ecommerce-2.png', alt: 'Imagen 8' }}
+                topLeft={{
+                  src: '/images/business-1.png',
+                  alt: 'Imagen 1',
+                  cardContent: (
+                    <div>
+                      <h3 className="text-lg font-bold">Solución Empresarial</h3>
+                      <p>Detalles y características exclusivas.</p>
+                    </div>
+                  ),
+                }}
+                topRight={{
+                  src: '/images/simple-1.png',
+                  alt: 'Imagen 2',
+                  cardContent: (
+                    <div>
+                      <h3 className="text-lg font-bold">Solución Simple</h3>
+                      <p>Todo lo que necesitas en un solo lugar.</p>
+                    </div>
+                  ),
+                }}
+                bottomLeft={{
+                  src: '/images/simple-1.png',
+                  alt: 'Imagen 3',
+                  cardContent: (
+                    <div>
+                      <h3 className="text-lg font-bold">Más Información</h3>
+                      <p>Explicación detallada de la solución.</p>
+                    </div>
+                  ),
+                }}
+                bottomRight={{
+                  src: '/images/ecommerce-1.png',
+                  alt: 'Imagen 4',
+                  cardContent: (
+                    <div>
+                      <h3 className="text-lg font-bold">Solución E-Commerce</h3>
+                      <p>Optimizada para ventas en línea.</p>
+                    </div>
+                  ),
+                }}
               />
             </div>
           )}
           {activeTab === 2 && (
             <div key="tab2" className="animate-fade-in">
-              <div className='container-badges-bento-tabs'><span>Para Todo Tipo de Nicho</span><span>Medios de Envio</span><span>Medios de Pago</span><span>Integracion IA</span><span>Potenciador De Ventas</span></div>                
+              <div className='container-badges-bento-tabs'><span>Para Todo Tipo de Nicho</span><span>Medios de Envio</span><span>Medios de Pago</span><span>Integracion IA</span><span>Potenciador De Ventas</span></div>
               <Bento
-  topLeft={{
-    src: '/images/business-1.png',
-    alt: 'Imagen 1',
-    cardContent: (
-      <div>
-        <h3 className="text-lg font-bold">Solución Empresarial</h3>
-        <p>Detalles y características exclusivas.</p>
-      </div>
-    ),
-  }}
-  topRight={{
-    src: '/images/simple-1.png',
-    alt: 'Imagen 2',
-    cardContent: (
-      <div>
-        <h3 className="text-lg font-bold">Solución Simple</h3>
-        <p>Todo lo que necesitas en un solo lugar.</p>
-      </div>
-    ),
-  }}
-  bottomLeft={{
-    src: '/images/simple-1.png',
-    alt: 'Imagen 3',
-    cardContent: (
-      <div>
-        <h3 className="text-lg font-bold">Más Información</h3>
-        <p>Explicación detallada de la solución.</p>
-      </div>
-    ),
-  }}
-  bottomRight={{
-    src: '/images/ecommerce-1.png',
-    alt: 'Imagen 4',
-    cardContent: (
-      <div>
-        <h3 className="text-lg font-bold">Solución E-Commerce</h3>
-        <p>Optimizada para ventas en línea.</p>
-      </div>
-    ),
-  }}
-/>
- </div>
+                topLeft={{
+                  src: '/images/business-1.png',
+                  alt: 'Imagen 1',
+                  cardContent: (
+                    <div>
+                      <h3 className="text-lg font-bold">Solución Empresarial</h3>
+                      <p>Detalles y características exclusivas.</p>
+                    </div>
+                  ),
+                }}
+                topRight={{
+                  src: '/images/simple-1.png',
+                  alt: 'Imagen 2',
+                  cardContent: (
+                    <div>
+                      <h3 className="text-lg font-bold">Solución Simple</h3>
+                      <p>Todo lo que necesitas en un solo lugar.</p>
+                    </div>
+                  ),
+                }}
+                bottomLeft={{
+                  src: '/images/simple-1.png',
+                  alt: 'Imagen 3',
+                  cardContent: (
+                    <div>
+                      <h3 className="text-lg font-bold">Más Información</h3>
+                      <p>Explicación detallada de la solución.</p>
+                    </div>
+                  ),
+                }}
+                bottomRight={{
+                  src: '/images/ecommerce-1.png',
+                  alt: 'Imagen 4',
+                  cardContent: (
+                    <div>
+                      <h3 className="text-lg font-bold">Solución E-Commerce</h3>
+                      <p>Optimizada para ventas en línea.</p>
+                    </div>
+                  ),
+                }}
+              />
+            </div>
           )}
         </div>
       </section>
