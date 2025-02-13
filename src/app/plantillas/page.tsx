@@ -39,7 +39,7 @@ export default function Plantillas() {
 
       {/* Sección de Tabs con el componente Bento */}
       <section className="container-bento">
-        <div className="tabs flex justify-center space-x-4 mb-8">
+        <div className="tabs flex justify-center space-x-4 mb-4 mt-8">
           <button 
             onClick={() => setActiveTab(0)}
             className={`px-4 py-2 border-b-2 ${
