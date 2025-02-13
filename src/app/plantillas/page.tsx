@@ -92,11 +92,48 @@ export default function Plantillas() {
             <div key="tab2" className="animate-fade-in">
               <div className='container-badges-bento-tabs'><span>Para Todo Tipo de Nicho</span><span>Medios de Envio</span><span>Medios de Pago</span><span>Integracion IA</span><span>Potenciador De Ventas</span></div>                
               <Bento
-                topLeft={{ src: '/images/business-3.png', alt: 'Imagen 9' }}
-                topRight={{ src: '/images/simple-3.png', alt: 'Imagen 10' }}
-                bottomLeft={{ src: '/images/simple-3.png', alt: 'Imagen 11' }}
-                bottomRight={{ src: '/images/ecommerce-3.png', alt: 'Imagen 12' }}
-              />
+  topLeft={{
+    src: '/images/business-1.png',
+    alt: 'Imagen 1',
+    cardContent: (
+      <div>
+        <h3 className="text-lg font-bold">Solución Empresarial</h3>
+        <p>Detalles y características exclusivas.</p>
+      </div>
+    ),
+  }}
+  topRight={{
+    src: '/images/simple-1.png',
+    alt: 'Imagen 2',
+    cardContent: (
+      <div>
+        <h3 className="text-lg font-bold">Solución Simple</h3>
+        <p>Todo lo que necesitas en un solo lugar.</p>
+      </div>
+    ),
+  }}
+  bottomLeft={{
+    src: '/images/simple-1.png',
+    alt: 'Imagen 3',
+    cardContent: (
+      <div>
+        <h3 className="text-lg font-bold">Más Información</h3>
+        <p>Explicación detallada de la solución.</p>
+      </div>
+    ),
+  }}
+  bottomRight={{
+    src: '/images/ecommerce-1.png',
+    alt: 'Imagen 4',
+    cardContent: (
+      <div>
+        <h3 className="text-lg font-bold">Solución E-Commerce</h3>
+        <p>Optimizada para ventas en línea.</p>
+      </div>
+    ),
+  }}
+/>
+
             </div>
           )}
         </div>
