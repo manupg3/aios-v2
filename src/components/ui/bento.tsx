@@ -4,7 +4,7 @@ import styles from './Bento.module.css';
 interface ImageProps {
   src: string;
   alt?: string;
-  tooltip?: React.ReactNode; // Permite pasar cualquier estructura HTML/JSX
+  cardContent?: React.ReactNode; // Ahora puede recibir cualquier contenido HTML/JSX
 }
 
 interface BentoProps {
@@ -17,14 +17,14 @@ interface BentoProps {
 const Bento: React.FC<BentoProps> = ({ topLeft, topRight, bottomLeft, bottomRight }) => {
   return (
     <div className={styles.bentoContainer}>
-      {/* Fila superior: Izquierda más grande que la derecha */}
+      {/* Fila superior */}
       <div className={styles.topRow}>
         <div className={styles.topLeft}>
           <div className={styles.imageContainer}>
             <img src={topLeft.src} alt={topLeft.alt || 'Imagen superior izquierda'} />
-            {topLeft.tooltip && (
-              <div className={styles.tooltip}>
-                {topLeft.tooltip}
+            {topLeft.cardContent && (
+              <div className={styles.card}>
+                {topLeft.cardContent}
               </div>
             )}
           </div>
@@ -32,23 +32,23 @@ const Bento: React.FC<BentoProps> = ({ topLeft, topRight, bottomLeft, bottomRigh
         <div className={styles.topRight}>
           <div className={styles.imageContainer}>
             <img src={topRight.src} alt={topRight.alt || 'Imagen superior derecha'} />
-            {topRight.tooltip && (
-              <div className={styles.tooltip}>
-                {topRight.tooltip}
+            {topRight.cardContent && (
+              <div className={styles.card}>
+                {topRight.cardContent}
               </div>
             )}
           </div>
         </div>
       </div>
 
-      {/* Fila inferior: Derecha más grande que la izquierda */}
+      {/* Fila inferior */}
       <div className={styles.bottomRow}>
         <div className={styles.bottomLeft}>
           <div className={styles.imageContainer}>
             <img src={bottomLeft.src} alt={bottomLeft.alt || 'Imagen inferior izquierda'} />
-            {bottomLeft.tooltip && (
-              <div className={styles.tooltip}>
-                {bottomLeft.tooltip}
+            {bottomLeft.cardContent && (
+              <div className={styles.card}>
+                {bottomLeft.cardContent}
               </div>
             )}
           </div>
@@ -56,9 +56,9 @@ const Bento: React.FC<BentoProps> = ({ topLeft, topRight, bottomLeft, bottomRigh
         <div className={styles.bottomRight}>
           <div className={styles.imageContainer}>
             <img src={bottomRight.src} alt={bottomRight.alt || 'Imagen inferior derecha'} />
-            {bottomRight.tooltip && (
-              <div className={styles.tooltip}>
-                {bottomRight.tooltip}
+            {bottomRight.cardContent && (
+              <div className={styles.card}>
+                {bottomRight.cardContent}
               </div>
             )}
           </div>

@@ -44,33 +44,32 @@ img.img-bottom-left {
   /* Tus estilos existentes */
 }
 
-/* Contenedor para cada imagen: permite posicionar el tooltip de forma absoluta */
 .imageContainer {
   position: relative;
-  display: inline-block;
 }
 
-/* Tooltip por defecto: oculto y con transición */
-.tooltip {
+/* Estilos para la card flotante */
+.card {
   position: absolute;
-  bottom: 110%;  /* Se muestra por encima de la imagen */
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.75);
-  color: #fff;
-  padding: 6px 10px;
+  top: 10px; /* Ajusta la posición según necesites */
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 12px;
+  border: 1px solid #ccc;
   border-radius: 4px;
-  white-space: nowrap;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
   z-index: 10;
 }
 
-/* Mostrar el tooltip al hacer hover sobre la imagen */
-.imageContainer:hover .tooltip {
+/* Mostrar la card al hacer hover */
+.imageContainer:hover .card {
   opacity: 1;
+  pointer-events: auto;
 }
+
+/* Puedes agregar o modificar más estilos según tu diseño */
 
   
 

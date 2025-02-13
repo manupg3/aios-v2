@@ -95,46 +95,45 @@ export default function Plantillas() {
   topLeft={{
     src: '/images/business-1.png',
     alt: 'Imagen 1',
-    tooltip: (
+    cardContent: (
       <div>
-        <strong>Solución Empresarial</strong>
+        <h3 className="text-lg font-bold">Solución Empresarial</h3>
         <p>Detalles y características exclusivas.</p>
       </div>
-    )
+    ),
   }}
   topRight={{
     src: '/images/simple-1.png',
     alt: 'Imagen 2',
-    tooltip: (
+    cardContent: (
       <div>
-        <strong>Solución Simple</strong>
+        <h3 className="text-lg font-bold">Solución Simple</h3>
         <p>Todo lo que necesitas en un solo lugar.</p>
       </div>
-    )
+    ),
   }}
   bottomLeft={{
     src: '/images/simple-1.png',
     alt: 'Imagen 3',
-    tooltip: (
+    cardContent: (
       <div>
-        <strong>Más Información</strong>
+        <h3 className="text-lg font-bold">Más Información</h3>
         <p>Explicación detallada de la solución.</p>
       </div>
-    )
+    ),
   }}
   bottomRight={{
     src: '/images/ecommerce-1.png',
     alt: 'Imagen 4',
-    tooltip: (
+    cardContent: (
       <div>
-        <strong>Solución E-Commerce</strong>
+        <h3 className="text-lg font-bold">Solución E-Commerce</h3>
         <p>Optimizada para ventas en línea.</p>
       </div>
-    )
+    ),
   }}
 />
-
-            </div>
+ </div>
           )}
         </div>
       </section>
