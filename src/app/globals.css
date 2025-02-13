@@ -29,14 +29,23 @@
 }
 
 .tabs button{
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 600;
-  font-family: 'Inter';
-  padding: 0;
+  font-family: Inter;
+  padding: 7px 20px;
+  border-radius: 10px;
+}
+.tabs button:hover{
+  color: #4f46e5;
+  border-bottom: 2px solid #4f46e5;
+  border: none;
+  background: #4f46e52e;
 }
 .btn-tabs-plantillas{
   color: #4f46e5;
-  border-bottom:2px solid #4f46e5;
+  border-bottom: 2px solid #4f46e5;
+  border: none;
+  background: #4f46e52e;
 }
 .container-badges-bento-tabs {
   display: flex
