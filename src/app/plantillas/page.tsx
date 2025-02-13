@@ -43,7 +43,7 @@ export default function Plantillas() {
           <button 
             onClick={() => setActiveTab(0)}
             className={`px-4 py-2 border-b-2 ${
-              activeTab === 0 ? 'text-blue-500 border-blue-500' : 'text-gray-500 border-transparent'
+              activeTab === 0 ? 'btn-tabs-plantillas border-blue-500' : 'text-gray-500 border-transparent'
             }`}
           >
             Solucion Simple
@@ -51,7 +51,7 @@ export default function Plantillas() {
           <button 
             onClick={() => setActiveTab(1)}
             className={`px-4 py-2 border-b-2 ${
-              activeTab === 1 ? 'text-blue-500 border-blue-500' : 'text-gray-500 border-transparent'
+              activeTab === 1 ? 'btn-tabs-plantillas ' : 'text-gray-500 border-transparent'
             }`}
           >
             Solucion Empresarial
@@ -59,7 +59,7 @@ export default function Plantillas() {
           <button 
             onClick={() => setActiveTab(2)}
             className={`px-4 py-2 border-b-2 ${
-              activeTab === 2 ? 'text-blue-500 border-blue-500' : 'text-gray-500 border-transparent'
+              activeTab === 2 ? 'btn-tabs-plantillas ' : 'text-gray-500 border-transparent'
             }`}
           >
             Solucion E-Commerce
