@@ -71,10 +71,10 @@ export default function Plantillas() {
                   src: '/images/business-1.png',
                   alt: 'Imagen 1',
                   cardContent: (
-                    <div>
+                    <div className="container-info-floating-card">
                       <h3 className="text-lg font-bold">Lumine</h3>
                       <p>Elegancia y claridad.</p>
-                      <a href="#" target="_blank">Ver Demo</a>  
+                      <a className="a-ver-demo" href="#" target="_blank">Ver Demo</a>  
                     </div>
                   ),
                 }}
@@ -82,10 +82,10 @@ export default function Plantillas() {
                   src: '/images/simple-1.png',
                   alt: 'Imagen 2',
                   cardContent: (
-                    <div>
+                    <div className="container-info-floating-card">
                       <h3 className="text-lg font-bold">Astra</h3>
                       <p>Moderna y versátil.</p>
-                      <a href="#" target="_blank">Ver Demo</a>  
+                      <a className="a-ver-demo" href="#" target="_blank">Ver Demo</a>  
                     </div>
                   ),
                 }}
@@ -93,10 +93,10 @@ export default function Plantillas() {
                   src: '/images/simple-1.png',
                   alt: 'Imagen 3',
                   cardContent: (
-                    <div>
+                    <div className="container-info-floating-card">
                       <h3 className="text-lg font-bold">Glow</h3>
                       <p>Cálida y acogedora.</p>
-                      <a href="#" target="_blank">Ver Demo</a>  
+                      <a className="a-ver-demo" href="#" target="_blank">Ver Demo</a>  
                     </div>
                   ),
                 }}
@@ -104,10 +104,10 @@ export default function Plantillas() {
                   src: '/images/ecommerce-1.png',
                   alt: 'Imagen 4',
                   cardContent: (
-                    <div>
+                    <div className="container-info-floating-card">
                       <h3 className="text-lg font-bold">Flux</h3>
                       <p>Dinámica y llamativa.</p>
-                      <a href="#" target="_blank">Ver Demo</a>  
+                      <a className="a-ver-demo" href="#" target="_blank">Ver Demo</a>  
                     </div>
                   ),
                 }}
