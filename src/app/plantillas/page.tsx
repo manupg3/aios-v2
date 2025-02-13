@@ -39,56 +39,62 @@ export default function Plantillas() {
 
       {/* Sección de Tabs con el componente Bento */}
       <section className="container-bento">
-      <div className="tabs flex justify-center space-x-4 mb-4">
-        <button 
-          onClick={() => setActiveTab(0)}
-          className={`px-4 py-2 border-b-2 ${
-            activeTab === 0 ? 'text-blue-500 border-blue-500' : 'text-gray-500 border-transparent'
-          }`}
-        >
-          Solucion Simple
-        </button>
-        <button 
-          onClick={() => setActiveTab(1)}
-          className={`px-4 py-2 border-b-2 ${
-            activeTab === 1 ? 'text-blue-500 border-blue-500' : 'text-gray-500 border-transparent'
-          }`}
-        >
-          Solucion Empresarial
-        </button>
-        <button 
-          onClick={() => setActiveTab(2)}
-          className={`px-4 py-2 border-b-2 ${
-            activeTab === 2 ? 'text-blue-500 border-blue-500' : 'text-gray-500 border-transparent'
-          }`}
-        >
-          Solucion E-Commerce
-        </button>
-      </div>
+        <div className="tabs flex justify-center space-x-4 mb-4">
+          <button 
+            onClick={() => setActiveTab(0)}
+            className={`px-4 py-2 border-b-2 ${
+              activeTab === 0 ? 'text-blue-500 border-blue-500' : 'text-gray-500 border-transparent'
+            }`}
+          >
+            Solucion Simple
+          </button>
+          <button 
+            onClick={() => setActiveTab(1)}
+            className={`px-4 py-2 border-b-2 ${
+              activeTab === 1 ? 'text-blue-500 border-blue-500' : 'text-gray-500 border-transparent'
+            }`}
+          >
+            Solucion Empresarial
+          </button>
+          <button 
+            onClick={() => setActiveTab(2)}
+            className={`px-4 py-2 border-b-2 ${
+              activeTab === 2 ? 'text-blue-500 border-blue-500' : 'text-gray-500 border-transparent'
+            }`}
+          >
+            Solucion E-Commerce
+          </button>
+        </div>
         <div className="tab-content">
           {activeTab === 0 && (
-            <Bento
-              topLeft={{ src: '/images/business-1.png', alt: 'Imagen 1' }}
-              topRight={{ src: '/images/simple-1.png', alt: 'Imagen 2' }}
-              bottomLeft={{ src: '/images/simple-1.png', alt: 'Imagen 3' }}
-              bottomRight={{ src: '/images/ecommerce-1.png', alt: 'Imagen 4' }}
-            />
+            <div key="tab0" className="animate-fade-in">
+              <Bento
+                topLeft={{ src: '/images/business-1.png', alt: 'Imagen 1' }}
+                topRight={{ src: '/images/simple-1.png', alt: 'Imagen 2' }}
+                bottomLeft={{ src: '/images/simple-1.png', alt: 'Imagen 3' }}
+                bottomRight={{ src: '/images/ecommerce-1.png', alt: 'Imagen 4' }}
+              />
+            </div>
           )}
           {activeTab === 1 && (
-            <Bento
-              topLeft={{ src: '/images/business-2.png', alt: 'Imagen 5' }}
-              topRight={{ src: '/images/simple-2.png', alt: 'Imagen 6' }}
-              bottomLeft={{ src: '/images/simple-2.png', alt: 'Imagen 7' }}
-              bottomRight={{ src: '/images/ecommerce-2.png', alt: 'Imagen 8' }}
-            />
+            <div key="tab1" className="animate-fade-in">
+              <Bento
+                topLeft={{ src: '/images/business-2.png', alt: 'Imagen 5' }}
+                topRight={{ src: '/images/simple-2.png', alt: 'Imagen 6' }}
+                bottomLeft={{ src: '/images/simple-2.png', alt: 'Imagen 7' }}
+                bottomRight={{ src: '/images/ecommerce-2.png', alt: 'Imagen 8' }}
+              />
+            </div>
           )}
           {activeTab === 2 && (
-            <Bento
-              topLeft={{ src: '/images/business-3.png', alt: 'Imagen 9' }}
-              topRight={{ src: '/images/simple-3.png', alt: 'Imagen 10' }}
-              bottomLeft={{ src: '/images/simple-3.png', alt: 'Imagen 11' }}
-              bottomRight={{ src: '/images/ecommerce-3.png', alt: 'Imagen 12' }}
-            />
+            <div key="tab2" className="animate-fade-in">
+              <Bento
+                topLeft={{ src: '/images/business-3.png', alt: 'Imagen 9' }}
+                topRight={{ src: '/images/simple-3.png', alt: 'Imagen 10' }}
+                bottomLeft={{ src: '/images/simple-3.png', alt: 'Imagen 11' }}
+                bottomRight={{ src: '/images/ecommerce-3.png', alt: 'Imagen 12' }}
+              />
+            </div>
           )}
         </div>
       </section>

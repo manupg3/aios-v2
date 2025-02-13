@@ -27,6 +27,16 @@
   /* Morado - Tecnología */
   --color-purple-600: #9333ea;
 }
+
+.tabs button{
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Inter';
+  padding: 0;
+}
+
+
+
 .btn-card-simple{
   color: #10b981;
   padding-left: 0;
@@ -171,6 +181,7 @@ ul.mt-4.space-y-4.ul-steps-modal li h3{
   backdrop-filter: blur(2px);
   border: 1px solid rgba(167, 243, 208, 0.4);
 }
+
 .container-col-left p{
   max-width: 500px;
   padding-top: 7px;
