@@ -44,7 +44,8 @@
   align-items: center;
   gap: 14px;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 29px;
+  margin-top: 25px;
 }
 .container-badges-bento-tabs span {
   color: #4f46e5;
