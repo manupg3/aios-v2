@@ -79,7 +79,7 @@ export default function Plantillas() {
           )}
           {activeTab === 1 && (
             <div key="tab1" className="animate-fade-in">
-              <div className='container-badges-bento-tabs'><span>Landings</span><span>Up To 3 Pages</span><span>Emprendedores</span><span>Integracion IA</span><span>Pequeños Negocios</span></div>  
+              <div className='container-badges-bento-tabs'><span>Paginas Ilimitadas</span><span>Diseños Premium</span><span>Medianas y Grandes Empresas</span><span>Integracion IA</span><span>Integraciones de Terceros</span></div>  
               <Bento
                 topLeft={{ src: '/images/business-2.png', alt: 'Imagen 5' }}
                 topRight={{ src: '/images/simple-2.png', alt: 'Imagen 6' }}
@@ -90,7 +90,7 @@ export default function Plantillas() {
           )}
           {activeTab === 2 && (
             <div key="tab2" className="animate-fade-in">
-              <div className='container-badges-bento-tabs'><span>Landings</span><span>Up To 3 Pages</span><span>Emprendedores</span><span>Integracion IA</span><span>Pequeños Negocios</span></div>                
+              <div className='container-badges-bento-tabs'><span>Para Todo Tipo de Nicho</span><span>Medios de Envio</span><span>Medios de Pago</span><span>Integracion IA</span><span>Potenciador De Ventas</span></div>                
               <Bento
                 topLeft={{ src: '/images/business-3.png', alt: 'Imagen 9' }}
                 topRight={{ src: '/images/simple-3.png', alt: 'Imagen 10' }}
