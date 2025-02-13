@@ -68,6 +68,7 @@ export default function Plantillas() {
         <div className="tab-content">
           {activeTab === 0 && (
             <div key="tab0" className="animate-fade-in">
+              <div className='container-badges-bento-tabs'><span>Landings</span><span>Up To 3 Pages</span><span>Emprendedores</span><span>Integracion IA</span><span>Pequeños Negocios</span></div>  
               <Bento
                 topLeft={{ src: '/images/business-1.png', alt: 'Imagen 1' }}
                 topRight={{ src: '/images/simple-1.png', alt: 'Imagen 2' }}
@@ -78,6 +79,7 @@ export default function Plantillas() {
           )}
           {activeTab === 1 && (
             <div key="tab1" className="animate-fade-in">
+              <div className='container-badges-bento-tabs'><span>Landings</span><span>Up To 3 Pages</span><span>Emprendedores</span><span>Integracion IA</span><span>Pequeños Negocios</span></div>  
               <Bento
                 topLeft={{ src: '/images/business-2.png', alt: 'Imagen 5' }}
                 topRight={{ src: '/images/simple-2.png', alt: 'Imagen 6' }}
@@ -88,6 +90,7 @@ export default function Plantillas() {
           )}
           {activeTab === 2 && (
             <div key="tab2" className="animate-fade-in">
+              <div className='container-badges-bento-tabs'><span>Landings</span><span>Up To 3 Pages</span><span>Emprendedores</span><span>Integracion IA</span><span>Pequeños Negocios</span></div>                
               <Bento
                 topLeft={{ src: '/images/business-3.png', alt: 'Imagen 9' }}
                 topRight={{ src: '/images/simple-3.png', alt: 'Imagen 10' }}
