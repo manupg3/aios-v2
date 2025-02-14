@@ -21,7 +21,7 @@ const Bento: React.FC<BentoProps> = ({ topLeft, topRight, bottomLeft, bottomRigh
       <div className={styles.topRow}>
         <div className={styles.topLeft}>
           <div className={styles.imageContainer}>
-            <img src={topLeft.src} alt={topLeft.alt || 'Imagen superior izquierda'} />
+            <img className='bento-img-top-left' src={topLeft.src} alt={topLeft.alt || 'Imagen superior izquierda'} />
             {topLeft.cardContent && (
               <div className={styles.card}>
                 {topLeft.cardContent}
@@ -31,7 +31,7 @@ const Bento: React.FC<BentoProps> = ({ topLeft, topRight, bottomLeft, bottomRigh
         </div>
         <div className={styles.topRight}>
           <div className={styles.imageContainer}>
-            <img src={topRight.src} alt={topRight.alt || 'Imagen superior derecha'} />
+            <img className='bento-img-top-right' src={topRight.src} alt={topRight.alt || 'Imagen superior derecha'} />
             {topRight.cardContent && (
               <div className={styles.card}>
                 {topRight.cardContent}
@@ -45,7 +45,7 @@ const Bento: React.FC<BentoProps> = ({ topLeft, topRight, bottomLeft, bottomRigh
       <div className={styles.bottomRow}>
         <div className={styles.bottomLeft}>
           <div className={styles.imageContainer}>
-            <img src={bottomLeft.src} alt={bottomLeft.alt || 'Imagen inferior izquierda'} />
+            <img className='bento-img-bottom-left' src={bottomLeft.src} alt={bottomLeft.alt || 'Imagen inferior izquierda'} />
             {bottomLeft.cardContent && (
               <div className={styles.card}>
                 {bottomLeft.cardContent}
@@ -55,7 +55,7 @@ const Bento: React.FC<BentoProps> = ({ topLeft, topRight, bottomLeft, bottomRigh
         </div>
         <div className={styles.bottomRight}>
           <div className={styles.imageContainer}>
-            <img src={bottomRight.src} alt={bottomRight.alt || 'Imagen inferior derecha'} />
+            <img className='bento-img-bottom-right' src={bottomRight.src} alt={bottomRight.alt || 'Imagen inferior derecha'} />
             {bottomRight.cardContent && (
               <div className={styles.card}>
                 {bottomRight.cardContent}
