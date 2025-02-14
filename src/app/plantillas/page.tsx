@@ -7,6 +7,7 @@ import TeamGallery from "@/components/ui/TeamGallery"
 import { cx } from "@/lib/utils"
 import Balancer from "react-wrap-balancer"
 import Bento from "@/components/ui/bento"
+import GridFeatures from "@/components/GridFeatures"
 
 export default function Plantillas() {
   const [activeTab, setActiveTab] = useState(0)
@@ -210,7 +211,9 @@ export default function Plantillas() {
           )}
         </div>
       </section>
-
+      <section className="grid-features">
+      <GridFeatures />
+      </section>
       <TeamGallery />
       <Benefits />
 
