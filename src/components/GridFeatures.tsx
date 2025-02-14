@@ -302,7 +302,7 @@ import {
         <Card className="p-0">
           <div className="p-6">
             <h3 className="text-tremor-title font-semibold text-tremor-content-strong dark:text-dark-tremor-content-strong">
-              Workspaces
+              Funcionalidades
             </h3>
             <p className="text-tremor-default text-tremor-content dark:text-dark-tremor-content">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
@@ -331,30 +331,15 @@ import {
                   className="space-y-4 px-6 pb-6 pt-2"
                 >
                   <div className="block md:flex md:items-center md:justify-between">
-                    <TextInput
-                      placeholder="Search workspace..."
-                      icon={RiSearchLine}
-                      className="h-9 w-full rounded-tremor-small md:max-w-xs"
-                    />
+                    
                     <div className="lg:flex lg:items-center lg:space-x-3">
-                      <div className="hidden items-center space-x-2 lg:flex">
-                        <label
-                          htmlFor="show-active-spaces"
-                          className="whitespace-nowrap text-tremor-default text-tremor-content dark:text-dark-tremor-content"
-                        >
-                          Show active spaces
-                        </label>
-                        <Switch
-                          id="show-active-spaces"
-                          name="show-active-spaces"
-                        />
-                      </div>
+                    
                       <span className="hidden h-8 w-px bg-tremor-border dark:bg-dark-tremor-border lg:block" />
                       <button
                         type="button"
                         className="mt-2 h-9 w-full whitespace-nowrap rounded-tremor-small bg-tremor-brand px-4 text-tremor-default font-medium text-tremor-brand-inverted shadow-tremor-input hover:bg-tremor-brand-emphasis disabled:hover:bg-tremor-brand dark:bg-dark-tremor-brand dark:text-dark-tremor-brand-inverted dark:shadow-dark-tremor-input dark:hover:bg-dark-tremor-brand-emphasis sm:block md:mt-0 md:w-fit"
                       >
-                        Add workspace
+                        Sugerir Funcionalidades
                       </button>
                     </div>
                   </div>
