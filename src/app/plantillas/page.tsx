@@ -74,7 +74,7 @@ export default function Plantillas() {
                     <div className="container-info-floating-card">
                       <h3 className="text-lg font-bold">Lumine</h3>
                       <p>Elegancia y claridad.</p>
-                      <a className="a-ver-demo" href="#" target="_blank">Ver Demo</a>  
+                      <a className="a-ver-demo" href="#" target="_blank">Ver Demo<svg width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#4f46e5" stroke-width="1" stroke-linecap="round" stroke-linejoin="miter"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><polyline points="17 14 17 7 10 7"></polyline><line x1="7" y1="17" x2="17" y2="7"></line></g></svg></a>  
                     </div>
                   ),
                 }}
@@ -85,7 +85,7 @@ export default function Plantillas() {
                     <div className="container-info-floating-card">
                       <h3 className="text-lg font-bold">Astra</h3>
                       <p>Moderna y versátil.</p>
-                      <a className="a-ver-demo" href="#" target="_blank">Ver Demo<svg width="64px" height="64px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#4f46e5" stroke-width="1" stroke-linecap="round" stroke-linejoin="miter"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><polyline points="17 14 17 7 10 7"></polyline><line x1="7" y1="17" x2="17" y2="7"></line></g></svg></a>  
+                      <a className="a-ver-demo" href="#" target="_blank">Ver Demo<svg width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#4f46e5" stroke-width="1" stroke-linecap="round" stroke-linejoin="miter"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><polyline points="17 14 17 7 10 7"></polyline><line x1="7" y1="17" x2="17" y2="7"></line></g></svg></a>  
                     </div>
                   ),
                 }}
@@ -96,7 +96,7 @@ export default function Plantillas() {
                     <div className="container-info-floating-card">
                       <h3 className="text-lg font-bold">Glow</h3>
                       <p>Cálida y acogedora.</p>
-                      <a className="a-ver-demo" href="#" target="_blank">Ver Demo</a>  
+                      <a className="a-ver-demo" href="#" target="_blank">Ver Demo<svg width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#4f46e5" stroke-width="1" stroke-linecap="round" stroke-linejoin="miter"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><polyline points="17 14 17 7 10 7"></polyline><line x1="7" y1="17" x2="17" y2="7"></line></g></svg></a>  
                     </div>
                   ),
                 }}
@@ -107,7 +107,7 @@ export default function Plantillas() {
                     <div className="container-info-floating-card">
                       <h3 className="text-lg font-bold">Flux</h3>
                       <p>Dinámica y llamativa.</p>
-                      <a className="a-ver-demo" href="#" target="_blank">Ver Demo</a>  
+                      <a className="a-ver-demo" href="#" target="_blank">Ver Demo<svg width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#4f46e5" stroke-width="1" stroke-linecap="round" stroke-linejoin="miter"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><polyline points="17 14 17 7 10 7"></polyline><line x1="7" y1="17" x2="17" y2="7"></line></g></svg></a>  
                     </div>
                   ),
                 }}

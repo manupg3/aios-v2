@@ -67,6 +67,7 @@
 {
       color: #4f46e5;
       font-size: 14px;
+      display: flex;
 }
 .container-badges-bento-tabs span {
   color: #4f46e5;
