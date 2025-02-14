@@ -22,8 +22,8 @@ import {
       region: 'Solucion Simmple',
       workspaces: [
         {
-          name: 'sales_by_day_api',
-          status: 'active',
+          name: 'Hosting Gratis',
+          status: 'activo',
           type: 'Test workspace',
           database: 'live_data',
           href: '#',
@@ -43,8 +43,8 @@ import {
           ],
         },
         {
-          name: 'testing_environment_2',
-          status: 'inactive',
+          name: 'SSL Gratis',
+          status: 'activo',
           type: 'API',
           database: 'test_data',
           href: '#',
@@ -64,7 +64,7 @@ import {
           ],
         },
         {
-          name: 'training_environment',
+          name: 'Diseños Premium',
           status: 'active',
           type: 'Test workspace',
           database: 'live_data',
@@ -85,8 +85,8 @@ import {
           ],
         },
         {
-          name: 'analytics_dashboard',
-          status: 'inactive',
+          name: 'Admin Panel',
+          status: 'activo',
           type: 'API',
           database: 'test_data',
           href: '#',
@@ -239,7 +239,7 @@ import {
       ],
     },
     {
-      region: 'Solucion Empresarial',
+      region: 'Solucion E-Commerce',
       workspaces: [
         {
           name: 'testing_lab',
@@ -330,7 +330,7 @@ import {
                   <div className="block md:flex md:items-center md:justify-between">
                     
                     <div className="lg:flex lg:items-center lg:space-x-3">
-                    
+                    <div></div>
                       <span className="hidden h-8 w-px bg-tremor-border dark:bg-dark-tremor-border lg:block" />
                       <button
                         type="button"
