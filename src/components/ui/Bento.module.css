@@ -70,6 +70,60 @@ img.img-bottom-left {
 }
 
 /* Puedes agregar o modificar más estilos según tu diseño */
+.Bento_card__M2oSW {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  max-width: 300px;
+  margin: 16px;
+  transition: transform 0.3s ease;
+}
+
+.Bento_card__M2oSW:hover {
+  transform: translateY(-5px);
+}
+
+.container-info-floating-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.text-lg.font-bold {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.container-info-floating-card p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+.a-ver-demo {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #4f46e5;
+  text-decoration: none;
+  margin-top: 8px;
+  transition: color 0.3s ease;
+}
+
+.a-ver-demo:hover {
+  color: #2a21a4;
+}
+
+.a-ver-demo svg {
+  margin-left: 4px;
+  transition: transform 0.3s ease;
+}
+
+.a-ver-demo:hover svg {
+  transform: translateX(2px);
+}
 
   
 
