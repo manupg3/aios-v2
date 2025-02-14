@@ -23,7 +23,7 @@ import {
       workspaces: [
         {
           name: 'Hosting Gratis',
-          status: 'activo',
+          status: 'active',
           type: 'Test workspace',
           database: 'live_data',
           href: '#',
@@ -44,7 +44,7 @@ import {
         },
         {
           name: 'SSL Gratis',
-          status: 'activo',
+          status: 'active',
           type: 'API',
           database: 'test_data',
           href: '#',
@@ -86,7 +86,7 @@ import {
         },
         {
           name: 'Admin Panel',
-          status: 'activo',
+          status: 'active',
           type: 'API',
           database: 'test_data',
           href: '#',
@@ -106,7 +106,7 @@ import {
           ],
         },
         {
-          name: 'managed_database_test',
+          name: 'Integraciones a Medida',
           status: 'active',
           type: 'Test workspace',
           database: 'live_data',
@@ -125,6 +125,27 @@ import {
               value: '7d ago',
             },
           ],
+        },
+        {
+            name: 'Integraciones IA',
+            status: 'active',
+            type: 'Test workspace',
+            database: 'live_data',
+            href: '#',
+            capacity: [
+              {
+                label: 'users',
+                value: 39,
+              },
+              {
+                label: 'storage',
+                value: '5.9/10GB',
+              },
+              {
+                label: 'lastEdited',
+                value: '7d ago',
+              },
+            ],
         },
       ],
     },
