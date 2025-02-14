@@ -19,7 +19,7 @@ import {
   
   const data = [
     {
-      region: 'US-East',
+      region: 'Solucion Simmple',
       workspaces: [
         {
           name: 'sales_by_day_api',
@@ -129,7 +129,7 @@ import {
       ],
     },
     {
-      region: 'US-West',
+      region: 'Solucion Empresarial',
       workspaces: [
         {
           name: 'testing_lab',
@@ -239,7 +239,7 @@ import {
       ],
     },
     {
-      region: 'EU-Central-1',
+      region: 'Solucion Empresarial',
       workspaces: [
         {
           name: 'testing_lab',
@@ -302,7 +302,7 @@ import {
               Funcionalidades
             </h3>
             <p className="text-tremor-default text-tremor-content dark:text-dark-tremor-content">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+              Ofrecemos multiples funcionalidades, modulos customizados, integraciones y mucho mas.
             </p>
           </div>
           <TabGroup>
