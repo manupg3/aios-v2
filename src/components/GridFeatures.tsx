@@ -3,7 +3,6 @@
 import {
     RiDatabase2Line,
     RiGroupLine,
-    RiSearchLine,
     RiTimeLine,
   } from '@remixicon/react';
   import {
@@ -11,13 +10,11 @@ import {
     Divider,
     List,
     ListItem,
-    Switch,
     Tab,
     TabGroup,
     TabList,
     TabPanel,
     TabPanels,
-    TextInput,
   } from '@tremor/react';
   
   const data = [
