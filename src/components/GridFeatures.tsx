@@ -368,7 +368,7 @@ import {
                         key={workspace.name}
                         className="rounded-tremor-small p-4"
                       >
-                        <div className="flex items-center space-x-2">
+                        <div className="flex justify-between items-center space-x-2">
                           <h4 className="truncate text-sm font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong">
                             <a
                               href={workspace.href}
