@@ -67,7 +67,7 @@ import {
           name: 'Diseños Premium',
           status: 'active',
           tipo: 'Diseño Web',
-          regitro: 'actualizando',
+          registro: 'actualizando',
           href: '#',
           capacity: [
             {
@@ -109,7 +109,7 @@ import {
           name: 'Integraciones a Medida',
           status: 'active',
           tipo: 'Desarrollo Personalizado',
-          registro: 'live_data',
+          registro: 'actualizado',
           href: '#',
           capacity: [
             {
@@ -156,7 +156,7 @@ import {
           name: 'testing_lab',
           status: 'active',
           tipo: 'Report',
-          registro: 'live_data',
+          registro: 'actualizando',
           href: '#',
           capacity: [
             {
@@ -177,7 +177,7 @@ import {
           name: 'research_project_2',
           status: 'inactive',
           tipo: 'Report',
-          registro: 'test_data',
+          registro: 'actualizado',
           href: '#',
           capacity: [
             {
@@ -198,7 +198,7 @@ import {
           name: 'supply_chain_api_month',
           status: 'active',
           tipo: 'API',
-          registro: 'live_data',
+          registro: 'actualizado',
           href: '#',
           capacity: [
             {
@@ -219,7 +219,7 @@ import {
           name: 'test_environment_beta',
           status: 'inactive',
           tipo: 'Test workspace',
-          registro: 'test_data',
+          registro: 'actualizado',
           href: '#',
           capacity: [
             {
@@ -240,7 +240,7 @@ import {
           name: 'private_workspace_test_api',
           status: 'inactive',
           tipo: 'Test workspace',
-          registro: 'test_data',
+          registro: 'actualizado',
           href: '#',
           capacity: [
             {
@@ -266,7 +266,7 @@ import {
           name: 'testing_lab',
           status: 'active',
           tipo: 'API',
-          registro: 'live_data',
+          registro: 'actualizando',
           href: '#',
           capacity: [
             {
@@ -287,7 +287,7 @@ import {
           name: 'research_project_2',
           status: 'inactive',
           tipo: 'Report',
-          registro: 'test_data',
+          registro: 'actualizando',
           href: '#',
           capacity: [
             {
@@ -397,7 +397,7 @@ import {
                           <ListItem className="justify-start space-x-2 py-1">
                             <span>Registro:</span>
                             <span className="inline-flex items-center gap-1.5 rounded-tremor-small px-2 py-1 text-xs font-medium text-tremor-content-strong ring-1 ring-inset ring-tremor-ring dark:text-dark-tremor-content-strong dark:ring-dark-tremor-ring">
-                              {workspace.regitro === 'actualizado' ? (
+                              {workspace.registro === 'actualizando' ? (
                                 <span
                                   className="size-2 shrink-0 rounded-sm bg-tremor-content-subtle dark:bg-dark-tremor-content-subtle"
                                   aria-hidden={true}
