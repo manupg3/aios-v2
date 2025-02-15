@@ -24,7 +24,7 @@ import {
         {
           name: 'Hosting Gratis',
           status: 'active',
-          type: 'Test workspace',
+          tipo: 'Servicio de Hosting',
           database: 'live_data',
           href: '#',
           capacity: [
@@ -45,7 +45,7 @@ import {
         {
           name: 'SSL Gratis',
           status: 'active',
-          type: 'API',
+          tipo: 'Seguridad',
           database: 'test_data',
           href: '#',
           capacity: [
@@ -66,7 +66,7 @@ import {
         {
           name: 'Diseños Premium',
           status: 'active',
-          type: 'Test workspace',
+          type: 'Diseño Web',
           database: 'live_data',
           href: '#',
           capacity: [
@@ -87,7 +87,7 @@ import {
         {
           name: 'Admin Panel',
           status: 'active',
-          type: 'API',
+          type: 'Administracion',
           database: 'test_data',
           href: '#',
           capacity: [
@@ -108,7 +108,7 @@ import {
         {
           name: 'Integraciones a Medida',
           status: 'active',
-          type: 'Test workspace',
+          type: 'Desarrollo Personalizado',
           database: 'live_data',
           href: '#',
           capacity: [
@@ -129,7 +129,7 @@ import {
         {
             name: 'Integraciones IA',
             status: 'active',
-            type: 'Test workspace',
+            type: 'Inteligencia Artificial',
             database: 'live_data',
             href: '#',
             capacity: [
@@ -318,7 +318,7 @@ import {
     return (
       <>
         <Card className="p-0">
-          <div className="p-6">
+          <div className="p-6 container-title-features">
             <h3 className="text-tremor-title font-semibold text-tremor-content-strong dark:text-dark-tremor-content-strong">
               Funcionalidades
             </h3>

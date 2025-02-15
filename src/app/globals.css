@@ -27,6 +27,12 @@
   /* Morado - Tecnología */
   --color-purple-600: #9333ea;
 }
+
+.container-title-features h3{
+  font-size: 60px;
+  font-family: 'Inter';
+  margin-bottom: 25px;
+}
 .container-badges-bento-tabs h3{
   font-size: 20px;
   font-family: 'Inter';
