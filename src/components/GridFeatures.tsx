@@ -454,7 +454,7 @@ import {
           ],
         },
         {
-          name: 'Analisys Integral',
+          name: 'Analisis Integral',
           status: 'active',
           tipo: 'Marketing',
           registro: 'actualizando',
@@ -474,7 +474,48 @@ import {
             },
           ],
         },
-        
+        {
+          name: 'Mantenimiento Continuo',
+          status: 'active',
+          tipo: 'Seguridad',
+          registro: 'actualizado',
+          href: '#',
+          capacity: [
+            {
+              label: 'users',
+              value: 1,
+            },
+            {
+              label: 'storage',
+              value: '100/150GB',
+            },
+            {
+              label: 'lastEdited',
+              value: 'Ilimitado',
+            },
+          ],
+        },
+        {
+          name: 'Administracion Integral E-Commerce',
+          status: 'active',
+          tipo: 'Administracion',
+          registro: 'actualizando',
+          href: '#',
+          capacity: [
+            {
+              label: 'users',
+              value: 1,
+            },
+            {
+              label: 'storage',
+              value: '100/150GB',
+            },
+            {
+              label: 'lastEdited',
+              value: 'Ilimitado',
+            },
+          ],
+        },
       ],
     },
   ];
