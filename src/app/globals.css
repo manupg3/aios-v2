@@ -27,7 +27,10 @@
   /* Morado - Tecnología */
   --color-purple-600: #9333ea;
 }
-
+.container-card-features{
+  box-shadow: none !important;
+  margin-top:50px;
+}
 .container-title-features h3{
   font-size: 60px;
   font-family: 'Inter';
