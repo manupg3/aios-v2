@@ -397,7 +397,7 @@ import {
                           <ListItem className="justify-start space-x-2 py-1">
                             <span>Registro:</span>
                             <span className="inline-flex items-center gap-1.5 rounded-tremor-small px-2 py-1 text-xs font-medium text-tremor-content-strong ring-1 ring-inset ring-tremor-ring dark:text-dark-tremor-content-strong dark:ring-dark-tremor-ring">
-                              {workspace.regitro === 'actualizando' ? (
+                              {workspace.regitro === 'actualizado' ? (
                                 <span
                                   className="size-2 shrink-0 rounded-sm bg-tremor-content-subtle dark:bg-dark-tremor-content-subtle"
                                   aria-hidden={true}
