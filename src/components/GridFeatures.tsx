@@ -398,7 +398,8 @@ import {
           href: '#',
           capacity: [
             {
-              label: '∞',
+              label: 'users',
+              value: 100,
             },
             {
               label: 'storage',
