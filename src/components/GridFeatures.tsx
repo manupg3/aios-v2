@@ -7,7 +7,6 @@ import {
   } from '@remixicon/react';
   import {
     Card,
-    Divider,
     List,
     ListItem,
     Tab,
@@ -153,9 +152,136 @@ import {
       region: 'Solucion Empresarial',
       workspaces: [
         {
-          name: 'testing_lab',
+          name: 'Hosting Gratis',
           status: 'active',
-          tipo: 'Report',
+          tipo: 'Servicio de Hosting',
+          registro: 'actualizado',
+          href: '#',
+          capacity: [
+            {
+              label: 'users',
+              value: 5,
+            },
+            {
+              label: 'storage',
+              value: '20/50GB',
+            },
+            {
+              label: 'lastEdited',
+              value: 'Ilimitado',
+            },
+          ],
+        },
+        {
+          name: 'SSL',
+          status: 'active',
+          tipo: 'Seguridad',
+          registro: 'actualizado',
+          href: '#',
+          capacity: [
+            {
+              label: 'users',
+              value: 20,
+            },
+            {
+              label: 'storage',
+              value: '20/50GB',
+            },
+            {
+              label: 'lastEdited',
+              value: 'Ilimitado',
+            },
+          ],
+        },
+        {
+          name: 'Diseños Premim a Medida',
+          status: 'active',
+          tipo: 'Diseño Web',
+          registro: 'actualizado',
+          href: '#',
+          capacity: [
+            {
+              label: 'users',
+              value: 50,
+            },
+            {
+              label: 'storage',
+              value: '20/50GB',
+            },
+            {
+              label: 'lastEdited',
+              value: 'Ilimitado',
+            },
+          ],
+        },
+        {
+          name: 'Admin Panel Personalizado',
+          status: 'active',
+          tipo: 'Administracion',
+          registro: 'actualizado',
+          href: '#',
+          capacity: [
+            {
+              label: 'users',
+              value: 20,
+            },
+            {
+              label: 'storage',
+              value: '20/50GB',
+            },
+            {
+              label: 'lastEdited',
+              value: 'Ilimitado',
+            },
+          ],
+        },
+        {
+          name: 'Integraciones a Medida',
+          status: 'active',
+          tipo: 'Desarrollo Personalizado',
+          registro: 'actualizado',
+          href: '#',
+          capacity: [
+            {
+              label: 'users',
+              value: 20,
+            },
+            {
+              label: 'storage',
+              value: '20/50GB',
+            },
+            {
+              label: 'lastEdited',
+              value: 'Ilimitado',
+            },
+          ],
+        },
+        {
+          name: 'Integraciones Ia',
+          status: 'active',
+          tipo: 'Inteligencia Artificial',
+          registro: 'actualizando',
+          href: '#',
+          capacity: [
+            {
+              label: 'users',
+              value: 2,
+            },
+            {
+              label: 'storage',
+              value: '20/50GB',
+            },
+            {
+              label: 'lastEdited',
+              value: 'Ilimitado',
+            },
+          ],
+        },
+     
+        {
+          name: 'Integraciones CRM (Leads)',
+          status: 'active',
+          tipo: 'Marketing',
           registro: 'actualizando',
           href: '#',
           capacity: [
@@ -169,141 +295,185 @@ import {
             },
             {
               label: 'lastEdited',
-              value: '1d ago',
+              value: 'Ilimitado',
             },
           ],
         },
+        
         {
-          name: 'research_project_2',
-          status: 'inactive',
-          tipo: 'Report',
-          registro: 'actualizado',
-          href: '#',
-          capacity: [
-            {
-              label: 'users',
-              value: 45,
-            },
-            {
-              label: 'storage',
-              value: '6.4/10GB',
-            },
-            {
-              label: 'lastEdited',
-              value: '4d ago',
-            },
-          ],
-        },
-        {
-          name: 'supply_chain_api_month',
+          name: 'Mantenimiento Continuo',
           status: 'active',
-          tipo: 'API',
+          tipo: 'Seguridad',
           registro: 'actualizado',
           href: '#',
           capacity: [
             {
               label: 'users',
-              value: 41,
+              value: 1,
             },
             {
               label: 'storage',
-              value: '7.8/10GB',
+              value: '20/50GB',
             },
             {
               label: 'lastEdited',
-              value: '1d ago',
+              value: 'Ilimitado',
             },
           ],
         },
-        {
-          name: 'test_environment_beta',
-          status: 'inactive',
-          tipo: 'Test workspace',
-          registro: 'actualizado',
-          href: '#',
-          capacity: [
-            {
-              label: 'users',
-              value: 39,
-            },
-            {
-              label: 'storage',
-              value: '6.4/10GB',
-            },
-            {
-              label: 'lastEdited',
-              value: '2h ago',
-            },
-          ],
-        },
-        {
-          name: 'private_workspace_test_api',
-          status: 'inactive',
-          tipo: 'Test workspace',
-          registro: 'actualizado',
-          href: '#',
-          capacity: [
-            {
-              label: 'users',
-              value: 31,
-            },
-            {
-              label: 'storage',
-              value: '4.1/10GB',
-            },
-            {
-              label: 'lastEdited',
-              value: '2d ago',
-            },
-          ],
-        },
+
       ],
     },
     {
       region: 'Solucion E-Commerce',
       workspaces: [
         {
-          name: 'testing_lab',
+          name: 'Hosting Gratis',
           status: 'active',
-          tipo: 'API',
-          registro: 'actualizando',
+          tipo: 'Servicio de Hosting',
+          registro: 'actualizado',
           href: '#',
           capacity: [
             {
               label: 'users',
-              value: 24,
+              value: 50,
             },
             {
               label: 'storage',
-              value: '6.1/10GB',
+              value: '100/150GB',
             },
             {
               label: 'lastEdited',
-              value: '1h ago',
+              value: 'Ilimitado',
             },
           ],
         },
         {
-          name: 'research_project_2',
-          status: 'inactive',
-          tipo: 'Report',
+          name: 'SSL Gratis',
+          status: 'active',
+          tipo: 'Seguridad',
+          registro: 'actualizado',
+          href: '#',
+          capacity: [
+            {
+              label: 'users',
+              value: 50,
+            },
+            {
+              label: 'storage',
+              value: '100/150GB',
+            },
+            {
+              label: 'lastEdited',
+              value: 'Ilimitado',
+            },
+          ],
+        },
+        {
+          name: 'Admin Personalizado E-Commerce',
+          status: 'active',
+          tipo: 'Administracion',
+          registro: 'actualizado',
+          href: '#',
+          capacity: [
+            {
+              label: 'users',
+              value: 20,
+            },
+            {
+              label: 'storage',
+              value: '100/150GB',
+            },
+            {
+              label: 'lastEdited',
+              value: 'Ilimitado',
+            },
+          ],
+        },
+        {
+          name: 'Integraciones a Medida',
+          status: 'active',
+          tipo: 'Administracion',
+          registro: 'actualizado',
+          href: '#',
+          capacity: [
+            {
+              label: '∞',
+            },
+            {
+              label: 'storage',
+              value: '100/150GB',
+            },
+            {
+              label: 'lastEdited',
+              value: 'Ilimitado',
+            },
+          ],
+        },
+        {
+          name: 'Integraciones IA',
+          status: 'active',
+          tipo: 'Inteligencia artificual',
           registro: 'actualizando',
           href: '#',
           capacity: [
             {
               label: 'users',
-              value: 12,
+              value: 2,
             },
             {
               label: 'storage',
-              value: '1.1/10GB',
+              value: '100/150GB',
             },
             {
               label: 'lastEdited',
-              value: '3d ago',
+              value: 'Ilimitado',
             },
           ],
         },
+        {
+          name: 'Potenciador de Ventas',
+          status: 'active',
+          tipo: 'Ventas On Site',
+          registro: 'actualizando',
+          href: '#',
+          capacity: [
+            {
+              label: 'users',
+              value: 10,
+            },
+            {
+              label: 'storage',
+              value: '100/150GB',
+            },
+            {
+              label: 'lastEdited',
+              value: 'Ilimitado',
+            },
+          ],
+        },
+        {
+          name: 'Analisys Integral',
+          status: 'active',
+          tipo: 'Marketing',
+          registro: 'actualizando',
+          href: '#',
+          capacity: [
+            {
+              label: 'users',
+              value: 1,
+            },
+            {
+              label: 'storage',
+              value: '100/150GB',
+            },
+            {
+              label: 'lastEdited',
+              value: 'Ilimitado',
+            },
+          ],
+        },
+        
       ],
     },
   ];
@@ -348,20 +518,7 @@ import {
                   key={category.region}
                   className="space-y-4 px-6 pb-6 pt-2"
                 >
-                  <div className="block md:flex md:items-center md:justify-between">
-                    
-                    <div className="lg:flex lg:items-center lg:space-x-3">
-                    <div></div>
-                      <span className="hidden h-8 w-px bg-tremor-border dark:bg-dark-tremor-border lg:block" />
-                      <button
-                        type="button"
-                        className="mt-2 h-9 w-full whitespace-nowrap rounded-tremor-small bg-tremor-brand px-4 text-tremor-default font-medium text-tremor-brand-inverted shadow-tremor-input hover:bg-tremor-brand-emphasis disabled:hover:bg-tremor-brand dark:bg-dark-tremor-brand dark:text-dark-tremor-brand-inverted dark:shadow-dark-tremor-input dark:hover:bg-dark-tremor-brand-emphasis sm:block md:mt-0 md:w-fit"
-                      >
-                        Sugerir Funcionalidades
-                      </button>
-                    </div>
-                  </div>
-                  <Divider />
+       
                   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
                     {category.workspaces.map((workspace) => (
                       <Card
