@@ -30,7 +30,7 @@ import {
           capacity: [
             {
               label: 'users',
-              value: 34,
+              value: 1,
             },
             {
               label: 'storage',
@@ -51,11 +51,11 @@ import {
           capacity: [
             {
               label: 'users',
-              value: 28,
+              value: 1,
             },
             {
               label: 'storage',
-              value: '7.4/10GB',
+              value: '5/10GB',
             },
             {
               label: 'lastEdited',
@@ -72,11 +72,11 @@ import {
           capacity: [
             {
               label: 'users',
-              value: 38,
+              value: +50,
             },
             {
               label: 'storage',
-              value: '3.2/10GB',
+              value: '5/10GB',
             },
             {
               label: 'lastEdited',
@@ -93,7 +93,7 @@ import {
           capacity: [
             {
               label: 'users',
-              value: 34,
+              value: 3,
             },
             {
               label: 'storage',
@@ -114,11 +114,11 @@ import {
           capacity: [
             {
               label: 'users',
-              value: 39,
+              value: 10,
             },
             {
               label: 'storage',
-              value: '5.9/10GB',
+              value: '5/10GB',
             },
             {
               label: 'lastEdited',
@@ -135,11 +135,11 @@ import {
             capacity: [
               {
                 label: 'users',
-                value: 39,
+                value: 1,
               },
               {
                 label: 'storage',
-                value: '5.9/10GB',
+                value: '5/10GB',
               },
               {
                 label: 'lastEdited',
@@ -161,11 +161,11 @@ import {
           capacity: [
             {
               label: 'users',
-              value: 27,
+              value: 5,
             },
             {
               label: 'storage',
-              value: '5/10GB',
+              value: '20/50GB',
             },
             {
               label: 'lastEdited',
