@@ -66,7 +66,7 @@ import {
         {
           name: 'Diseños Premium',
           status: 'active',
-          type: 'Diseño Web',
+          tipo: 'Diseño Web',
           database: 'live_data',
           href: '#',
           capacity: [
@@ -87,7 +87,7 @@ import {
         {
           name: 'Admin Panel',
           status: 'active',
-          type: 'Administracion',
+          tipo: 'Administracion',
           database: 'test_data',
           href: '#',
           capacity: [
@@ -108,7 +108,7 @@ import {
         {
           name: 'Integraciones a Medida',
           status: 'active',
-          type: 'Desarrollo Personalizado',
+          tipo: 'Desarrollo Personalizado',
           database: 'live_data',
           href: '#',
           capacity: [
@@ -129,7 +129,7 @@ import {
         {
             name: 'Integraciones IA',
             status: 'active',
-            type: 'Inteligencia Artificial',
+            tipo: 'Inteligencia Artificial',
             database: 'live_data',
             href: '#',
             capacity: [
@@ -155,7 +155,7 @@ import {
         {
           name: 'testing_lab',
           status: 'active',
-          type: 'Report',
+          tipo: 'Report',
           database: 'live_data',
           href: '#',
           capacity: [
@@ -176,7 +176,7 @@ import {
         {
           name: 'research_project_2',
           status: 'inactive',
-          type: 'Report',
+          tipo: 'Report',
           database: 'test_data',
           href: '#',
           capacity: [
@@ -197,7 +197,7 @@ import {
         {
           name: 'supply_chain_api_month',
           status: 'active',
-          type: 'API',
+          tipo: 'API',
           database: 'live_data',
           href: '#',
           capacity: [
@@ -218,7 +218,7 @@ import {
         {
           name: 'test_environment_beta',
           status: 'inactive',
-          type: 'Test workspace',
+          tipo: 'Test workspace',
           database: 'test_data',
           href: '#',
           capacity: [
@@ -239,7 +239,7 @@ import {
         {
           name: 'private_workspace_test_api',
           status: 'inactive',
-          type: 'Test workspace',
+          tipo: 'Test workspace',
           database: 'test_data',
           href: '#',
           capacity: [
@@ -265,7 +265,7 @@ import {
         {
           name: 'testing_lab',
           status: 'active',
-          type: 'API',
+          tipo: 'API',
           database: 'live_data',
           href: '#',
           capacity: [
@@ -286,7 +286,7 @@ import {
         {
           name: 'research_project_2',
           status: 'inactive',
-          type: 'Report',
+          tipo: 'Report',
           database: 'test_data',
           href: '#',
           capacity: [
@@ -389,9 +389,9 @@ import {
                         </div>
                         <List className="mt-3 divide-none">
                           <ListItem className="justify-start space-x-2 py-1">
-                            <span>Type:</span>
+                            <span>Tipo:</span>
                             <span className="font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong">
-                              {workspace.type}
+                              {workspace.tipo}
                             </span>
                           </ListItem>
                           <ListItem className="justify-start space-x-2 py-1">
