@@ -529,7 +529,7 @@ import {
   export default function GridFeatures() {
     return (
       <>
-        <Card className="p-0">
+        <Card className="p-0 container-cards-features">
           <div className="p-6 container-title-features">
             <h3 className="text-tremor-title font-semibold text-tremor-content-strong dark:text-dark-tremor-content-strong">
               Funcionalidades
