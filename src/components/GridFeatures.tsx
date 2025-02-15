@@ -554,7 +554,7 @@ import {
           Desde el diseño hasta la funcionalidad, creado y pensado para cada solucion.
         </p>
       </section>
-          <TabGroup>
+          <TabGroup className='tabs-group-features'>
             <TabList className="px-6">
               {data.map((category) => (
                 <Tab
