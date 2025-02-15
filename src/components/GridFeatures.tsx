@@ -25,7 +25,7 @@ import {
           name: 'Hosting Gratis',
           status: 'active',
           tipo: 'Servicio de Hosting',
-          database: 'live_data',
+          registro: 'actualizado',
           href: '#',
           capacity: [
             {
@@ -38,7 +38,7 @@ import {
             },
             {
               label: 'lastEdited',
-              value: '1d ago',
+              value: 'Ilimitado',
             },
           ],
         },
@@ -46,7 +46,7 @@ import {
           name: 'SSL Gratis',
           status: 'active',
           tipo: 'Seguridad',
-          database: 'test_data',
+          registro: 'actualizado y seguro',
           href: '#',
           capacity: [
             {
@@ -59,7 +59,7 @@ import {
             },
             {
               label: 'lastEdited',
-              value: '2d ago',
+              value: 'Ilimitado',
             },
           ],
         },
@@ -67,7 +67,7 @@ import {
           name: 'Diseños Premium',
           status: 'active',
           tipo: 'Diseño Web',
-          database: 'live_data',
+          regitro: 'sumando_diseños',
           href: '#',
           capacity: [
             {
@@ -80,7 +80,7 @@ import {
             },
             {
               label: 'lastEdited',
-              value: '4h ago',
+              value: 'Ilimitado',
             },
           ],
         },
@@ -88,7 +88,7 @@ import {
           name: 'Admin Panel',
           status: 'active',
           tipo: 'Administracion',
-          database: 'test_data',
+          registro: 'actualizado',
           href: '#',
           capacity: [
             {
@@ -101,7 +101,7 @@ import {
             },
             {
               label: 'lastEdited',
-              value: '1d ago',
+              value: 'Ilimitado',
             },
           ],
         },
@@ -109,7 +109,7 @@ import {
           name: 'Integraciones a Medida',
           status: 'active',
           tipo: 'Desarrollo Personalizado',
-          database: 'live_data',
+          databasee: 'live_data',
           href: '#',
           capacity: [
             {
@@ -122,7 +122,7 @@ import {
             },
             {
               label: 'lastEdited',
-              value: '7d ago',
+              value: 'Ilimitado',
             },
           ],
         },
@@ -130,7 +130,7 @@ import {
             name: 'Integraciones IA',
             status: 'active',
             tipo: 'Inteligencia Artificial',
-            database: 'live_data',
+            registro: 'sumando_soluciones',
             href: '#',
             capacity: [
               {
@@ -143,7 +143,7 @@ import {
               },
               {
                 label: 'lastEdited',
-                value: '7d ago',
+                value: 'Ilimitado',
               },
             ],
         },
