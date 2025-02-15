@@ -1,5 +1,6 @@
 // 'use client';
-
+import { Badge } from './Badge';
+import Balancer from 'react-wrap-balancer';
 import {
     RiDatabase2Line,
     RiGroupLine,
@@ -530,14 +531,29 @@ import {
     return (
       <>
         <Card className="p-0 container-cards-features">
-          <div className="p-6 container-title-features">
-            <h3 className="text-tremor-title font-semibold text-tremor-content-strong dark:text-dark-tremor-content-strong">
-              Funcionalidades
-            </h3>
-            <p className="text-tremor-default text-tremor-content dark:text-dark-tremor-content">
-              Ofrecemos multiples funcionalidades, modulos customizados, integraciones y mucho mas.
-            </p>
-          </div>
+        <section
+        aria-labelledby="about-overview"
+        className="animate-slide-up-fade"
+        style={{
+          animationDuration: "600ms",
+          animationFillMode: "backwards",
+        }}
+      >
+        <Badge>Funcionalidades Por Solucion</Badge>
+        <h1
+          id="about-overview"
+          className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300"
+        >
+          <Balancer>
+            Funcionalidades.
+          </Balancer>
+        </h1>
+        <p className="mt-6 max-w-2xl text-lg text-gray-700 dark:text-gray-400">
+          Ofrecemos multiples funcionalidades, modulos a medida, integraciones IA.
+          <br />
+          Desde el diseño hasta la funcionalidad, creado y pensado para cada solucion.
+        </p>
+      </section>
           <TabGroup>
             <TabList className="px-6">
               {data.map((category) => (
