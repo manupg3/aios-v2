@@ -39,7 +39,7 @@ export default function About() {
           id="vision-title"
           className="inline-block bg-gradient-to-t from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent md:text-5xl dark:from-gray-50 dark:to-gray-300"
         >
-          Our Vision
+          Nuestra Vision
         </h2>
         <div className="mt-6 max-w-prose space-y-4 text-gray-600 dark:text-gray-400">
           <p className="text-lg leading-8">
