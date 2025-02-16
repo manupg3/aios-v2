@@ -19,7 +19,7 @@ const features = [
     },
     {
       title: '4. Deploy',
-      subtitle: 'Tu Solucion Lista Para El Mundo',
+      subtitle: 'Lista Para El Mundo',
       description:
         'Una vez aprobado, se desplega la solucion cubriendo todos los puntos escenciales.',
     },

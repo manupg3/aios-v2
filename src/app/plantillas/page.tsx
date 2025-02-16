@@ -212,7 +212,17 @@ export default function Plantillas() {
       <section className="grid-features">
       <GridFeatures />
       </section>
+      <section>
+      <h1
+          id="about-overview"
+          className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300"
+        >
+          <Balancer>
+            ¿Cómo Funciona?.
+          </Balancer>
+        </h1>
       <StepsHorizontal />     
+      </section>
       <Cta />
      
     </div>
