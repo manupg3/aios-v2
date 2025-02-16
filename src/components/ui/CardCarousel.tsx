@@ -11,18 +11,28 @@ const CardCarousel = () => {
     { icon: "💡", title: "Card 6", description: "Descripción de la Card 6" },
   ]
 
-  // Duplicamos el arreglo para lograr scroll infinito
+  const visibleCards = 3
+  // Duplicamos las cards para lograr el efecto infinito.
   const extendedCards = [...cards, ...cards]
+  const totalCards = extendedCards.length // 12 cards
+
+  // Calculamos el ancho del contenedor interno.
+  // Cada card ocupará 1/totalCards del ancho total.
+  // El contenedor tendrá un ancho de (totalCards/visibleCards)*100% para que en pantalla se muestren "visibleCards".
+  const containerWidth = `${(totalCards / visibleCards) * 100}%` // en este caso, (12/3)*100 = 400%
+  const cardWidth = `${100 / totalCards}%` // cada card ocupará 100/12 % del contenedor interno
 
   return (
     <div className="overflow-hidden">
-      {/* Contenedor de desplazamiento */}
-      <div className="flex animate-scroll">
+      <div 
+        className="flex animate-scroll" 
+        style={{ width: containerWidth }}
+      >
         {extendedCards.map((card, index) => (
-          <div
+          <div 
             key={index}
-            // Usamos flex-basis para que cada card ocupe exactamente un tercio del contenedor
-            style={{ flex: "0 0 calc(100% / 3)" }}
+            className="p-2"
+            style={{ width: cardWidth }}
           >
             <div className="bg-white shadow-md rounded-lg p-6">
               <div className="text-4xl mb-4">{card.icon}</div>
@@ -32,10 +42,9 @@ const CardCarousel = () => {
           </div>
         ))}
       </div>
-      {/* Estilos de la animación */}
       <style jsx>{`
         .animate-scroll {
-          /* La animación mueve el contenedor el ancho exacto de la primera copia (50% de los elementos duplicados) */
+          /* Se desplaza el 50% del ancho total, que equivale a la primera copia (6 cards) */
           animation: scroll 12s linear infinite;
         }
         @keyframes scroll {
