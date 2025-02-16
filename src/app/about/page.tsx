@@ -27,7 +27,7 @@ export default function About() {
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-gray-700 dark:text-gray-400">
         La inteligencia artificial está transformando las operaciones y decisiones empresariales
-                <br />  En nuestra consultoría, implementamos soluciones de IA personalizadas para optimizar procesos y potenciar el crecimiento de tu negocio.
+        En nuestra consultoría, implementamos soluciones de IA personalizadas para optimizar procesos y potenciar el crecimiento de tu negocio.
 
 
         </p>
