@@ -20,7 +20,7 @@ const CardCarousel = () => {
       {/* Contenedor animado */}
       <div className="flex animate-scroll">
         {extendedCards.map((card, index) => (
-          <div key={index} className="flex-shrink-0 w-1/3 p-4">
+          <div key={index} className="flex-shrink-0 w-1/3 p-2">
             <div className="bg-white shadow-md rounded-lg p-6">
               <div className="text-4xl mb-4">{card.icon}</div>
               <h3 className="text-xl font-bold mb-2">{card.title}</h3>
@@ -33,7 +33,7 @@ const CardCarousel = () => {
       <style jsx>{`
         .animate-scroll {
           /* La duración determina la velocidad del scroll */
-          animation: scroll 20s linear infinite;
+          animation: scroll 12s linear infinite;
         }
         @keyframes scroll {
           from {
