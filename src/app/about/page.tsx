@@ -1,9 +1,9 @@
 import { Badge } from "@/components/Badge"
 import { Button } from "@/components/Button"
 import Benefits from "@/components/ui/Benefits"
-import TeamGallery from "@/components/ui/TeamGallery"
 import { cx } from "@/lib/utils"
 import Balancer from "react-wrap-balancer"
+import CardSlider from "@/components/ui/CardSlider"
 
 export default function About() {
   return (
@@ -16,23 +16,23 @@ export default function About() {
           animationFillMode: "backwards",
         }}
       >
-        <Badge>Consultoría Especializada en IA</Badge>
+        <Badge>Asesoramiento</Badge>
         <h1
           id="about-overview"
           className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300"
         >
           <Balancer>
-            Consultoría en Inteligencia Artificial para Empresas
+            Asesoramiento en Inteligencia Artificial para Empresas
           </Balancer>
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-gray-700 dark:text-gray-400">
         La inteligencia artificial está transformando las operaciones y decisiones empresariales
-        En nuestra consultoría, implementamos soluciones de IA personalizadas para optimizar procesos y potenciar el crecimiento de tu negocio.
+        Con nuestro asesoramiento, implementamos soluciones de IA personalizadas para optimizar procesos y potenciar el crecimiento de tu negocio.
 
 
         </p>
       </section>
-      <TeamGallery />
+      <CardSlider />
       <Benefits />
       <section aria-labelledby="vision-title" className="mx-auto mt-40">
         <h2
