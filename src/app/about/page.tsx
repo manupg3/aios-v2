@@ -3,8 +3,7 @@ import { Button } from "@/components/Button"
 import Benefits from "@/components/ui/Benefits"
 import { cx } from "@/lib/utils"
 import Balancer from "react-wrap-balancer"
-import dynamic from "next/dynamic";
-
+import CardCarousel from "@/components/ui/CardCarousel"
 
 export default function About() {
   return (
@@ -33,6 +32,7 @@ export default function About() {
 
         </p>
       </section>
+      <CardCarousel />
       <Benefits />
       <section aria-labelledby="vision-title" className="mx-auto mt-40">
         <h2
