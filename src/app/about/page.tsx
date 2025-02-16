@@ -5,10 +5,6 @@ import { cx } from "@/lib/utils"
 import Balancer from "react-wrap-balancer"
 import dynamic from "next/dynamic";
 
-const CardSlider = dynamic(
-  () => import("@/components/ui/CardSlider"),
-  { ssr: false }
-);
 
 export default function About() {
   return (
@@ -37,7 +33,6 @@ export default function About() {
 
         </p>
       </section>
-      <CardSlider />
       <Benefits />
       <section aria-labelledby="vision-title" className="mx-auto mt-40">
         <h2
