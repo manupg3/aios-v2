@@ -214,7 +214,7 @@ export default function Plantillas() {
       </section>
       <section>
       <h1
-          id="about-overview"
+          id="h1-steps-horizontal"
           className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300"
         >
           <Balancer>
