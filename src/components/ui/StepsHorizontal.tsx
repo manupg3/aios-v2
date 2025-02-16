@@ -28,7 +28,7 @@ const features = [
   export default function StepsHorizontal() {
     return (
       <>
-        <div className="mx-auto w-full max-w-6xl px-3 py-20">
+        <div className="mx-auto w-full max-w-6xl px-3 py-10">
           <dl className="grid grid-cols-4 gap-10">
             {features.map((item) => (
               <div
