@@ -1,27 +1,27 @@
 const features = [
     {
-      title: '1. Prototype',
-      subtitle: 'Build fast, test early',
+      title: '1. Planing',
+      subtitle: 'Definicion y Planificacion',
       description:
-        'Quickly spin up a working model with libraries for popular frameworks like React.',
+        'Definimos el tipo de solucion, alcance, funciones, tiempos, etc.',
     },
     {
-      title: '2. Present',
-      subtitle: 'Showcase your vision',
+      title: '2. Development',
+      subtitle: 'Desarrollo Y Testeo Funcional',
       description:
-        'Use intuitive plug & play features to prepare a live demo and deploy from our platform.',
+        'En base a la etapa 1 se desarrolla la solucion y se testea por completo.',
     },
     {
-      title: '3. Iterate',
-      subtitle: 'Refine and improve',
+      title: '3. Test',
+      subtitle: 'Aprobacion Del Cliente',
       description:
-        'Continuously enhance your product by integrating with over a hundred tools.',
+        'El cliente tiene un tiempo para probar y aprobar lo acordado en la etapa 1.',
     },
     {
       title: '4. Deploy',
-      subtitle: 'Launch with confidence',
+      subtitle: 'Tu Solucion Lista Para El Mundo',
       description:
-        'Deploy securely with encryption, ensuring data compliance and user consent.',
+        'Una vez aprobado, se desplega la solucion cubriendo todos los puntos escenciales.',
     },
   ];
   

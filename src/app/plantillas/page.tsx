@@ -1,7 +1,6 @@
 'use client'
 import { useState } from "react"
 import { Badge } from "@/components/Badge"
-import Benefits from "@/components/ui/Benefits"
 import Balancer from "react-wrap-balancer"
 import Bento from "@/components/ui/bento"
 import GridFeatures from "@/components/GridFeatures"
@@ -213,9 +212,7 @@ export default function Plantillas() {
       <section className="grid-features">
       <GridFeatures />
       </section>
-      <StepsHorizontal />
-      <Benefits />
-     
+      <StepsHorizontal />     
       <Cta />
      
     </div>
