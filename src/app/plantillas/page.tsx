@@ -2,11 +2,11 @@
 import { useState } from "react"
 import { Badge } from "@/components/Badge"
 import Benefits from "@/components/ui/Benefits"
-import TeamGallery from "@/components/ui/TeamGallery"
 import Balancer from "react-wrap-balancer"
 import Bento from "@/components/ui/bento"
 import GridFeatures from "@/components/GridFeatures"
 import Cta from "../../../Cta"
+import StepsHorizontal from "@/components/ui/StepsHorizontal"
 
 export default function Plantillas() {
   const [activeTab, setActiveTab] = useState(0)
@@ -213,7 +213,7 @@ export default function Plantillas() {
       <section className="grid-features">
       <GridFeatures />
       </section>
-      <TeamGallery />
+      <StepsHorizontal />
       <Benefits />
      
       <Cta />
