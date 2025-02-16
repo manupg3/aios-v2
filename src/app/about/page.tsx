@@ -16,18 +16,18 @@ export default function About() {
           animationFillMode: "backwards",
         }}
       >
-        <Badge>about database</Badge>
+        <Badge>Consultoría Especializada en IA</Badge>
         <h1
           id="about-overview"
           className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300"
         >
           <Balancer>
-            We are engineers, building the database platform we always wanted
+            Consultoría en Inteligencia Artificial para Empresas
           </Balancer>
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-gray-700 dark:text-gray-400">
-          Data is changing every aspect of running a business, and it is
-          happening now. <br /> Database is at the core of this revolution.
+        La inteligencia artificial está revolucionando la forma en que las empresas operan y toman decisiones.
+        <br /> En nuestra consultoría, te ayudamos a implementar soluciones de IA personalizadas para optimizar procesos, mejorar la eficiencia y potenciar el crecimiento de tu negocio.
         </p>
       </section>
       <TeamGallery />
