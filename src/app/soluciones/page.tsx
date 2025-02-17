@@ -5,7 +5,6 @@ import TeamGallery from "@/components/ui/TeamGallery"
 import Balancer from "react-wrap-balancer"
 import BadgeSolutions from "@/components/BadgesSolutions"
 
-
 import { Tooltip } from "@/components/Tooltip"
 import { ArrowAnimated } from "@/components/ui/ArrowAnimated"
 import { cx } from "@/lib/utils"
@@ -40,8 +39,7 @@ const plans: Plan[] = [
   {
     name: "Simple",
     price: "$0",
-    description:
-      "For individuals and freelancers that need a scalable database.",
+    description: "For individuals and freelancers that need a scalable database.",
     capacity: ["Up to 5 users, 1 admin", "1 workspace"],
     features: [
       "Up to 1000/req. per day",
@@ -72,8 +70,7 @@ const plans: Plan[] = [
   {
     name: "E-Commerce",
     price: { monthly: "$99", annually: "$79" },
-    description:
-      "For larger teams that need more advanced controls and features.",
+    description: "For larger teams that need more advanced controls and features.",
     capacity: ["Up to 500 users, 10 admins", "Unlimited workspaces"],
     features: [
       "Unlimited requests",
@@ -106,31 +103,27 @@ const sections: Section[] = [
     features: [
       {
         name: "Hosting gratis",
-        tooltip:
-          "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: { Starter: true, Teams: true, Business: true },
+        tooltip: "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
+        plans: { Simple: true, Empresarial: true, "E-Commerce": true },
       },
       {
         name: "SSL gratis",
-        tooltip:
-          "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: { Starter: "5", Teams: "10", Business: "Unlimited" },
+        tooltip: "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
+        plans: { Simple: "5", Empresarial: "10", "E-Commerce": "Unlimited" },
       },
       {
         name: "Almacenamiento",
-        tooltip:
-          "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
+        tooltip: "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
         plans: {
-          Starter: "5/10GB",
-          Teams: "20/50GB",
-          Business: "100/150GB",
+          Simple: "5/10GB",
+          Empresarial: "20/50GB",
+          "E-Commerce": "100/150GB",
         },
       },
       {
         name: "Plantillas Premium",
-        tooltip:
-          "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-          plans: { Starter: true, Teams: true, Business: true },
+        tooltip: "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
+        plans: { Simple: true, Empresarial: true, "E-Commerce": true },
       },
     ],
   },
@@ -139,21 +132,18 @@ const sections: Section[] = [
     features: [
       {
         name: "Service accounts",
-        tooltip:
-          "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: { Starter: true, Teams: true, Business: true },
+        tooltip: "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
+        plans: { Simple: true, Empresarial: true, "E-Commerce": true },
       },
       {
         name: "Admin API",
-        tooltip:
-          "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: { Teams: true, Business: true },
+        tooltip: "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
+        plans: { Empresarial: true, "E-Commerce": true },
       },
       {
         name: "No-Code workflow builder",
-        tooltip:
-          "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: { Starter: "Limited", Teams: "Standard", Business: "Enhanced" },
+        tooltip: "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
+        plans: { Simple: "Limited", Empresarial: "Standard", "E-Commerce": "Enhanced" },
       },
     ],
   },
@@ -162,21 +152,18 @@ const sections: Section[] = [
     features: [
       {
         name: "Analytics retention",
-        tooltip:
-          "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: { Starter: "7 days", Teams: "1 year", Business: "Unlimited" },
+        tooltip: "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
+        plans: { Simple: "7 days", Empresarial: "1 year", "E-Commerce": "Unlimited" },
       },
       {
         name: "Anomaly detection",
-        tooltip:
-          "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: { Teams: true, Business: true },
+        tooltip: "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
+        plans: { Empresarial: true, "E-Commerce": true },
       },
       {
         name: "Custom report builder",
-        tooltip:
-          "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: { Business: true },
+        tooltip: "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
+        plans: { "E-Commerce": true },
       },
     ],
   },
@@ -186,26 +173,20 @@ const sections: Section[] = [
       {
         name: "Slack",
         plans: {
-          Starter: "Community",
-          Teams: "Connect",
-          Business: "Dedicated agent",
+          Simple: "Community",
+          Empresarial: "Connect",
+          "E-Commerce": "Dedicated agent",
         },
       },
       {
         name: "Email",
-        plans: { Starter: "2-4 days", Teams: "1-2 days", Business: "Priority" },
+        plans: { Simple: "2-4 days", Empresarial: "1-2 days", "E-Commerce": "Priority" },
       },
     ],
   },
 ]
 
-
-
-
-
 export default function About() {
-
-
   return (
     <div className="mt-36 flex flex-col overflow-hidden px-3">
       <section
@@ -216,22 +197,22 @@ export default function About() {
           animationFillMode: "backwards",
         }}
       >
-        <Badge>soluciones para cada necesidad</Badge>
+        <Badge>Soluciones para cada necesidad</Badge>
         <h1
           id="about-overview"
           className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300"
         >
           <Balancer>
-          Innovadores creando el futuro digital.
-        </Balancer>
+            Innovadores creando el futuro digital.
+          </Balancer>
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-gray-700 dark:text-gray-400">
-        La tecnología redefine cómo las empresas crecen y se conectan.
-        <br /> Soluciones clave: diseño intuitivo, código eficaz y experiencias memorables.
+          La tecnología redefine cómo las empresas crecen y se conectan.
+          <br /> Soluciones clave: diseño intuitivo, código eficaz y experiencias memorables.
         </p>
       </section>
-      <section  className="section-badge-solutions" id="badge-solutions">
-      <BadgeSolutions />
+      <section className="section-badge-solutions" id="badge-solutions">
+        <BadgeSolutions />
       </section>
 
       {/* plan details (lg+) */}
@@ -255,7 +236,7 @@ export default function About() {
                       Todas las funciones
                     </div>
                     <div className="text-sm font-normal text-gray-600 dark:text-gray-400">
-                      Pensadas para cada solucion
+                      Pensadas para cada solución
                     </div>
                   </th>
                   {plans.map((plan) => (
@@ -275,7 +256,14 @@ export default function About() {
                         {plan.name}
                       </div>
                       <div className="text-sm font-normal text-gray-600 dark:text-gray-400">
-                      
+                        {typeof plan.price === "object" ? (
+                          <>
+                            <span className="mr-1">{plan.price.monthly}</span>
+                            <span className="text-gray-500">/month</span>
+                          </>
+                        ) : (
+                          plan.price
+                        )}
                       </div>
                     </th>
                   ))}
@@ -337,7 +325,6 @@ export default function About() {
                                     aria-hidden="true"
                                   />
                                 )}
-
                                 <span className="sr-only">
                                   {feature.plans[plan.name] === true
                                     ? "Included"
@@ -361,29 +348,19 @@ export default function About() {
                   </th>
                   {plans.map((plan) => (
                     <td key={plan.name} className="px-6 pt-6 lg:px-8">
-                      {plan.isStarter ? (
-                        <Button
-                          variant="light"
-                          asChild
-                          className="group bg-transparent px-0 text-base hover:bg-transparent dark:bg-transparent hover:dark:bg-transparent"
-                        >
-                          <Link href={plan.buttonLink}>
-                            {plan.buttonText}
-                            <ArrowAnimated />
-                          </Link>
-                        </Button>
-                      ) : (
-                        <Button
-                          variant="light"
-                          asChild
-                          className="group bg-transparent px-0 text-base text-indigo-600 hover:bg-transparent dark:bg-transparent dark:text-indigo-400 hover:dark:bg-transparent"
-                        >
-                          <Link href={plan.buttonLink}>
-                            {plan.buttonText}
-                            <ArrowAnimated />
-                          </Link>
-                        </Button>
-                      )}
+                      <Button
+                        variant="light"
+                        asChild
+                        className={cx(
+                          "group bg-transparent px-0 text-base hover:bg-transparent dark:bg-transparent hover:dark:bg-transparent",
+                          plan.isStarter ? "" : "text-indigo-600 dark:text-indigo-400"
+                        )}
+                      >
+                        <Link href={plan.buttonLink}>
+                          {plan.buttonText}
+                          <ArrowAnimated />
+                        </Link>
+                      </Button>
                     </td>
                   ))}
                 </tr>
@@ -392,7 +369,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
 
       <TeamGallery />
       <Benefits />
