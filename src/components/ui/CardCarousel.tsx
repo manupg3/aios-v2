@@ -6,29 +6,30 @@ const CardCarousel = () => {
     {
       icon: "🌟",
       title: "Asesoria General",
-      description: "Mejora tus procesos web con estrategias personalizadas para alcanzar tus objetivos."
+      description: "Optimiza tus procesos web con estrategias personalizadas."
     },
     {
       icon: "🌍",
       title: "Asesoria Especifica",
-      description: "Optimiza aspectos clave de tu sitio web con recomendaciones específicas."
+      description: "Mejora aspectos clave de tu sitio web con recomendaciones específicas."
     },
     {
       icon: "🛠️",
       title: "Asesoria IA General",
-      description: "Descubre cómo la IA puede mejorar tu desarrollo web y sus aplicaciones."
+      description: "Aplica IA para mejorar tu desarrollo web."
     },
     {
       icon: "📈",
       title: "Asesoria IA Especifica",
-      description: "Implementa soluciones de IA para resolver problemas específicos en tu sitio web."
+      description: "Resuelve problemas web con soluciones de IA."
     },
     {
       icon: "🚀",
       title: "Asesoria Integral",
-      description: "Combina estrategia y tecnología para impulsar el crecimiento de tu proyecto web."
+      description: "Combina estrategia y tecnología para impulsar tu proyecto web."
     }
   ];
+  
   
 
   const visibleCards = 3
