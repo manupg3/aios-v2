@@ -22,12 +22,11 @@ export default function About() {
           className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300"
         >
           <Balancer>
-            Asesoramiento en inteligencia artificial para empresas
+            Asesoramiento especializado
           </Balancer>
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-gray-700 dark:text-gray-400">
-        La inteligencia artificial está transformando las operaciones y decisiones empresariales
-        Con nuestro asesoramiento, implementamos soluciones de IA personalizadas para optimizar procesos y potenciar el crecimiento de tu negocio.
+        Optimizamos tu presencia en línea con estrategias web personalizadas para mejorar la funcionalidad y rendimiento de tu sitio, enfocándonos en aspectos clave como SEO y UX para maximizar el rendimiento 
         </p>
       </section>
       <CardCarousel />
