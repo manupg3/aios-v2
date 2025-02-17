@@ -3,13 +3,33 @@ import React from "react"
 
 const CardCarousel = () => {
   const cards = [
-    { icon: "🌟", title: "Card 1", description: "Descripción de la Card 1" },
-    { icon: "🌍", title: "Card 2", description: "Descripción de la Card 2" },
-    { icon: "🛠️", title: "Card 3", description: "Descripción de la Card 3" },
-    { icon: "📈", title: "Card 4", description: "Descripción de la Card 4" },
-    { icon: "🚀", title: "Card 5", description: "Descripción de la Card 5" },
-    { icon: "💡", title: "Card 6", description: "Descripción de la Card 6" },
-  ]
+    {
+      icon: "🌟",
+      title: "Asesoria General",
+      description: "Mejora tus procesos web con estrategias personalizadas para alcanzar tus objetivos."
+    },
+    {
+      icon: "🌍",
+      title: "Asesoria Especifica",
+      description: "Optimiza aspectos clave de tu sitio web con recomendaciones específicas."
+    },
+    {
+      icon: "🛠️",
+      title: "Asesoria IA General",
+      description: "Descubre cómo la IA puede mejorar tu desarrollo web y sus aplicaciones."
+    },
+    {
+      icon: "📈",
+      title: "Asesoria IA Especifica",
+      description: "Implementa soluciones de IA para resolver problemas específicos en tu sitio web."
+    },
+    {
+      icon: "🚀",
+      title: "Asesoria Integral",
+      description: "Combina estrategia y tecnología para impulsar el crecimiento de tu proyecto web."
+    }
+  ];
+  
 
   const visibleCards = 3
   // Duplicamos las cards para lograr el efecto infinito.
