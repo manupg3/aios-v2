@@ -45,7 +45,7 @@ const CardCarousel = () => {
       <style jsx>{`
         .animate-scroll {
           /* Se desplaza el 50% del ancho total, que equivale a la primera copia (6 cards) */
-          animation: scroll 20s linear infinite;
+          animation: scroll 30s linear infinite;
         }
         @keyframes scroll {
           from {
