@@ -203,11 +203,7 @@ const sections: Section[] = [
   },
 ]
 
-const isVariablePrice = (
-  price: FixedPrice | VariablePrice,
-): price is VariablePrice => {
-  return (price as VariablePrice).monthly !== undefined
-}
+
 
 
 
