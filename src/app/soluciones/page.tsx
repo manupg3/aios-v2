@@ -38,7 +38,7 @@ interface Plan {
 
 const plans: Plan[] = [
   {
-    name: "Starter",
+    name: "Simple",
     price: "$0",
     description:
       "For individuals and freelancers that need a scalable database.",
@@ -54,7 +54,7 @@ const plans: Plan[] = [
     buttonLink: "#",
   },
   {
-    name: "Teams",
+    name: "Empresarial",
     price: { monthly: "$49", annually: "$39" },
     description: "For small teams and start-ups that need a scalable database.",
     capacity: ["Up to 100 users, 3 admins", "Up to 20 workspaces"],
@@ -70,7 +70,7 @@ const plans: Plan[] = [
     buttonLink: "#",
   },
   {
-    name: "Business",
+    name: "E-Commerce",
     price: { monthly: "$99", annually: "$79" },
     description:
       "For larger teams that need more advanced controls and features.",
@@ -102,39 +102,35 @@ interface Section {
 
 const sections: Section[] = [
   {
-    name: "Workspace Features",
+    name: "Funciones Generales",
     features: [
       {
-        name: "Email notifications & webhooks",
+        name: "Hosting gratis",
         tooltip:
           "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
         plans: { Starter: true, Teams: true, Business: true },
       },
       {
-        name: "Workspaces",
+        name: "SSL gratis",
         tooltip:
           "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
         plans: { Starter: "5", Teams: "10", Business: "Unlimited" },
       },
       {
-        name: "Storage",
+        name: "Almacenamiento",
         tooltip:
           "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
         plans: {
-          Starter: "$0.65 per stored GB",
-          Teams: "$0.34 per stored GB",
-          Business: "Customized¹",
+          Starter: "5/10GB",
+          Teams: "20/50GB",
+          Business: "100/150GB",
         },
       },
       {
-        name: "Seats",
+        name: "Plantillas Premium",
         tooltip:
           "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: {
-          Starter: "5 users",
-          Teams: "Up to 20 users",
-          Business: "Unlimited",
-        },
+          plans: { Starter: true, Teams: true, Business: true },
       },
     ],
   },
@@ -239,12 +235,10 @@ export default function About() {
       </section>
 
       {/* plan details (lg+) */}
-      <section className="mx-auto mt-20">
-        <div className="mt-20 hidden sm:mt-28 lg:block">
+      <section className="mx-auto mt-0">
+        <div className="mt-0 hidden sm:mt-28 lg:block">
           <div className="relative">
-            <div className="sticky top-0 z-20 h-28 w-full bg-white dark:bg-gray-950" />
             <table className="w-full table-fixed border-separate border-spacing-0 text-left">
-              <caption className="sr-only">Pricing plan comparison</caption>
               <colgroup>
                 <col className="w-2/5" />
                 <col className="w-1/5" />
@@ -258,10 +252,10 @@ export default function About() {
                     className="border-b border-gray-100 bg-white pb-8 dark:border-gray-800 dark:bg-gray-950"
                   >
                     <div className="font-semibold leading-7 text-gray-900 dark:text-gray-50">
-                      Compare prices
+                      Todas las funciones
                     </div>
                     <div className="text-sm font-normal text-gray-600 dark:text-gray-400">
-                      Price per month (billed yearly)
+                      Pensadas para cada solucion
                     </div>
                   </th>
                   {plans.map((plan) => (
