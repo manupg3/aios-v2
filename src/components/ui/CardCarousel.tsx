@@ -16,7 +16,7 @@ const CardCarousel = () => {
     {
       icon: "🛠️",
       title: "Asesoria IA General",
-      description: "Aplica IA para mejorar tu desarrollo web."
+      description: "Aplica IA para mejorar tu negocio, optimizar procesos, etc."
     },
     {
       icon: "📈",
