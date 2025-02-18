@@ -108,41 +108,41 @@ const sections: Section[] = [
         name: "Hosting gratis",
         tooltip:
           "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: { Starter: true, Teams: true, Business: true },
-      },
+          plans: { Simple: true, Empresarial: true, "E-Commerce": true },
+        },
       {
         name: "SSL gratis",
         tooltip:
           "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: { Starter: "5", Teams: "10", Business: "Ilimitado" },
-      },
+          plans: { Simple: "5", Empresarial: "10", "E-Commerce": "Unlimited" },
+        },
       {
         name: "Almacenamiento",
         tooltip:
           "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
         plans: {
-          Starter: "5/10GB",
-          Teams: "20/50GB",
-          Business: "100/150GB",
+          Simple: "5/10GB",
+          Empresarial: "20/50GB",
+          "E-Commerce": "100/150GB",
         },
       },
       {
         name: "Plantillas Premium",
         tooltip:
           "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-          plans: { Starter: true, Teams: true, Business: true },
+          plans: { Simple: true, Empresarial: true, "E-Commerce": true },
       },
       {
         name: "Integraciones Generales",
         tooltip:
           "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-          plans: { Starter: '10', Teams: '+20', Business: 'Ilimitadas' },
+          plans: { Simple: '10', Empresarial: '+20', "E-Commerce": 'Ilimitadas' },
       },
       {
         name: "Integraciones IA",
         tooltip:
           "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-          plans: { Starter: '1', Teams: '+2', Business: 'Ilimitadas' },
+          plans: { Simple: '1', Empresarial: '+2', "E-Commerce": 'Ilimitadas' },
       },
     ],
   },
