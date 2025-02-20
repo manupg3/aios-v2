@@ -8,16 +8,11 @@ export default function Cta() {
   const [step, setStep] = useState(1);
   const [email, setEmail] = useState("");
   const [solution, setSolution] = useState("");
-  const [animate, setAnimate] = useState(false);
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     if (step === 1) {
-      setAnimate(true);
-      setTimeout(() => {
-        setStep(2);
-        setAnimate(false);
-      }, 300); // Duration should match the CSS transition duration
+      setStep(2);
     } else {
       // Handle final form submission
       console.log("Email:", email);
@@ -68,9 +63,8 @@ export default function Cta() {
             <div className="mt-14 w-full rounded-[16px] bg-gray-300/5 p-1.5 ring-1 ring-black/[3%] backdrop-blur dark:bg-gray-900/10 dark:ring-white/[3%]">
               <div className="rounded-xl bg-white p-4 shadow-lg shadow-indigo-500/10 ring-1 ring-black/5 dark:bg-gray-950 dark:shadow-indigo-500/10 dark:ring-white/5">
                 <form
-                  className={`flex flex-col items-center gap-3 sm:flex-row transition-opacity duration-300 ${animate ? 'opacity-0' : 'opacity-100'}`}
+                  className="flex flex-col items-center gap-3 sm:flex-row"
                   onSubmit={handleSubmit}
-                  style={{ height: animate ? '0' : 'auto' }}
                 >
                   {step === 1 ? (
                     <>
