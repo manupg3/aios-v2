@@ -113,9 +113,12 @@ export default function Cta() {
                           <option value="" disabled>
                             Selecciona una solución
                           </option>
-                          <option value="solution1">Solución 1</option>
-                          <option value="solution2">Solución 2</option>
-                          <option value="solution3">Solución 3</option>
+                          <option value="solucion-simple">Solucion Simple</option>
+                          <option value="solucion-empresarial">Solución Empresarial</option>
+                          <option value="solucion-ecommerce">Solución E-Commerce</option>
+                          <option value="solucion-ia">Solucion IA</option>
+                          <option value="mantenimiento-integral">Mantenimiento Integral</option>
+                          <option value="otro">Otro...</option>
                         </select>
                         <Button
                           className="h-10 w-full sm:w-fit sm:flex-none"
