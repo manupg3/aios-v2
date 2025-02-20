@@ -2,7 +2,7 @@ import { Badge } from "@/components/Badge"
 import { Button } from "@/components/Button"
 import Balancer from "react-wrap-balancer"
 import BadgeSolutions from "@/components/BadgesSolutions"
-import Cta from "../../../Cta"
+import Cta from "@/components/ui/Cta"
 
 import { Tooltip } from "@/components/Tooltip"
 import { ArrowAnimated } from "@/components/ui/ArrowAnimated"

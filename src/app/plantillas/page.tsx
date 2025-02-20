@@ -4,7 +4,7 @@ import { Badge } from "@/components/Badge"
 import Balancer from "react-wrap-balancer"
 import Bento from "@/components/ui/bento"
 import GridFeatures from "@/components/GridFeatures"
-import Cta from "../../../Cta"
+import Cta from "@/components/ui/Cta"
 import StepsHorizontal from "@/components/ui/StepsHorizontal"
 
 export default function Plantillas() {
