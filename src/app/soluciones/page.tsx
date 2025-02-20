@@ -114,7 +114,7 @@ const sections: Section[] = [
         name: "SSL gratis",
         tooltip:
           "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-          plans: { Simple: "5", Empresarial: "10", "E-Commerce": "Unlimited" },
+          plans: { Simple: "5", Empresarial: "10", "E-Commerce": "Ilimitados" },
         },
       {
         name: "Almacenamiento",
@@ -147,66 +147,76 @@ const sections: Section[] = [
     ],
   },
   {
-    name: "Automation",
+    name: "Integraciones de Terceros",
     features: [
       {
-        name: "Service accounts",
+        name: "Medios de Pago",
         tooltip:
           "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: { Starter: true, Teams: true, Business: true },
+          plans: { Simple: false, Empresarial: true, "E-Commerce": true },
       },
       {
-        name: "Admin API",
+        name: "Medios de Envio",
         tooltip:
           "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: { Teams: true, Business: true },
+          plans: { Simple: false, Empresarial: false, "E-Commerce": true },
       },
       {
-        name: "No-Code workflow builder",
+        name: "CRMs",
         tooltip:
           "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: { Starter: "Limited", Teams: "Standard", Business: "Enhanced" },
+          plans: { Simple: true, Empresarial: true, "E-Commerce": true },
+      },
+      {
+        name: "Analiticas",
+        tooltip:
+          "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
+          plans: { Simple: true, Empresarial: true, "E-Commerce": true },
       },
     ],
   },
   {
-    name: "Analytics",
+    name: "Analiticas",
     features: [
       {
-        name: "Analytics retention",
+        name: "Google Analytics",
         tooltip:
           "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: { Starter: "7 days", Teams: "1 year", Business: "Unlimited" },
+          plans: { Simple: true, Empresarial: true, "E-Commerce": true },
       },
       {
-        name: "Anomaly detection",
+        name: "Google Tag Manager",
         tooltip:
           "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: { Teams: true, Business: true },
+          plans: { Simple: true, Empresarial: true, "E-Commerce": true },
       },
       {
-        name: "Custom report builder",
+        name: "Hotjar",
         tooltip:
           "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: { Business: true },
+          plans: { Simple: false, Empresarial: true, "E-Commerce": true },
+      },
+      {
+        name: "Soluciones IA",
+        tooltip:
+          "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
+          plans: { Simple: false, Empresarial: true, "E-Commerce": true },
       },
     ],
   },
   {
-    name: "Support",
+    name: "Atencion al Cliente",
     features: [
       {
-        name: "Slack",
-        plans: {
-          Starter: "Community",
-          Teams: "Connect",
-          Business: "Dedicated agent",
-        },
+        name: "Soluciones IA",
+        plans: { Simple: true, Empresarial: true, "E-Commerce": true },
+
       },
       {
-        name: "Email",
-        plans: { Starter: "2-4 days", Teams: "1-2 days", Business: "Priority" },
+        name: "Email, SMS, WhatsApp, etc",
+        plans: { Simple: true, Empresarial: true, "E-Commerce": true },
       },
+   
     ],
   },
 ]
