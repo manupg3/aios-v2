@@ -67,7 +67,7 @@ export default function Cta() {
             </div>
             <div className="mt-14 w-full rounded-[16px] bg-gray-300/5 p-1.5 ring-1 ring-black/[3%] backdrop-blur dark:bg-gray-900/10 dark:ring-white/[3%]">
               <div className="rounded-xl bg-white p-4 shadow-lg shadow-indigo-500/10 ring-1 ring-black/5 dark:bg-gray-950 dark:shadow-indigo-500/10 dark:ring-white/5">
-                <div className="relative h-32">
+                <div className="relative h-[3rem]"> 
                   <form
                     className={`absolute inset-0 flex flex-col items-center gap-3 sm:flex-row transition-opacity duration-1000 ${animate ? 'opacity-0' : 'opacity-100'}`}
                     onSubmit={handleSubmit}
