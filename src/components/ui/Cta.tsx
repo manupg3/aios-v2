@@ -8,11 +8,16 @@ export default function Cta() {
   const [step, setStep] = useState(1);
   const [email, setEmail] = useState("");
   const [solution, setSolution] = useState("");
+  const [animate, setAnimate] = useState(false);
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     if (step === 1) {
-      setStep(2);
+      setAnimate(true);
+      setTimeout(() => {
+        setStep(2);
+        setAnimate(false);
+      }, 1000); // Duration should match the CSS transition duration
     } else {
       // Handle final form submission
       console.log("Email:", email);
@@ -62,65 +67,67 @@ export default function Cta() {
             </div>
             <div className="mt-14 w-full rounded-[16px] bg-gray-300/5 p-1.5 ring-1 ring-black/[3%] backdrop-blur dark:bg-gray-900/10 dark:ring-white/[3%]">
               <div className="rounded-xl bg-white p-4 shadow-lg shadow-indigo-500/10 ring-1 ring-black/5 dark:bg-gray-950 dark:shadow-indigo-500/10 dark:ring-white/5">
-                <form
-                  className="flex flex-col items-center gap-3 sm:flex-row"
-                  onSubmit={handleSubmit}
-                >
-                  {step === 1 ? (
-                    <>
-                      <label htmlFor="email" className="sr-only">
-                        Email
-                      </label>
-                      <Input
-                        name="email"
-                        type="email"
-                        autoComplete="email"
-                        required
-                        id="email"
-                        className="h-10 w-full min-w-0 flex-auto"
-                        inputClassName="h-full"
-                        placeholder="Tu Mejor Email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                      />
-                      <Button
-                        className="h-10 w-full sm:w-fit sm:flex-none"
-                        type="submit"
-                        variant="primary"
-                      >
-                        Siguiente
-                      </Button>
-                    </>
-                  ) : (
-                    <>
-                      <label htmlFor="solution" className="sr-only">
-                        Solución
-                      </label>
-                      <select
-                        name="solution"
-                        id="solution"
-                        className="h-10 w-full min-w-0 flex-auto rounded border border-gray-300 px-3 py-2 text-gray-700 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300"
-                        value={solution}
-                        onChange={(e) => setSolution(e.target.value)}
-                        required
-                      >
-                        <option value="" disabled>
-                          Selecciona una solución
-                        </option>
-                        <option value="solution1">Solución 1</option>
-                        <option value="solution2">Solución 2</option>
-                        <option value="solution3">Solución 3</option>
-                      </select>
-                      <Button
-                        className="h-10 w-full sm:w-fit sm:flex-none"
-                        type="submit"
-                        variant="primary"
-                      >
-                        Empezar Ahora
-                      </Button>
-                    </>
-                  )}
-                </form>
+                <div className="relative h-32">
+                  <form
+                    className={`absolute inset-0 flex flex-col items-center gap-3 sm:flex-row transition-opacity duration-1000 ${animate ? 'opacity-0' : 'opacity-100'}`}
+                    onSubmit={handleSubmit}
+                  >
+                    {step === 1 ? (
+                      <>
+                        <label htmlFor="email" className="sr-only">
+                          Email
+                        </label>
+                        <Input
+                          name="email"
+                          type="email"
+                          autoComplete="email"
+                          required
+                          id="email"
+                          className="h-10 w-full min-w-0 flex-auto"
+                          inputClassName="h-full"
+                          placeholder="Tu Mejor Email"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
+                        />
+                        <Button
+                          className="h-10 w-full sm:w-fit sm:flex-none"
+                          type="submit"
+                          variant="primary"
+                        >
+                          Siguiente
+                        </Button>
+                      </>
+                    ) : (
+                      <>
+                        <label htmlFor="solution" className="sr-only">
+                          Solución
+                        </label>
+                        <select
+                          name="solution"
+                          id="solution"
+                          className="h-10 w-full min-w-0 flex-auto rounded border border-gray-300 px-3 py-2 text-gray-700 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300"
+                          value={solution}
+                          onChange={(e) => setSolution(e.target.value)}
+                          required
+                        >
+                          <option value="" disabled>
+                            Selecciona una solución
+                          </option>
+                          <option value="solution1">Solución 1</option>
+                          <option value="solution2">Solución 2</option>
+                          <option value="solution3">Solución 3</option>
+                        </select>
+                        <Button
+                          className="h-10 w-full sm:w-fit sm:flex-none"
+                          type="submit"
+                          variant="primary"
+                        >
+                          Empezar Ahora
+                        </Button>
+                      </>
+                    )}
+                  </form>
+                </div>
               </div>
             </div>
             <p className="mt-4 text-xs text-gray-600 sm:text-sm dark:text-gray-400">
