@@ -33,7 +33,7 @@ interface Plan {
   buttonLink: string
 }
 
-const plans: Plan[] = [
+const monthlyPlans: Plan[] = [
   {
     name: "Starter",
     price: "$0",
@@ -52,7 +52,7 @@ const plans: Plan[] = [
   },
   {
     name: "Teams",
-    price: { monthly: "$49", annually: "$39" },
+    price: "$49",
     description: "For small teams and start-ups that need a scalable database.",
     capacity: ["Up to 100 users, 3 admins", "Up to 20 workspaces"],
     features: [
@@ -68,7 +68,7 @@ const plans: Plan[] = [
   },
   {
     name: "Business",
-    price: { monthly: "$99", annually: "$79" },
+    price: "$99",
     description:
       "For larger teams that need more advanced controls and features.",
     capacity: ["Up to 500 users, 10 admins", "Unlimited workspaces"],
@@ -86,7 +86,40 @@ const plans: Plan[] = [
   },
 ]
 
-
+const annuallyPlans: Plan[] = [
+  {
+    name: "Starter",
+    price: "$0",
+    description:
+      "For individuals and freelancers that need a scalable database.",
+    capacity: ["Up to 5 users, 1 admin", "1 workspace"],
+    features: [
+      "Up to 1000/req. per day",
+      "5 GB max storage",
+      "Community Slack Support",
+    ],
+    isStarter: true,
+    isRecommended: false,
+    buttonText: "Get started",
+    buttonLink: "#",
+  },
+  {
+    name: "Teams",
+    price: "$39",
+    description: "For small teams and start-ups that need a scalable database.",
+    capacity: ["Up to 100 users, 3 admins", "Up to 20 workspaces"],
+    features: [
+      "Unlimited requests",
+      "$0.07 per processed GB",
+      "$0.34 per stored GB",
+      "Slack Connect",
+    ],
+    isStarter: false,
+    isRecommended: false,
+    buttonText: "Start 14-day trial",
+    buttonLink: "#",
+  },
+]
 
 const isVariablePrice = (
   price: FixedPrice | VariablePrice,
@@ -98,6 +131,9 @@ export default function Pricing() {
   const [billingFrequency, setBillingFrequency] = React.useState<
     "monthly" | "annually"
   >("monthly")
+
+  const plansToShow = billingFrequency === "monthly" ? monthlyPlans : annuallyPlans
+
   return (
     <div className="px-3">
       <section
@@ -151,8 +187,8 @@ export default function Pricing() {
             Yearly (-20%)
           </Label>
         </div>
-        <div className="grid grid-cols-1 gap-x-14 gap-y-8 lg:grid-cols-3">
-          {plans.map((plan, planIdx) => (
+        <div className={`grid grid-cols-1 gap-x-14 gap-y-8 ${billingFrequency === "monthly" ? "lg:grid-cols-3" : "lg:grid-cols-2"}`}>
+          {plansToShow.map((plan, planIdx) => (
             <div key={planIdx} className="mt-6">
               {plan.isRecommended ? (
                 <div className="flex h-4 items-center">
