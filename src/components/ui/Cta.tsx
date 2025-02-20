@@ -1,5 +1,5 @@
 "use client"
-import { useState, FormEvent, useEffect } from "react";
+import { useState, FormEvent } from "react";
 import Balancer from "react-wrap-balancer";
 import { Button } from "../Button";
 import { Input } from "../Input";
