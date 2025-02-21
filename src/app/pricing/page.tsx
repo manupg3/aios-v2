@@ -199,7 +199,7 @@ export default function Pricing() {
           {plansToShow.map((plan, planIdx) => (
             <div
               key={planIdx}
-              className={`mt-6 ${billingFrequency === "annually" ? "max-w-sm" : "max-w-md"}`}
+              className={`mt-6 ${billingFrequency === "annually" ? "max-w-[900px]" : "max-w-md"}`}
             >
               {plan.isRecommended ? (
                 <div className="flex h-4 items-center">
