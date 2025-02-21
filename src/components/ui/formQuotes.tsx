@@ -63,22 +63,6 @@ export default function FormCotizacion() {
             </div>
             <div className="col-span-full sm:col-span-3">
               <label
-                htmlFor="last-name"
-                className="text-tremor-default font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong"
-              >
-                Last name
-              </label>
-              <TextInput
-                type="text"
-                id="last-name"
-                name="last-name"
-                autoComplete="family-name"
-                placeholder="Crown"
-                className="mt-2"
-              />
-            </div>
-            <div className="col-span-full">
-              <label
                 htmlFor="email"
                 className="text-tremor-default font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong"
               >
