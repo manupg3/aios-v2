@@ -38,8 +38,8 @@ const monthlyPlans: Plan[] = [
     name: "Simple",
     price: "Cotizar",
     description:
-      "Una solucion simple con todo lo que necesitas para digitalizar tu marca.",
-    capacity: ["Hasta 3 usuarios, 1 admin", "1 solucion en la nube"],
+      "Una solución simple con todo lo que necesitas para digitalizar tu marca.",
+    capacity: ["Hasta 3 usuarios, 1 admin", "1 solución en la nube"],
     features: [
       "Hosting gratis",
       "SSL gratis",
@@ -63,7 +63,7 @@ const monthlyPlans: Plan[] = [
       "Diseños premium Personalizados",
       "Integraciones de terceros",
       "Integraciones IA personalizadas",
-      "Optmizacion de procesos",  
+      "Optimización de procesos",
     ],
     isStarter: false,
     isRecommended: false,
@@ -79,12 +79,12 @@ const monthlyPlans: Plan[] = [
     features: [
       "Hosting gratis",
       "SSL gratis",
-      "Diseños premium para vender mas",
+      "Diseños premium para vender más",
       "Integraciones de terceros",
       "Integraciones IA a medida",
-      "Optmizacion de procesos de venta",
+      "Optimización de procesos de venta",
       "Potenciador de ventas",
-      "Medios de pago y envios",  
+      "Medios de pago y envíos",
     ],
     isStarter: false,
     isRecommended: true,
@@ -95,35 +95,36 @@ const monthlyPlans: Plan[] = [
 
 const annuallyPlans: Plan[] = [
   {
-    name: "Starter",
-    price: "$0",
+    name: "Mantenimiento",
+    price: "Cotizar",
     description:
-      "For individuals and freelancers that need a scalable database.",
-    capacity: ["Up to 5 users, 1 admin", "1 workspace"],
+      "Ofrecemos mantenimiento integral para todo tipo de solución.",
+    capacity: ["Múltiples plataformas", "Actualizaciones en la nube"],
     features: [
-      "Up to 1000/req. per day",
-      "5 GB max storage",
-      "Community Slack Support",
+      "Actualizaciones continuas",
+      "Seguridad integral",
+      "Migración a nuevas tecnologías",
+      "Contratación mensual y anual",
     ],
     isStarter: true,
     isRecommended: false,
-    buttonText: "Get started",
+    buttonText: "Comenzar ahora",
     buttonLink: "#",
   },
   {
-    name: "Teams",
-    price: "$39",
-    description: "For small teams and start-ups that need a scalable database.",
-    capacity: ["Up to 100 users, 3 admins", "Up to 20 workspaces"],
+    name: "Soluciones IA",
+    price: "Cotizar",
+    description: "Ofrecemos herramientas potenciadas con IA para automatizar y optimizar procesos.",
+    capacity: ["+2", "Soluciones en la nube"],
     features: [
-      "Unlimited requests",
-      "$0.07 per processed GB",
-      "$0.34 per stored GB",
-      "Slack Connect",
+      "Asistentes automatizados (Chatbots)",
+      "Analizadores de tendencias",
+      "Soluciones a medida",
+      "Configuración y uso simple e intuitivo",
     ],
     isStarter: false,
     isRecommended: false,
-    buttonText: "Start 14-day trial",
+    buttonText: "Comenzar ahora",
     buttonLink: "#",
   },
 ]
@@ -151,14 +152,14 @@ export default function Pricing() {
           animationFillMode: "backwards",
         }}
       >
-        <Badge>Cotiza tu solucion</Badge>
+        <Badge>Cotiza tu solución</Badge>
         <h1 className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300">
           Nuestros planes escalan con tu negocio
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-gray-700 dark:text-gray-400">
-         Ofrecemos soluciones para todo tipo de sitio web. Creamos herramientas
-         especializadas adaptadas a cada necesidad, desde diseños optimizados, hasta
-         integraciones IA.
+          Ofrecemos soluciones para todo tipo de sitio web. Creamos herramientas
+          especializadas adaptadas a cada necesidad, desde diseños optimizados, hasta
+          integraciones IA.
         </p>
       </section>
       <section
@@ -191,12 +192,15 @@ export default function Pricing() {
             htmlFor="switch"
             className="text-base font-medium sm:text-sm dark:text-gray-400"
           >
-           IA - Mantenimiento
+            IA - Mantenimiento
           </Label>
         </div>
         <div className={`grid grid-cols-1 gap-x-14 gap-y-8 ${billingFrequency === "monthly" ? "lg:grid-cols-3" : "lg:grid-cols-2"}`}>
           {plansToShow.map((plan, planIdx) => (
-            <div key={planIdx} className="mt-6">
+            <div
+              key={planIdx}
+              className={`mt-6 ${billingFrequency === "annually" ? "max-w-sm" : "max-w-md"}`}
+            >
               {plan.isRecommended ? (
                 <div className="flex h-4 items-center">
                   <div className="relative w-full">
@@ -218,7 +222,7 @@ export default function Pricing() {
                   <div className="h-px w-full bg-gray-200 dark:bg-gray-800" />
                 </div>
               )}
-              <div className="mx-auto max-w-md">
+              <div className="mx-auto">
                 <h2 className="mt-6 text-sm font-semibold text-gray-900 dark:text-gray-50">
                   {plan.name}
                 </h2>
@@ -230,7 +234,6 @@ export default function Pricing() {
                         : plan.price.annually
                       : plan.price}
                   </span>
-
                 </div>
                 <div className="mt-6 flex flex-col justify-between">
                   <p className="text-sm leading-6 text-gray-600 dark:text-gray-400">
