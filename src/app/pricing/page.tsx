@@ -55,7 +55,7 @@ const monthlyPlans: Plan[] = [
   {
     name: "Empresarial",
     price: "Cotizar",
-    description: "Para todo tipo de empresa e industria, nos especializamos en renovar y optmizar tu presencia digital.",
+    description: "Renovamos y optimizamos tu presencia digital para cualquier empresa o industria.",
     capacity: ["Hasta 20 usuarios, 3 admins", "5 Soluciones en la nube"],
     features: [
       "Hosting gratis",
@@ -67,14 +67,14 @@ const monthlyPlans: Plan[] = [
     ],
     isStarter: false,
     isRecommended: false,
-    buttonText: "Start 14-day trial",
+    buttonText: "Comenzar ahora",
     buttonLink: "#",
   },
   {
     name: "E-Commerce",
     price: "Cotizar",
     description:
-      "Potencia tus ventas digitalizando tu negocio, con nuestros diseños y herramientas creados para vender mas.",
+      "Potencia tus ventas digitalizando tu negocio con nuestros diseños y herramientas.",
     capacity: ["Usuarios ilimitados, 5 admins", "10 Soluciones en la nube"],
     features: [
       "Hosting gratis",
@@ -208,7 +208,7 @@ export default function Pricing() {
                     </div>
                     <div className="relative flex justify-center">
                       <span className="bg-white px-3 text-xs font-medium text-indigo-600 dark:bg-gray-950 dark:text-indigo-400">
-                        Most popular
+                        Potencia tus ventas
                       </span>
                     </div>
                   </div>
