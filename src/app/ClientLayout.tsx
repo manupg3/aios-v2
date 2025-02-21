@@ -16,10 +16,7 @@ export function ClientLayout({ children }: { children: React.ReactNode }) {
       {children}
       <Footer />
       <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
-        <h2 className="text-xl font-semibold">Cotizar Solución</h2>
-        <p className="mt-2 text-gray-600">Complete el formulario para obtener una cotización.</p>
         <FormCotizacion />
- 
       </Modal>
     </ThemeProvider>
   );
