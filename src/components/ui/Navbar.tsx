@@ -8,6 +8,8 @@ import Link from "next/link"
 import React from "react"
 import { DatabaseLogo } from "../../../DatabaseLogo"
 import { Button } from "../Button"
+import { ArrowAnimated } from "@/components/ui/ArrowAnimated"
+
 
 export function Navigation() {
   const scrolled = useScroll(15)
@@ -58,6 +60,13 @@ export function Navigation() {
               >
                 Plantillas
               </Link>
+             
+              <Link
+                className="px-2 py-1 text-gray-900 dark:text-gray-50"
+                href={siteConfig.baseLinks.about}
+              >
+                Asesoramiento
+              </Link>
               <Link
                 className="px-2 py-1 text-gray-900 dark:text-gray-50"
                 href={siteConfig.baseLinks.pricing}
@@ -65,19 +74,15 @@ export function Navigation() {
                 Cotizar
               </Link>
               
-              <Link
-                className="px-2 py-1 text-gray-900 dark:text-gray-50"
-                href={siteConfig.baseLinks.about}
-              >
-                Asesoramiento
-              </Link>
+              
             </div>
           </nav>
           <Button className="hidden h-10 font-semibold md:flex">
-            Book a demo
+                                      <ArrowAnimated />
+          
           </Button>
           <div className="flex gap-x-2 md:hidden">
-            <Button>Book demo</Button>
+            <Button>Cotizar solucion</Button>
             <Button
               onClick={() => setOpen(!open)}
               variant="light"
