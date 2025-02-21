@@ -65,9 +65,9 @@ const CardCarousel = () => {
             {/* Contenedor de la tarjeta */}
             <div className="relative cards-asesorias bg-white rounded-lg p-6 shadow-md">
               {/* Badge “Active” */}
-              <span className="absolute top-2 right-2 bg-green-500 text-white text-xs font-bold py-1 px-2 rounded-full">
-                Active
-              </span>
+              <span className="inline-flex items-center rounded bg-emerald-100 px-1.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-400/10 dark:text-emerald-400">
+                              active
+                            </span>
 
               <div className="text-4xl mb-4">{card.icon}</div>
               <h3 className="text-xl font-bold mb-2">{card.title}</h3>
