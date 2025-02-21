@@ -42,7 +42,7 @@ export default function FormCotizacion() {
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
         </p>
-        <form action="#" method="post" className="mt-8">
+        <form action="#" method="post" className="mt-8 form-cotizacion">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-6">
             <div className="col-span-full sm:col-span-3">
               <label

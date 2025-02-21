@@ -366,4 +366,11 @@ a {
   @apply visible;
 }
 
+@media (max-width:767px)
+{
+  .form-cotizacion{
+    max-height: 500px;
+    overflow-y: scroll;
+  }
+}
 
