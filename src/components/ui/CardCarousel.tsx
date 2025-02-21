@@ -46,10 +46,6 @@ const CardCarousel = () => {
 
   return (
     <div className="relative overflow-hidden w-full">
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white to-transparent"></div>
-        <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-white to-transparent"></div>
-      </div>
       <div
         className="flex animate-scroll"
         style={{ width: containerWidth }}
@@ -57,10 +53,14 @@ const CardCarousel = () => {
         {extendedCards.map((card, index) => (
           <div
             key={index}
-            className="p-2"
+            className="relative p-2"
             style={{ width: cardWidth }}
           >
-            <div className="cards-asesorias bg-white rounded-lg p-6 shadow-md">
+            <div className="absolute inset-0 pointer-events-none">
+              <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white to-transparent"></div>
+              <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-white to-transparent"></div>
+            </div>
+            <div className="relative cards-asesorias bg-white rounded-lg p-6 shadow-md">
               <div className="text-4xl mb-4">{card.icon}</div>
               <h3 className="text-xl font-bold mb-2">{card.title}</h3>
               <p className="text-gray-600">{card.description}</p>
