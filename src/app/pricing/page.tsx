@@ -35,7 +35,7 @@ interface Plan {
 
 const monthlyPlans: Plan[] = [
   {
-    name: "Starter",
+    name: "Simple",
     price: "$0",
     description:
       "For individuals and freelancers that need a scalable database.",
@@ -51,7 +51,7 @@ const monthlyPlans: Plan[] = [
     buttonLink: "#",
   },
   {
-    name: "Teams",
+    name: "Empresarial",
     price: "$49",
     description: "For small teams and start-ups that need a scalable database.",
     capacity: ["Up to 100 users, 3 admins", "Up to 20 workspaces"],
@@ -67,7 +67,7 @@ const monthlyPlans: Plan[] = [
     buttonLink: "#",
   },
   {
-    name: "Business",
+    name: "E-Commerce",
     price: "$99",
     description:
       "For larger teams that need more advanced controls and features.",
@@ -169,7 +169,7 @@ export default function Pricing() {
             htmlFor="switch"
             className="text-base font-medium sm:text-sm dark:text-gray-400"
           >
-            Monthly
+            Sitios Simples - Empresariales - E-Commerce
           </Label>
           <Switch
             id="switch"
@@ -184,7 +184,7 @@ export default function Pricing() {
             htmlFor="switch"
             className="text-base font-medium sm:text-sm dark:text-gray-400"
           >
-            Yearly (-20%)
+           Integracion IA - Mantenimiento Integral
           </Label>
         </div>
         <div className={`grid grid-cols-1 gap-x-14 gap-y-8 ${billingFrequency === "monthly" ? "lg:grid-cols-3" : "lg:grid-cols-2"}`}>
