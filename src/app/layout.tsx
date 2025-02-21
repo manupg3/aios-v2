@@ -1,3 +1,4 @@
+'use client'
 import Footer from "@/components/ui/Footer"
 import { Navigation } from "@/components/ui/Navbar"
 import type { Metadata } from "next"
