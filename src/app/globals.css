@@ -10,7 +10,10 @@
   font-named-instance: "Regular";
   src: url("/fonts/NanumPenScript.woff2") format("woff2");
 }
-
+.cards-asesorias
+{
+ box-shadow: 1px 1px 10px 1px #c2c2c2; 
+}
 :root {
   /* Verde - Simplicidad */
   --color-green-500: #22c55e;

@@ -60,7 +60,7 @@ const CardCarousel = () => {
             className="p-2"
             style={{ width: cardWidth }}
           >
-            <div className="bg-white shadow-md rounded-lg p-6">
+            <div className="cards-asesorias bg-white rounded-lg p-6">
               <div className="text-4xl mb-4">{card.icon}</div>
               <h3 className="text-xl font-bold mb-2">{card.title}</h3>
               <p className="text-gray-600">{card.description}</p>
