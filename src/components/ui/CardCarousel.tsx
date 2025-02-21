@@ -49,7 +49,11 @@ const CardCarousel = () => {
   const cardWidth = `${100 / totalCards}%` // cada card ocupará 100/12 % del contenedor interno
 
   return (
-    <div className="overflow-hidden">
+    <div className="relative overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white"></div>
+        <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-white"></div>
+      </div>
       <div
         className="flex animate-scroll"
         style={{ width: containerWidth }}
