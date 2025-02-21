@@ -223,9 +223,7 @@ export default function Pricing() {
                         : plan.price.annually
                       : plan.price}
                   </span>
-                  <div className="text-xs text-gray-600 dark:text-gray-400">
-                    per user <br /> per month
-                  </div>
+
                 </div>
                 <div className="mt-6 flex flex-col justify-between">
                   <p className="text-sm leading-6 text-gray-600 dark:text-gray-400">
