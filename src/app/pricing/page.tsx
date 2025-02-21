@@ -36,7 +36,7 @@ interface Plan {
 const monthlyPlans: Plan[] = [
   {
     name: "Simple",
-    price: "$0",
+    price: "Cotizar",
     description:
       "For individuals and freelancers that need a scalable database.",
     capacity: ["Up to 5 users, 1 admin", "1 workspace"],
@@ -52,7 +52,7 @@ const monthlyPlans: Plan[] = [
   },
   {
     name: "Empresarial",
-    price: "$49",
+    price: "Cotizar",
     description: "For small teams and start-ups that need a scalable database.",
     capacity: ["Up to 100 users, 3 admins", "Up to 20 workspaces"],
     features: [
@@ -68,7 +68,7 @@ const monthlyPlans: Plan[] = [
   },
   {
     name: "E-Commerce",
-    price: "$99",
+    price: "Cotizar",
     description:
       "For larger teams that need more advanced controls and features.",
     capacity: ["Up to 500 users, 10 admins", "Unlimited workspaces"],
