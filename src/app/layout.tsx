@@ -1,80 +1,54 @@
-'use client'
-import Footer from "@/components/ui/Footer"
-import { Navigation } from "@/components/ui/Navbar"
-import type { Metadata } from "next"
-import { ThemeProvider } from "next-themes"
-import { Inter } from "next/font/google"
-import "./globals.css"
-import { siteConfig } from "./siteConfig"
-import { Modal } from "@/components/ui/ModalLayout"
-import { useState } from "react"
+import { ClientLayout } from './ClientLayout';
+import { Inter } from 'next/font/google';
+import type { Metadata } from 'next';
+import './globals.css';
+import { siteConfig } from './siteConfig';
 
 const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-inter",
-})
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+});
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://yoururl.com"),
+  metadataBase: new URL('https://yoururl.com'),
   title: siteConfig.name,
   description: siteConfig.description,
-  keywords: ["Marketing", "Database", "Software"],
+  keywords: ['Marketing', 'Database', 'Software'],
   authors: [
     {
-      name: "yourname",
-      url: "",
+      name: 'yourname',
+      url: '',
     },
   ],
-  creator: "yourname",
+  creator: 'yourname',
   openGraph: {
-    type: "website",
-    locale: "en_US",
+    type: 'website',
+    locale: 'en_US',
     url: siteConfig.url,
     title: siteConfig.name,
     description: siteConfig.description,
     siteName: siteConfig.name,
   },
   twitter: {
-    card: "summary_large_image",
+    card: 'summary_large_image',
     title: siteConfig.name,
     description: siteConfig.description,
-    creator: "@yourname",
+    creator: '@yourname',
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: '/favicon.ico',
   },
-}
+};
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
-  const [modalOpen, setModalOpen] = useState(false);
-
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${inter.className} min-h-screen scroll-auto antialiased selection:bg-indigo-100 selection:text-indigo-700 dark:bg-gray-950`}
-      >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          disableTransitionOnChange
-        >
-          <Navigation setModalOpen={setModalOpen} />
+      <body className={`${inter.className} min-h-screen scroll-auto antialiased selection:bg-indigo-100 selection:text-indigo-700 dark:bg-gray-950`}>
+        <ClientLayout>
           {children}
-          <Footer />
-          <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
-            {/* Coloca aquí el contenido del modal */}
-            <h2 className="text-xl font-semibold">Cotizar Solución</h2>
-            <p className="mt-2 text-gray-600">Complete el formulario para obtener una cotización.</p>
-            {/* Agrega tu formulario o componente aquí */}
-          </Modal>
-
-        </ThemeProvider>
+        </ClientLayout>
       </body>
     </html>
-  )
+  );
 }
