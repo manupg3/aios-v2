@@ -28,7 +28,9 @@
   --color-purple-600: #9333ea;
 }
 
-
+.section-card-carousel{
+  margin-block:80px;
+}
 h1#h1-steps-horizontal {
   text-align: center !important;
   display: flex;
