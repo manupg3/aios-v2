@@ -368,7 +368,7 @@ a {
 
 @media (max-width:767px)
 {
-  .form-cotizacion{
+  .modal-cotizacion{
     max-height: 500px;
     overflow-y: scroll;
   }
