@@ -71,12 +71,7 @@ const PackageDetails: React.FC<PackageDetailsProps> = ({ workspaceId }) => {
           </li>
         ))}
       </ul>
-      <p className="mt-6 text-tremor-label text-tremor-content dark:text-dark-tremor-content">
-        <sup>1</sup> $0.5/10K requests after limit reach.
-      </p>
-      <p className="mt-1 text-tremor-label text-tremor-content dark:text-dark-tremor-content">
-        <sup>2</sup> No credit card required for registration.
-      </p>
+
     </>
   );
 };
