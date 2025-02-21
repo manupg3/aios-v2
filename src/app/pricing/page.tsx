@@ -169,7 +169,7 @@ export default function Pricing() {
             htmlFor="switch"
             className="text-base font-medium sm:text-sm dark:text-gray-400"
           >
-            Sitios Simples - Empresariales - E-Commerce
+            Soluciones Web
           </Label>
           <Switch
             id="switch"
@@ -184,7 +184,7 @@ export default function Pricing() {
             htmlFor="switch"
             className="text-base font-medium sm:text-sm dark:text-gray-400"
           >
-           Integracion IA - Mantenimiento Integral
+           IA - Mantenimiento
           </Label>
         </div>
         <div className={`grid grid-cols-1 gap-x-14 gap-y-8 ${billingFrequency === "monthly" ? "lg:grid-cols-3" : "lg:grid-cols-2"}`}>
