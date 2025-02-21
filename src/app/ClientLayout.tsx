@@ -5,6 +5,7 @@ import { Navigation } from '@/components/ui/Navbar';
 import Footer from '@/components/ui/Footer';
 import { ThemeProvider } from 'next-themes';
 import { Modal } from '@/components/ui/ModalLayout';
+import FormCotizacion from '@/components/ui/formQuotes';
 
 export function ClientLayout({ children }: { children: React.ReactNode }) {
   const [modalOpen, setModalOpen] = useState(false);
@@ -17,7 +18,8 @@ export function ClientLayout({ children }: { children: React.ReactNode }) {
       <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
         <h2 className="text-xl font-semibold">Cotizar Solución</h2>
         <p className="mt-2 text-gray-600">Complete el formulario para obtener una cotización.</p>
-        {/* Agrega tu formulario o componente aquí */}
+        <FormCotizacion />
+ 
       </Modal>
     </ThemeProvider>
   );
