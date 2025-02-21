@@ -129,7 +129,6 @@ export default function FormCotizacion() {
                 <SelectItem value="250+">250+</SelectItem>
               </Select>
             </div>
-            <Divider className="col-span-full" />
             <div className="col-span-full">
               <RadioGroup
                 value={selectedWorkspace}
