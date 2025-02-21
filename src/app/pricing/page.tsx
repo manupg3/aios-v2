@@ -55,7 +55,7 @@ const monthlyPlans: Plan[] = [
   {
     name: "Empresarial",
     price: "Cotizar",
-    description: "For small teams and start-ups that need a scalable database.",
+    description: "Para todo tipo de empresa e industria, nos especializamos en renovar y optmizar tu presencia digital.",
     capacity: ["Hasta 20 usuarios, 3 admins", "5 Soluciones en la nube"],
     features: [
       "Hosting gratis",
@@ -74,7 +74,7 @@ const monthlyPlans: Plan[] = [
     name: "E-Commerce",
     price: "Cotizar",
     description:
-      "For larger teams that need more advanced controls and features.",
+      "Potencia tus ventas digitalizando tu negocio, con nuestros diseños y herramientas creados para vender mas.",
     capacity: ["Usuarios ilimitados, 5 admins", "10 Soluciones en la nube"],
     features: [
       "Hosting gratis",
@@ -88,7 +88,7 @@ const monthlyPlans: Plan[] = [
     ],
     isStarter: false,
     isRecommended: true,
-    buttonText: "Start 14-day trial",
+    buttonText: "Comenzar ahora",
     buttonLink: "#",
   },
 ]
