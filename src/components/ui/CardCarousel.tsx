@@ -45,12 +45,7 @@ const CardCarousel = () => {
   const cardWidth = `${100 / totalCards}%`
 
   return (
-    <div className="relative w-full overflow-hidden">
-      {/* Degradados a los costados */}
-      <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white to-transparent pointer-events-none z-10"></div>
-      <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-white to-transparent pointer-events-none z-10"></div>
-
-      {/* Carrusel con animación */}
+    <div className="relative overflow-hidden w-full">
       <div
         className="flex animate-scroll"
         style={{ width: containerWidth }}
@@ -58,10 +53,22 @@ const CardCarousel = () => {
         {extendedCards.map((card, index) => (
           <div
             key={index}
-            className="p-2"
+            className="relative p-2"
             style={{ width: cardWidth }}
           >
-            <div className="bg-white rounded-lg p-6 shadow-md">
+            {/* Gradientes en los laterales */}
+            <div className="absolute inset-0 pointer-events-none">
+              <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white to-transparent"></div>
+              <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-white to-transparent"></div>
+            </div>
+
+            {/* Contenedor de la tarjeta */}
+            <div className="relative cards-asesorias bg-white rounded-lg p-6 shadow-md">
+              {/* Badge “Active” */}
+              <span className="absolute top-2 right-2 bg-green-500 text-white text-xs font-bold py-1 px-2 rounded-full">
+                Active
+              </span>
+
               <div className="text-4xl mb-4">{card.icon}</div>
               <h3 className="text-xl font-bold mb-2">{card.title}</h3>
               <p className="text-gray-600">{card.description}</p>
