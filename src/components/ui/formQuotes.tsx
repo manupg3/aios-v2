@@ -99,19 +99,16 @@ export default function FormCotizacion() {
                 htmlFor="size"
                 className="text-tremor-default font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong"
               >
-                Company size (employees)
+                Tamaño (empleados)
               </label>
-              <Select
-                id="size"
-                name="size"
+              <TextInput
+                type="text"
+                id="company-size"
+                name="company-size"
+                autoComplete="organization"
+                placeholder="Company size."
                 className="mt-2"
-                enableClear={false}
-              >
-                <SelectItem value="1-9">1-9</SelectItem>
-                <SelectItem value="10-50">10-50</SelectItem>
-                <SelectItem value="50-250">50-250</SelectItem>
-                <SelectItem value="250+">250+</SelectItem>
-              </Select>
+              />
             </div>
             <div className="col-span-full">
               <RadioGroup
