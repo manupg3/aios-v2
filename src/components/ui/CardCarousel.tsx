@@ -1,36 +1,41 @@
 'use client'
 import React from "react"
+import {
+  RiOpenaiFill,
+  RiFile3Fill,
+  RiGeminiFill,
+  RiGlobalFill,
+  RiRocketFill
+} from "@remixicon/react"
 
 const CardCarousel = () => {
   const cards = [
     {
-      icon: "🌟",
+      icon: <RiFile3Fill />,
       title: "Asesoria General",
       description: "Optimiza tus procesos web con estrategias personalizadas."
     },
     {
-      icon: "🌍",
+      icon: <RiGlobalFill />,
       title: "Asesoria Especifica",
       description: "Mejora aspectos clave de tu sitio web con recomendaciones específicas."
     },
     {
-      icon: "🛠️",
+      icon: <RiGeminiFill />,
       title: "Asesoria IA General",
       description: "Aplica IA para mejorar tu negocio, optimizar procesos, etc."
     },
     {
-      icon: "📈",
+      icon: <RiOpenaiFill />,
       title: "Asesoria IA Especifica",
       description: "Resuelve problemas web con soluciones de IA."
     },
     {
-      icon: "🚀",
+      icon: <RiRocketFill />,
       title: "Asesoria Integral",
       description: "Combina estrategia y tecnología para impulsar tu proyecto web."
     }
   ];
-  
-  
 
   const visibleCards = 3
   // Duplicamos las cards para lograr el efecto infinito.
@@ -45,12 +50,12 @@ const CardCarousel = () => {
 
   return (
     <div className="overflow-hidden">
-      <div 
-        className="flex animate-scroll" 
+      <div
+        className="flex animate-scroll"
         style={{ width: containerWidth }}
       >
         {extendedCards.map((card, index) => (
-          <div 
+          <div
             key={index}
             className="p-2"
             style={{ width: cardWidth }}
