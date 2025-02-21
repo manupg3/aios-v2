@@ -28,53 +28,6 @@ const workspaces = [
   },
 ];
 
-interface PackageDetailsProps {
-  workspaceId: number;
-}
-
-const PackageDetails: React.FC<PackageDetailsProps> = ({ workspaceId }) => {
-  const features: { [key: number]: string[] } = {
-    1: ['Community support', '50 GB storage', 'Integrated application builder'],
-    2: [
-      'Slack Connect support',
-      '100 GB storage',
-      'Managed workspace',
-      'Integrated application builder',
-    ],
-    3: [
-      'Priority Support with Slack Connect',
-      'Unlimited storage',
-      'Integrated application builder',
-      'Volume discount',
-    ],
-  };
-
-  const getFeatures = (workspaceId: number) => {
-    return features[workspaceId] || 'No Features available';
-  };
-
-  return (
-    <>
-      <p className="mt-6 text-tremor-default font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong">
-        Includes:
-      </p>
-      <ul role="list" className="mt-2 space-y-2">
-        {getFeatures(workspaceId).map((feature: string, idx: number) => (
-          <li key={idx} className="flex items-center space-x-2">
-            <RiCheckLine
-              className="size-5 text-tremor-content dark:text-dark-tremor-content"
-              aria-hidden={true}
-            />
-            <span className="text-tremor-default text-tremor-content-strong dark:text-dark-tremor-content-strong">
-              {feature}
-            </span>
-          </li>
-        ))}
-      </ul>
-
-    </>
-  );
-};
 
 export default function FormCotizacion() {
   const [selectedWorkspace, setSelectedWorkspace] = useState(workspaces[0]);
@@ -240,7 +193,6 @@ export default function FormCotizacion() {
                     </RadioGroup.Option>
                   ))}
                 </div>
-                <PackageDetails workspaceId={selectedWorkspace.id} />
               </RadioGroup>
             </div>
           </div>
