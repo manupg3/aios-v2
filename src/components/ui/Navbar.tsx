@@ -8,13 +8,14 @@ import useScroll from '@/lib/use-scroll';
 import { DatabaseLogo } from '../../../DatabaseLogo';
 import { Button } from '../Button';
 import { ArrowAnimated } from '@/components/ui/ArrowAnimated';
-import { Modal } from './ModalLayout';
-import FormCotizacion from './formQuotes';
 
-export function Navigation() {
+interface NavigationProps {
+  setModalOpen: (open: boolean) => void;
+}
+
+export function Navigation({ setModalOpen }: NavigationProps) {
   const scrolled = useScroll(15);
   const [open, setOpen] = React.useState(false);
-  const [modalOpen, setModalOpen] = React.useState(false); // State for modal
 
   React.useEffect(() => {
     const mediaQuery: MediaQueryList = window.matchMedia('(min-width: 768px)');
@@ -87,11 +88,6 @@ export function Navigation() {
           </ul>
         </nav>
       </div>
-      <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
-        {/* Place your form or component here */}
-        <h2 className="text-xl font-semibold">Cotizar Solución</h2>
-        < FormCotizacion />
-      </Modal>
     </header>
   );
 }

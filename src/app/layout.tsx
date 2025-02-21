@@ -5,6 +5,8 @@ import { ThemeProvider } from "next-themes"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { siteConfig } from "./siteConfig"
+import { Modal } from "@/components/ui/ModalLayout"
+import { useState } from "react"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -48,6 +50,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body
@@ -58,9 +62,16 @@ export default function RootLayout({
           defaultTheme="system"
           disableTransitionOnChange
         >
-          <Navigation />
+          <Navigation setModalOpen={setModalOpen} />
           {children}
           <Footer />
+          <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
+            {/* Coloca aquí el contenido del modal */}
+            <h2 className="text-xl font-semibold">Cotizar Solución</h2>
+            <p className="mt-2 text-gray-600">Complete el formulario para obtener una cotización.</p>
+            {/* Agrega tu formulario o componente aquí */}
+          </Modal>
+
         </ThemeProvider>
       </body>
     </html>
