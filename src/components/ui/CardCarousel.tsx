@@ -13,27 +13,47 @@ const CardCarousel = () => {
     {
       icon: <RiFile3Fill />,
       title: "Asesoria General",
-      description: "Optimiza tus procesos web con estrategias personalizadas."
+      description: "Optimiza tus procesos web con estrategias personalizadas.",
+      badge: 
+      <span className="absolute top-6 right-6 rounded bg-emerald-100 px-1.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-400/10 dark:text-emerald-400">
+                      active
+                    </span>,
     },
     {
       icon: <RiGlobalFill />,
       title: "Asesoria Especifica",
-      description: "Mejora aspectos clave de tu sitio web con recomendaciones específicas."
+      description: "Mejora aspectos clave de tu sitio web con recomendaciones específicas.",
+      badge: 
+      <span className="absolute top-6 right-6 rounded bg-emerald-100 px-1.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-400/10 dark:text-emerald-400">
+                      active
+                    </span>,
     },
     {
       icon: <RiGeminiFill />,
       title: "Asesoria IA General",
-      description: "Aplica IA para mejorar tu negocio, optimizar procesos, etc."
+      description: "Aplica IA para mejorar tu negocio, optimizar procesos, etc.",
+      badge: 
+      <span className="absolute top-6 right-6 rounded bg-emerald-100 px-1.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-400/10 dark:text-emerald-400">
+                      active
+                    </span>,
     },
     {
       icon: <RiOpenaiFill />,
       title: "Asesoria IA Especifica",
-      description: "Resuelve problemas web con soluciones de IA."
+      description: "Resuelve problemas web con soluciones de IA.",
+      badge: 
+      <span className="absolute top-6 right-6 rounded bg-emerald-100 px-1.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-400/10 dark:text-emerald-400">
+                      active
+                    </span>,
     },
     {
       icon: <RiRocketFill />,
       title: "Asesoria Integral",
-      description: "Combina estrategia y tecnología para impulsar tu proyecto web."
+      description: "Combina estrategia y tecnología para impulsar tu proyecto web.",
+      badge: 
+      <span className="absolute top-6 right-6 rounded bg-emerald-100 px-1.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-400/10 dark:text-emerald-400">
+                      active
+                    </span>,
     }
   ];
 
@@ -64,6 +84,7 @@ const CardCarousel = () => {
             <div className="bg-white rounded-lg p-6 shadow-md">
            
               <div className="text-4xl mb-4">{card.icon}</div>
+              <div>{card.badge}</div>
               <h3 className="text-xl font-bold mb-2">{card.title}</h3>
               <p className="text-gray-600">{card.description}</p>
             </div>
