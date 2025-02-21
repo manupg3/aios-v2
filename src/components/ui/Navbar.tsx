@@ -1,4 +1,3 @@
-'use client'
 import React from 'react';
 import { RiCloseLine, RiMenuLine } from '@remixicon/react';
 import Link from 'next/link';

@@ -2,16 +2,16 @@
 
 import React, { useState } from 'react';
 import { Navigation } from '@/components/ui/Navbar';
+import { Modal } from '@/components/ui/ModalLayout';
 import Footer from '@/components/ui/Footer';
 import { ThemeProvider } from 'next-themes';
-import { Modal } from '@/components/ui/ModalLayout';
 
 export function ClientLayout({ children }: { children: React.ReactNode }) {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <ThemeProvider attribute="class" defaultTheme="system" disableTransitionOnChange>
-      <Navigation setModalOpen={setModalOpen} />
+      <Navigation setModalOpen={setModalOpen} /> {/* Pasa setModalOpen aquí */}
       {children}
       <Footer />
       <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
