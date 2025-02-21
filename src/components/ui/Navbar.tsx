@@ -78,8 +78,8 @@ export function Navigation() {
             </div>
           </nav>
           <Button className="hidden h-10 font-semibold md:flex">
-                                      <ArrowAnimated />
-          
+            Cotizar solucion     
+          <ArrowAnimated />      
           </Button>
           <div className="flex gap-x-2 md:hidden">
             <Button>Cotizar solucion</Button>
