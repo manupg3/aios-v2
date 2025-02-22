@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { RadioGroup } from '@headlessui/react';
 import { RiCheckboxCircleFill } from '@remixicon/react';
 import { TextInput } from '@tremor/react';
+import ContactSpecialist from './ContactSpecialist';
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
@@ -178,7 +179,9 @@ export default function FormCotizacion() {
             </div>
           </div>
           <div className='container-contact-specialist'>
-              ¿No estas seguro? <a href='#' className='font-semibold text-indigo-600 hover:text-indigo-500 dark:text-indigo-500 dark:hover:text-indigo-400'>Contacta a un especialista</a>  
+              ¿No estas seguro?
+              <ContactSpecialist />
+               <a href='#' className='font-semibold text-indigo-600 hover:text-indigo-500 dark:text-indigo-500 dark:hover:text-indigo-400'>Contacta a un especialista</a>  
            </div>
           
           <div className="flex items-center justify-end space-x-4">
