@@ -129,7 +129,7 @@ export default function FormCotizacion() {
                         classNames(
                           active
                             ? 'border-tremor-brand-subtle ring-2 ring-tremor-brand-muted dark:border-dark-tremor-brand-subtle dark:ring-dark-tremor-brand-muted'
-                            : 'border-tremor-border dark:border-dark-tremor-border',
+                            : 'border-tremor-border dark:border-dark-tremor-border radio-buttons',
                           'relative flex cursor-pointer rounded-tremor-default border bg-tremor-background p-4 transition dark:bg-dark-tremor-background',
                         )
                       }
@@ -172,7 +172,7 @@ export default function FormCotizacion() {
               </RadioGroup>
             </div>
           </div>
-          <div className="col-span-full">
+          <div className="col-span-full mt-2">
                 <label
                   htmlFor="workspace-description"
                   className="text-tremor-default font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong"

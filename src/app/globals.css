@@ -368,7 +368,11 @@ a {
 .container-contact-specialist {
   font-size: 13px;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 15px;
+  margin-bottom:15px;
+}
+.radio-buttons{
+  min-width: 200px;
 }
 @media (max-width:767px)
 {
