@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { RadioGroup } from '@headlessui/react';
 import { RiCheckboxCircleFill } from '@remixicon/react';
-import { TextInput } from '@tremor/react';
+import { TextInput, Textarea } from '@tremor/react';
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
@@ -177,9 +177,26 @@ export default function FormCotizacion() {
               </RadioGroup>
             </div>
           </div>
+          <div className="col-span-full">
+                <label
+                  htmlFor="workspace-description"
+                  className="text-tremor-default font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong"
+                >
+                  Breve descripcion
+                </label>
+                <Textarea
+                  id="workspace-description"
+                  name="workspace-description"
+                  className="mt-2"
+                  rows={4}
+                />
+                <p className="mt-2 text-tremor-label text-tremor-content dark:text-dark-tremor-content">
+                  Note: description provided will not be displayed externally.
+                </p>
+              </div>
+
           <div className='container-contact-specialist'>
-            ¿No estas seguro?
-            <a
+            ¿No estas seguro? <a
                 href='https://calendly.com/solucion-aios/30min'
                 target='_blank'
                 rel='noopener noreferrer'
