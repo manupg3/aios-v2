@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { RadioGroup } from '@headlessui/react';
 import { RiCheckboxCircleFill } from '@remixicon/react';
-import { Divider, Select, SelectItem, TextInput } from '@tremor/react';
+import { Divider,  TextInput } from '@tremor/react';
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
