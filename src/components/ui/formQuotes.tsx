@@ -36,7 +36,7 @@ export default function FormCotizacion() {
     <div className="obfuscate">
       <div className="sm:mx-auto sm:max-w-2xl">
         <h3 className="mt-6 text-tremor-title font-semibold text-tremor-content-strong dark:text-dark-tremor-content-strong">
-          Necesitas un socio. <br/> Estamos aqui para ayudar.
+          Necesitas un socio. Estamos aqui para ayudar.
 
         </h3>
         <p className="mt-1 text-tremor-default leading-6 text-tremor-content dark:text-dark-tremor-content">
