@@ -178,8 +178,8 @@ export default function FormCotizacion() {
             </div>
           </div>
           <div className='container-contact-specialist'>
-              ¿No estas seguro? <a href=''>Contacta a un especialista</a>  
-          </div>
+              ¿No estas seguro? <a href='#' className='font-semibold text-indigo-600 hover:text-indigo-500 dark:text-indigo-500 dark:hover:text-indigo-400'>Contacta a un especialista</a>  
+           </div>
           
           <div className="flex items-center justify-end space-x-4">
             <button

@@ -365,7 +365,11 @@ a {
 *:hover > .anchor-link {
   @apply visible;
 }
-
+.container-contact-specialist {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 20px;
+}
 @media (max-width:767px)
 {
   .modal-cotizacion{
