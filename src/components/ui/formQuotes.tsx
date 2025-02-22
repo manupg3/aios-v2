@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { RadioGroup } from '@headlessui/react';
 import { RiCheckboxCircleFill } from '@remixicon/react';
-import { Divider,  TextInput } from '@tremor/react';
+import { TextInput } from '@tremor/react';
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
@@ -10,21 +10,21 @@ function classNames(...classes: string[]) {
 const workspaces = [
   {
     id: 1,
-    title: 'Starter',
-    description: 'Up to 10,000 requests per day.',
-    users: 'Free',
+    title: 'Solucion web',
+    description: 'Digitaliza tu marca.',
+    users: 'a cotizar',
   },
   {
     id: 2,
-    title: 'Premium',
-    description: '500,000 requests per day¹',
-    users: '$900/month²',
+    title: 'Solucion IA',
+    description: 'Integraciones a medida',
+    users: 'a cotizar',
   },
   {
     id: 3,
-    title: 'Enterprise',
-    description: 'Based on your specific needs',
-    users: 'Custom',
+    title: 'Mantenimiento',
+    description: 'Siempre actualizado y seguro',
+    users: 'a cotizar',
   },
 ];
 
@@ -177,7 +177,10 @@ export default function FormCotizacion() {
               </RadioGroup>
             </div>
           </div>
-          <Divider />
+          <div className='container-contact-specialist'>
+              ¿No estas seguro? <a href=''>Contacta a un especialista</a>  
+          </div>
+          
           <div className="flex items-center justify-end space-x-4">
             <button
               type="button"
