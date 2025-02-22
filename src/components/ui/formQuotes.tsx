@@ -36,11 +36,12 @@ export default function FormCotizacion() {
     <div className="obfuscate">
       <div className="sm:mx-auto sm:max-w-2xl">
         <h3 className="mt-6 text-tremor-title font-semibold text-tremor-content-strong dark:text-dark-tremor-content-strong">
-          Apply for early access
+          Necesitas un socio. <br/> Estamos aqui para ayudar.
+
         </h3>
         <p className="mt-1 text-tremor-default leading-6 text-tremor-content dark:text-dark-tremor-content">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+        Antes de comenzar, nos gustaría comprender mejor sus necesidades. <br/>
+        Revisaremos su solicitud y nos pondremos en contacto a la brevedad.
         </p>
         <form action="#" method="post" className="mt-8">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-6">
@@ -49,7 +50,7 @@ export default function FormCotizacion() {
                 htmlFor="first-name"
                 className="text-tremor-default font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong"
               >
-                First name<span className="text-red-500">*</span>
+                Nombre completo<span className="text-red-500">*</span>
               </label>
               <TextInput
                 type="text"
@@ -57,7 +58,7 @@ export default function FormCotizacion() {
                 name="first-name"
                 autoComplete="given-name"
                 required
-                placeholder="Emma"
+                placeholder="Nombre completo"
                 className="mt-2"
               />
             </div>
@@ -66,7 +67,7 @@ export default function FormCotizacion() {
                 htmlFor="email"
                 className="text-tremor-default font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong"
               >
-                Work email<span className="text-red-500">*</span>
+                Email<span className="text-red-500">*</span>
               </label>
               <TextInput
                 type="email"
@@ -74,7 +75,7 @@ export default function FormCotizacion() {
                 name="email"
                 autoComplete="email"
                 required
-                placeholder="emma@company.com"
+                placeholder="email@ejemplo.com"
                 className="mt-2"
               />
             </div>
@@ -83,14 +84,14 @@ export default function FormCotizacion() {
                 htmlFor="company"
                 className="text-tremor-default font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong"
               >
-                Company
+                Empresa
               </label>
               <TextInput
                 type="text"
                 id="company"
                 name="company"
                 autoComplete="organization"
-                placeholder="Company, Inc."
+                placeholder="Nombre empresa."
                 className="mt-2"
               />
             </div>
@@ -106,7 +107,7 @@ export default function FormCotizacion() {
                 id="company-size"
                 name="company-size"
                 autoComplete="organization"
-                placeholder="Company size."
+                placeholder="0-10, 10-50, 50-100, +100."
                 className="mt-2"
               />
             </div>
@@ -117,7 +118,7 @@ export default function FormCotizacion() {
                 name="platform"
               >
                 <RadioGroup.Label className="text-tremor-default font-semibold text-tremor-content-strong dark:text-dark-tremor-content-strong">
-                  Select a workspace package
+                  Elige la solucion para ti
                 </RadioGroup.Label>
                 <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3">
                   {workspaces.map((item) => (
