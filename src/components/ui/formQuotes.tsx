@@ -144,13 +144,8 @@ export default function FormCotizacion() {
                               >
                                 {item.title}
                               </RadioGroup.Label>
-                              <p className="mt-1 text-tremor-default text-tremor-content dark:text-dark-tremor-content">
-                                {item.description}
-                              </p>
+                              
                             </div>
-                            <span className="mt-6 text-tremor-default font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong">
-                              {item.users}
-                            </span>
                           </div>
                           <RiCheckboxCircleFill
                             className={classNames(
@@ -188,10 +183,11 @@ export default function FormCotizacion() {
                   id="workspace-description"
                   name="workspace-description"
                   className="mt-2"
+                  placeholder='Describe brevemente el proyecto/solucion que necesitas.'
                   rows={4}
                 />
                 <p className="mt-2 text-tremor-label text-tremor-content dark:text-dark-tremor-content">
-                  Note: description provided will not be displayed externally.
+                  En base a esta informacion se procedera a la cotizacion, evaluacion.
                 </p>
               </div>
 
