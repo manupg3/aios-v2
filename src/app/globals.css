@@ -15,6 +15,7 @@ section#calendly-inline{
   height: 330px;
   padding-inline: 10px;
   border-radius: 10px;
+  padding-bottom: 50px;
 }
 .description-contact-specialist {
   margin-top: 18px;

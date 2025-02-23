@@ -351,7 +351,7 @@ export default function Pricing() {
         className="mx-auto  max-w-xl  lg:max-w-6xl"
       >
          <div className='mt-14 text-center'>
-          <h1 className='text-center mt-4 inline-block bg-gradient-to-br from-gray-900 
+          <h1 className='text-center mt-8 inline-block bg-gradient-to-br from-gray-900 
           to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent 
           sm:text-6xl md:text-5xl dark:from-gray-50 dark:to-gray-300'>¿Necesitas ayuda para definir tu solucion?</h1>
           <p className='description-contact-specialist text-center mt-6 max-w-full text-lg text-gray-700 dark:text-gray-400'>Reserva una reunion con un especialista para establecer la mejor solucion para tu marca</p>
