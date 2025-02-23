@@ -277,7 +277,7 @@ export default function Pricing() {
                       </Button>
                     ) : (
                       <Button asChild className="group">
-                        <div onClick={() => handleButtonClick(plan.name === "Mantenimiento" ? 3 : plan.name === "Soluciones IA" ? 2 : 1)}>
+                      <div onClick={() => handleButtonClick(plan.name === "Mantenimiento" ? 3 : plan.name === "Soluciones IA" ? 2 : 1)}>
                           {plan.buttonText}
                           <ArrowAnimated />
                         </div>
