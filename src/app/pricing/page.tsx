@@ -103,7 +103,7 @@ const annuallyPlans: Plan[] = [
       "Migración a nuevas tecnologías",
       "Contratación mensual y anual",
     ],
-    isStarter: true,
+    isStarter: false,
     isRecommended: false,
     buttonText: "Comenzar ahora",
     buttonLink: "#",
