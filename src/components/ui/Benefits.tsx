@@ -5,7 +5,7 @@ const benefits = [
       "Realizamos auditorías completas de sitios web.",
   },
   {
-    title: "Consultoría en SEO y Posicionamiento",
+    title: "SEO y Posicionamiento",
     description:
       "Ofrecemos asesoría especializada en SEO.",
   },
@@ -15,22 +15,22 @@ const benefits = [
       "Asesoría integral en E-Commerce.",
   },
   {
-    title: "Consultoría en Implementación de IA",
+    title: "Implementación de IA",
     description:
       "Ayudamos a identificar y adoptar soluciones de IA.",
   },
   {
-    title: "Optimización de Procesos con IA",
+    title: "Optimización de Procesos - IA",
     description:
       "Optimización de sus procesos con IA.",
   },
   {
-    title: "Estrategias de Personalización con IA",
+    title: "Personalización con IA",
     description:
       "IA para mejorar la experiencia del cliente.",
   },
   {
-    title: "Consultoría en Chatbots y Asistentes Virtuales",
+    title: "Chatbots y Asistentes Virtuales",
     description: "Asesoría en la implementación de chatbots y asistentes virtuales.",
   },
 ]
