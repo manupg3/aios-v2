@@ -2,36 +2,36 @@ const benefits = [
   {
     title: "Auditoría y Mejora de Sitios Web",
     description:
-      "Realizamos auditorías completas de sitios web para identificar áreas de mejora en diseño, usabilidad y rendimiento.",
+      "Realizamos auditorías completas de sitios web.",
   },
   {
     title: "Consultoría en SEO y Posicionamiento",
     description:
-      "Ofrecemos asesoría especializada en SEO para mejorar el posicionamiento de tu sitio web en los motores de búsqueda.",
+      "Ofrecemos asesoría especializada en SEO.",
   },
   {
     title: "Asesoría en E-commerce",
     description:
-      "Para negocios en línea, proporcionamos asesoría integral en e-commerce, desde la configuración de la tienda hasta la optimización de procesos de venta.",
+      "Asesoría integral en E-Commerce.",
   },
   {
     title: "Consultoría en Implementación de IA",
     description:
-      "Nuestra asesoría en IA te ayuda a identificar y adoptar las soluciones de inteligencia artificial más adecuadas para tu negocio.",
+      "Ayudamos a identificar y adoptar soluciones de IA.",
   },
   {
     title: "Optimización de Procesos con IA",
     description:
-      "Asesoramos a las empresas en la optimización de sus procesos utilizando IA.",
+      "Optimización de sus procesos con IA.",
   },
   {
     title: "Estrategias de Personalización con IA",
     description:
-      "Ofrecemos consultoría en estrategias de personalización utilizando IA para mejorar la experiencia del cliente.",
+      "IA para mejorar la experiencia del cliente.",
   },
   {
     title: "Consultoría en Chatbots y Asistentes Virtuales",
-    description: "Proporcionamos asesoría en la implementación de chatbots y asistentes virtuales para mejorar la interacción con los clientes.",
+    description: "Asesoría en la implementación de chatbots y asistentes virtuales.",
   },
 ]
 
