@@ -349,8 +349,11 @@ export default function Pricing() {
 
       <section
         id="calendly-inline"
-        className="mx-auto mt-20 max-w-xl sm:mt-32 lg:max-w-6xl"
+        className="mx-auto  max-w-xl  lg:max-w-6xl"
       >
+        <div><h2>¿Necesitas ayuda para definir tu solucion?</h2>
+        <p>Reserva una reunion con un especialista para establecer la mejor solucion para tu marca</p>
+        </div>
    <div
         className="calendly-inline-widget"
         data-url="https://calendly.com/solucion-aios/30min"
