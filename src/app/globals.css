@@ -10,6 +10,18 @@
   font-named-instance: "Regular";
   src: url("/fonts/NanumPenScript.woff2") format("woff2");
 }
+.description-contact-specialist{
+  margin-top: 18px;
+  margin-bottom: 35px !important;
+}
+.contacta-a-un-especialista{
+  border: 1px solid;
+  padding-inline: 20px;
+  padding-block: 12px;
+  border-radius: 6px;
+  background: rgb(79 70 229 / var(--tw-text-opacity, 1));
+  color: #fff;
+}
 header{
   padding-bottom: 56px !important;
 }

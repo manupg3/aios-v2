@@ -350,15 +350,15 @@ export default function Pricing() {
         id="calendly-inline"
         className="mx-auto  max-w-xl  lg:max-w-6xl"
       >
-         <div>
+         <div className='mt-14'>
           <h1 className='text-center mt-24 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300'>¿Necesitas ayuda para definir tu solucion?</h1>
-          <p className='text-center mt-6 max-w-full text-lg text-gray-700 dark:text-gray-400'>Reserva una reunion con un especialista para establecer la mejor solucion para tu marca</p>
+          <p className='description-contact-specialist text-center mt-6 max-w-full text-lg text-gray-700 dark:text-gray-400'>Reserva una reunion con un especialista para establecer la mejor solucion para tu marca</p>
         </div>
-        <div> <a
+        <div className='text-center'> <a
                 href='https://calendly.com/solucion-aios/30min'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='font-semibold text-indigo-600 hover:text-indigo-500 dark:text-indigo-500 dark:hover:text-indigo-400'
+                className='contacta-a-un-especialista font-semibold text-indigo-600 hover:text-indigo-500 dark:text-indigo-500 dark:hover:text-indigo-400'
             >
                 Contacta a un especialista
             </a></div>
