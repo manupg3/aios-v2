@@ -353,7 +353,7 @@ export default function Pricing() {
       >
    <div
         className="calendly-inline-widget"
-        data-url="https://calendly.com/solucion-aios"
+        data-url="https://calendly.com/solucion-aios/30min"
         style={{ minWidth: '320px', height: '700px' }}
       ></div>
       <Script
