@@ -1,22 +1,22 @@
-// Hero.tsx
 'use client';
 
 import { useState } from 'react';
 import { RiPlayCircleFill, RiCloseLine } from "@remixicon/react"
-import Link from "next/link"
 import { Button } from "../Button"
 import HeroImage from "./HeroImage"
 import StepsComponent from './steps';
+import FormCotizacion from './formQuotes';
 
 export default function Hero() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isNewModalOpen, setIsNewModalOpen] = useState(false); // Estado para el nuevo modal
 
   return (
     <section
       aria-labelledby="hero-title"
       className="mt-32 flex flex-col items-center justify-center text-center sm:mt-40 relative"
     >
-      {/* Modal */}
+      {/* Modal "¿Cómo Funciona?" */}
       {isModalOpen && (
         <div className="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center p-4">
           <div className="bg-white dark:bg-gray-900 rounded-xl p-6 max-w-2xl w-full relative max-h-[95vh] overflow-y-auto">
@@ -31,6 +31,25 @@ export default function Hero() {
         </div>
       )}
 
+      {/* Nuevo Modal "Comenzar Ahora" */}
+      {isNewModalOpen && (
+        <div className="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center p-4">
+          <div className="bg-white dark:bg-gray-900 rounded-xl p-6 max-w-2xl w-full relative max-h-[95vh] overflow-y-auto">
+            <button
+              onClick={() => setIsNewModalOpen(false)}
+              className="absolute top-4 right-4 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+            >
+              <RiCloseLine className="w-6 h-6 text-gray-700 dark:text-gray-300" />
+            </button>
+            <div>
+              
+              < FormCotizacion />
+              
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Contenido existente */}
       <div className="badge-hero-ia"><span>Soluciones potenciadas con IA</span></div>
       <h1
@@ -40,7 +59,7 @@ export default function Hero() {
       >
         Diseño y desarrollo web <br /> de vanguardia
       </h1>
-      
+
       <p
         className="mt-6 max-w-lg animate-slide-up-fade text-lg text-gray-700 dark:text-gray-400"
         style={{ animationDuration: "900ms" }}
@@ -52,10 +71,13 @@ export default function Hero() {
         className="mt-8 flex w-full animate-slide-up-fade flex-col justify-center gap-3 px-3 sm:flex-row"
         style={{ animationDuration: "1100ms" }}
       >
-        <Button className="h-10 font-semibold">
-          <Link href="#">Comenzar Ahora</Link>
+        <Button
+          className="h-10 font-semibold"
+          onClick={() => setIsNewModalOpen(true)} // Abrir el nuevo modal
+        >
+          Comenzar Ahora
         </Button>
-        
+
         <Button
           asChild
           variant="light"

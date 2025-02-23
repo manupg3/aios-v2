@@ -10,6 +10,9 @@
   font-named-instance: "Regular";
   src: url("/fonts/NanumPenScript.woff2") format("woff2");
 }
+header{
+  padding-bottom: 56px !important;
+}
 .cards-asesorias {
   box-shadow: 1px 1px 10px 1px #c2c2c24d;
   border: 1px solid #c2c2c263;
