@@ -1,42 +1,37 @@
 const benefits = [
   {
-    title: "Work in Zurich",
+    title: "Auditoría y Mejora de Sitios Web",
     description:
-      "We are in-person first and have a fantastic office in Zurich.",
+      "Realizamos auditorías completas de sitios web para identificar áreas de mejora en diseño, usabilidad y rendimiento.",
   },
   {
-    title: "Competitive salary & equity",
+    title: "Consultoría en SEO y Posicionamiento",
     description:
-      "We pay competitive salary and option packages to attract the very best talent.",
+      "Ofrecemos asesoría especializada en SEO para mejorar el posicionamiento de tu sitio web en los motores de búsqueda.",
   },
   {
-    title: "Health, dental, vision",
+    title: "Asesoría en E-commerce",
     description:
-      "Database pays all of your health, dental, and vision insurance.",
+      "Para negocios en línea, proporcionamos asesoría integral en e-commerce, desde la configuración de la tienda hasta la optimización de procesos de venta.",
   },
   {
-    title: "Yearly off-sites",
+    title: "Consultoría en Implementación de IA",
     description:
-      "We bring everyone together at an interesting location to discuss the big picture.",
+      "Nuestra asesoría en IA te ayuda a identificar y adoptar las soluciones de inteligencia artificial más adecuadas para tu negocio.",
   },
   {
-    title: "Book budget",
+    title: "Optimización de Procesos con IA",
     description:
-      "We provide every employee with a 350 dollar budget for books.",
+      "Asesoramos a las empresas en la optimización de sus procesos utilizando IA.",
   },
   {
-    title: "Tasty snacks",
+    title: "Estrategias de Personalización con IA",
     description:
-      "The fridge and pantry are stocked + free dinner catered every night (incl. weekends).",
+      "Ofrecemos consultoría en estrategias de personalización utilizando IA para mejorar la experiencia del cliente.",
   },
   {
-    title: "20 PTO days per year",
-    description: "Take time off to recharge and come back refreshed.",
-  },
-  {
-    title: "Spotify Premium",
-    description:
-      "We really have the best fringe benefits, even a Spotify subscription is included.",
+    title: "Consultoría en Chatbots y Asistentes Virtuales",
+    description: "Proporcionamos asesoría en la implementación de chatbots y asistentes virtuales para mejorar la interacción con los clientes.",
   },
 ]
 
