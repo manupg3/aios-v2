@@ -47,7 +47,7 @@ export default function Benefits() {
       <dl className="mt-8 grid grid-cols-4 gap-x-10 gap-y-8 sm:mt-12 sm:gap-y-10">
         {benefits.map((benefit, index) => (
           <div key={index} className="col-span-4 sm:col-span-2 lg:col-span-1">
-            <dt className="font-semibold text-gray-900 dark:text-gray-50">
+            <dt className="relative font-semibold text-gray-900 dark:text-gray-50">
               {benefit.title}
               <div className="absolute -left-2 top-1 h-4 w-0.5 rounded-full bg-blue-500" /> 
             </dt>

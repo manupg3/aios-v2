@@ -7,7 +7,7 @@ import { Label } from "@/components/Label"
 import { Switch } from "@/components/Switch"
 import { ArrowAnimated } from "@/components/ui/ArrowAnimated"
 import { Faqs } from "@/components/ui/Faqs"
-import Testimonial from "@/components/ui/Testimonial"
+import Script from 'next/script';
 import { RiCheckLine, RiCloudLine, RiUserLine, RiCloseLine } from "@remixicon/react"
 import React from "react"
 import { RadioGroup } from '@headlessui/react';
@@ -348,11 +348,18 @@ export default function Pricing() {
       )}
 
       <section
-        id="testimonial"
+        id="calendly-inline"
         className="mx-auto mt-20 max-w-xl sm:mt-32 lg:max-w-6xl"
-        aria-labelledby="testimonial"
       >
-        <Testimonial />
+   <div
+        className="calendly-inline-widget"
+        data-url="https://calendly.com/solucion-aios"
+        style={{ minWidth: '320px', height: '700px' }}
+      ></div>
+      <Script
+        src="https://assets.calendly.com/assets/external/widget.js"
+        strategy="lazyOnload"
+      />
       </section>
 
       <Faqs />
