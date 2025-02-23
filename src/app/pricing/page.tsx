@@ -7,7 +7,6 @@ import { Label } from "@/components/Label"
 import { Switch } from "@/components/Switch"
 import { ArrowAnimated } from "@/components/ui/ArrowAnimated"
 import { Faqs } from "@/components/ui/Faqs"
-import Script from 'next/script';
 import { RiCheckLine, RiCloudLine, RiUserLine, RiCloseLine } from "@remixicon/react"
 import React from "react"
 import { RadioGroup } from '@headlessui/react';
