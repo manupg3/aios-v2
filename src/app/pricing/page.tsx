@@ -351,8 +351,8 @@ export default function Pricing() {
         id="calendly-inline"
         className="mx-auto  max-w-xl  lg:max-w-6xl"
       >
-        <div><h2>¿Necesitas ayuda para definir tu solucion?</h2>
-        <p>Reserva una reunion con un especialista para establecer la mejor solucion para tu marca</p>
+        <div><h1 className='mt-6 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300'>¿Necesitas ayuda para definir tu solucion?</h1>
+        <p className='mt-6 max-w-2xl text-lg text-gray-700 dark:text-gray-400'>Reserva una reunion con un especialista para establecer la mejor solucion para tu marca</p>
         </div>
    <div
         className="calendly-inline-widget"
