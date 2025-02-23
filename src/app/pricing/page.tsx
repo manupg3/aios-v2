@@ -1,4 +1,6 @@
-"use client"
+'use client';
+
+import { useState } from 'react';
 import { Badge } from "@/components/Badge"
 import { Button } from "@/components/Button"
 import { Label } from "@/components/Label"
@@ -6,39 +8,37 @@ import { Switch } from "@/components/Switch"
 import { ArrowAnimated } from "@/components/ui/ArrowAnimated"
 import { Faqs } from "@/components/ui/Faqs"
 import Testimonial from "@/components/ui/Testimonial"
-import {
-  RiCheckLine,
-  RiCloudLine,
-  RiUserLine,
-} from "@remixicon/react"
+import { RiCheckLine, RiCloudLine, RiUserLine, RiCloseLine } from "@remixicon/react"
 import Link from "next/link"
 import React from "react"
+import { RadioGroup } from '@headlessui/react';
+import { RiCheckboxCircleFill } from '@remixicon/react';
+import { TextInput, Textarea } from '@tremor/react';
 
-type FixedPrice = string
+type FixedPrice = string;
 
 interface VariablePrice {
-  monthly: string
-  annually: string
+  monthly: string;
+  annually: string;
 }
 
 interface Plan {
-  name: string
-  price: FixedPrice | VariablePrice
-  description: string
-  capacity: string[]
-  features: string[]
-  isStarter: boolean
-  isRecommended: boolean
-  buttonText: string
-  buttonLink: string
+  name: string;
+  price: FixedPrice | VariablePrice;
+  description: string;
+  capacity: string[];
+  features: string[];
+  isStarter: boolean;
+  isRecommended: boolean;
+  buttonText: string;
+  buttonLink: string;
 }
 
 const monthlyPlans: Plan[] = [
   {
     name: "Simple",
     price: "Cotizar",
-    description:
-      "Una solución simple con todo lo que necesitas para digitalizar tu marca.",
+    description: "Una solución simple con todo lo que necesitas para digitalizar tu marca.",
     capacity: ["Hasta 3 usuarios, 1 admin", "1 solución en la nube"],
     features: [
       "Hosting gratis",
@@ -73,8 +73,7 @@ const monthlyPlans: Plan[] = [
   {
     name: "E-Commerce",
     price: "Cotizar",
-    description:
-      "Potencia tus ventas digitalizando tu negocio con nuestros diseños y herramientas.",
+    description: "Potencia tus ventas digitalizando tu negocio con nuestros diseños y herramientas.",
     capacity: ["Usuarios ilimitados, 5 admins", "10 Soluciones en la nube"],
     features: [
       "Hosting gratis",
@@ -91,14 +90,13 @@ const monthlyPlans: Plan[] = [
     buttonText: "Comenzar ahora",
     buttonLink: "#",
   },
-]
+];
 
 const annuallyPlans: Plan[] = [
   {
     name: "Mantenimiento",
     price: "Cotizar",
-    description:
-      "Ofrecemos mantenimiento integral para todo tipo de solución.",
+    description: "Ofrecemos mantenimiento integral para todo tipo de solución.",
     capacity: ["Múltiples plataformas", "Actualizaciones en la nube"],
     features: [
       "Actualizaciones continuas",
@@ -127,20 +125,51 @@ const annuallyPlans: Plan[] = [
     buttonText: "Comenzar ahora",
     buttonLink: "#",
   },
-]
+];
 
-const isVariablePrice = (
-  price: FixedPrice | VariablePrice,
-): price is VariablePrice => {
-  return (price as VariablePrice).monthly !== undefined
+const isVariablePrice = (price: FixedPrice | VariablePrice): price is VariablePrice => {
+  return (price as VariablePrice).monthly !== undefined;
+};
+
+const workspaces = [
+  {
+    id: 1,
+    title: 'Solucion web',
+    description: 'Digitaliza tu marca.',
+    users: 'a cotizar',
+  },
+  {
+    id: 2,
+    title: 'Solucion IA',
+    description: 'Integraciones a medida',
+    users: 'a cotizar',
+  },
+  {
+    id: 3,
+    title: 'Mantenimiento',
+    description: 'Siempre actualizado y seguro',
+    users: 'a cotizar',
+  },
+];
+
+function classNames(...classes: string[]) {
+  return classes.filter(Boolean).join(' ');
 }
 
 export default function Pricing() {
-  const [billingFrequency, setBillingFrequency] = React.useState<
-    "monthly" | "annually"
-  >("monthly")
+  const [billingFrequency, setBillingFrequency] = React.useState<"monthly" | "annually">("monthly");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedWorkspace, setSelectedWorkspace] = useState(workspaces[0]);
 
-  const plansToShow = billingFrequency === "monthly" ? monthlyPlans : annuallyPlans
+  const plansToShow = billingFrequency === "monthly" ? monthlyPlans : annuallyPlans;
+
+  const handleButtonClick = (workspaceId: number) => {
+    const workspace = workspaces.find(w => w.id === workspaceId);
+    if (workspace) {
+      setSelectedWorkspace(workspace);
+      setIsModalOpen(true);
+    }
+  };
 
   return (
     <div className="px-3">
@@ -242,17 +271,17 @@ export default function Pricing() {
                   <div className="mt-6">
                     {plan.isStarter ? (
                       <Button variant="secondary" asChild className="group">
-                        <Link href={plan.buttonLink}>
+                        <div onClick={() => handleButtonClick(1)}>
                           {plan.buttonText}
                           <ArrowAnimated />
-                        </Link>
+                        </div>
                       </Button>
                     ) : (
                       <Button asChild className="group">
-                        <Link href={plan.buttonLink}>
+                        <div onClick={() => handleButtonClick(plan.name === "Mantenimiento" ? 3 : plan.name === "Soluciones IA" ? 2 : 1)}>
                           {plan.buttonText}
                           <ArrowAnimated />
-                        </Link>
+                        </div>
                       </Button>
                     )}
                   </div>
@@ -305,6 +334,20 @@ export default function Pricing() {
         </div>
       </section>
 
+      {isModalOpen && (
+        <div className="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center p-4">
+          <div className="bg-white dark:bg-gray-900 rounded-xl p-6 max-w-2xl w-full relative max-h-[95vh] overflow-y-auto">
+            <button
+              onClick={() => setIsModalOpen(false)}
+              className="absolute top-4 right-4 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+            >
+              <RiCloseLine className="w-6 h-6 text-gray-700 dark:text-gray-300" />
+            </button>
+            <FormCotizacion selectedWorkspace={selectedWorkspace} setSelectedWorkspace={setSelectedWorkspace} />
+          </div>
+        </div>
+      )}
+
       <section
         id="testimonial"
         className="mx-auto mt-20 max-w-xl sm:mt-32 lg:max-w-6xl"
@@ -315,5 +358,186 @@ export default function Pricing() {
 
       <Faqs />
     </div>
-  )
+  );
+}
+
+function FormCotizacion({ selectedWorkspace, setSelectedWorkspace }: any) {
+  return (
+    <div className="obfuscate">
+      <div className="sm:mx-auto sm:max-w-2xl">
+        <h3 className="mt-6 text-tremor-title font-semibold text-tremor-content-strong dark:text-dark-tremor-content-strong">
+          Necesitas un socio. Estamos aqui para ayudar.
+        </h3>
+        <p className="mt-1 text-tremor-default leading-6 text-tremor-content dark:text-dark-tremor-content">
+          Antes de comenzar, nos gustaría comprender mejor sus necesidades. <br/>
+          Revisaremos su solicitud y nos pondremos en contacto a la brevedad.
+        </p>
+        <form action="#" method="post" className="mt-8">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-6">
+            <div className="col-span-full sm:col-span-3">
+              <label
+                htmlFor="first-name"
+                className="text-tremor-default font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong"
+              >
+                Nombre completo<span className="text-red-500">*</span>
+              </label>
+              <TextInput
+                type="text"
+                id="first-name"
+                name="first-name"
+                autoComplete="given-name"
+                required
+                placeholder="Nombre completo"
+                className="mt-2"
+              />
+            </div>
+            <div className="col-span-full sm:col-span-3">
+              <label
+                htmlFor="email"
+                className="text-tremor-default font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong"
+              >
+                Email<span className="text-red-500">*</span>
+              </label>
+              <TextInput
+                type="email"
+                id="email"
+                name="email"
+                autoComplete="email"
+                required
+                placeholder="email@ejemplo.com"
+                className="mt-2"
+              />
+            </div>
+            <div className="col-span-full sm:col-span-3">
+              <label
+                htmlFor="company"
+                className="text-tremor-default font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong"
+              >
+                Empresa
+              </label>
+              <TextInput
+                type="text"
+                id="company"
+                name="company"
+                autoComplete="organization"
+                placeholder="Nombre empresa."
+                className="mt-2"
+              />
+            </div>
+            <div className="col-span-full sm:col-span-3">
+              <label
+                htmlFor="size"
+                className="text-tremor-default font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong"
+              >
+                Tamaño (empleados)
+              </label>
+              <TextInput
+                type="text"
+                id="company-size"
+                name="company-size"
+                autoComplete="organization"
+                placeholder="0-10, 10-50, 50-100, +100."
+                className="mt-2"
+              />
+            </div>
+            <div className="col-span-full">
+              <RadioGroup
+                value={selectedWorkspace}
+                onChange={setSelectedWorkspace}
+                name="platform"
+              >
+                <RadioGroup.Label className="text-tremor-default font-semibold text-tremor-content-strong dark:text-dark-tremor-content-strong">
+                  Elige la solucion para ti
+                </RadioGroup.Label>
+                <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3">
+                  {workspaces.map((item) => (
+                    <RadioGroup.Option
+                      key={item.id}
+                      value={item}
+                      className={({ active }) =>
+                        classNames(
+                          active
+                            ? 'border-tremor-brand-subtle ring-2 ring-tremor-brand-muted dark:border-dark-tremor-brand-subtle dark:ring-dark-tremor-brand-muted'
+                            : 'border-tremor-border dark:border-dark-tremor-border radio-buttons',
+                          'relative flex cursor-pointer rounded-tremor-default border bg-tremor-background p-4 transition dark:bg-dark-tremor-background',
+                        )
+                      }
+                    >
+                      {({ checked, active }) => (
+                        <>
+                          <div className="flex w-full flex-col justify-between">
+                            <div>
+                              <RadioGroup.Label
+                                as="span"
+                                className="block text-tremor-default font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong"
+                              >
+                                {item.title}
+                              </RadioGroup.Label>
+                            </div>
+                          </div>
+                          <RiCheckboxCircleFill
+                            className={classNames(
+                              !checked ? 'invisible' : '',
+                              'size-5 shrink-0 text-tremor-brand dark:text-dark-tremor-brand',
+                            )}
+                            aria-hidden={true}
+                          />
+                          <span
+                            className={classNames(
+                              active ? 'border' : 'border-2',
+                              checked
+                                ? 'border-tremor-brand dark:border-dark-tremor-brand'
+                                : 'border-transparent',
+                              'pointer-events-none absolute -inset-px rounded-tremor-default',
+                            )}
+                            aria-hidden={true}
+                          />
+                        </>
+                      )}
+                    </RadioGroup.Option>
+                  ))}
+                </div>
+              </RadioGroup>
+            </div>
+          </div>
+          <div className="col-span-full mt-2">
+            <label
+              htmlFor="workspace-description"
+              className="text-tremor-default font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong"
+            >
+              Breve descripcion
+            </label>
+            <Textarea
+              id="workspace-description"
+              name="workspace-description"
+              className="mt-2"
+              placeholder='Describe brevemente el proyecto/solucion que necesitas.'
+              rows={4}
+            />
+            <p className="mt-2 text-tremor-label text-tremor-content dark:text-dark-tremor-content">
+              En base a esta informacion se procedera a la cotizacion, evaluacion.
+            </p>
+          </div>
+          <div className='container-contact-specialist'>
+            ¿No estas seguro? <a
+              href='https://calendly.com/solucion-aios/30min'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='font-semibold text-indigo-600 hover:text-indigo-500 dark:text-indigo-500 dark:hover:text-indigo-400'
+            >
+              Contacta a un especialista
+            </a>
+          </div>
+          <div className="flex items-center justify-end space-x-4">
+            <button
+              type="submit"
+              className="whitespace-nowrap rounded-tremor-default bg-tremor-brand px-4 py-2.5 text-tremor-default font-medium text-tremor-brand-inverted shadow-tremor-input hover:bg-tremor-brand-emphasis dark:bg-dark-tremor-brand dark:text-dark-tremor-brand-inverted dark:shadow-dark-tremor-input dark:hover:bg-dark-tremor-brand-emphasis"
+            >
+              Cotizar solucion
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
 }
