@@ -1,26 +1,30 @@
-'use client'
-import { useEffect } from 'react';
+// components/CursorTrail.js
+import { useEffect, useRef } from 'react';
 import styles from './CursorTrail.module.css';
 
 const CursorTrail = () => {
+  const lastTimeRef = useRef(0);
+
   useEffect(() => {
     const handleMouseMove = (e: any) => {
+      const now = Date.now();
+      // Solo crea una gota cada 50ms (ajustable)
+      if (now - lastTimeRef.current < 50) return;
+      lastTimeRef.current = now;
+
       const trail = document.createElement('div');
       trail.className = styles.trail;
       trail.style.left = `${e.pageX}px`;
       trail.style.top = `${e.pageY}px`;
       document.body.appendChild(trail);
 
-      // Eliminar el elemento después de 500ms
+      // Remover la gota al finalizar la animación (1.2s)
       setTimeout(() => {
         trail.remove();
-      }, 500);
+      }, 1200);
     };
 
-    // Agregar el listener del movimiento del mouse
     document.addEventListener('mousemove', handleMouseMove);
-
-    // Limpiar el listener cuando se desmonte el componente
     return () => {
       document.removeEventListener('mousemove', handleMouseMove);
     };

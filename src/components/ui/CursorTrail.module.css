@@ -1,23 +1,24 @@
 /* components/CursorTrail.module.css */
 .trail {
     position: absolute;
-    width: 30px;  /* Tamaño mayor para el efecto de gota */
+    width: 30px;
     height: 30px;
-    background: radial-gradient(circle, #a5b4fc 0%, rgba(165, 180, 252, 0) 70%);
-    opacity: 0.5;  /* Transparencia para que se vea sutil */
+    background: radial-gradient(circle, #dbeafe 0%, rgba(219,234,254,0) 70%);
+    opacity: 0.7;
     border-radius: 50%;
     pointer-events: none;
     transform: translate(-50%, -50%);
-    animation: waterRipple 1s forwards;
+    filter: blur(2px);
+    animation: waterRipple 1.2s forwards;
   }
   
   @keyframes waterRipple {
     0% {
       transform: translate(-50%, -50%) scale(0.8);
-      opacity: 0.6;
+      opacity: 0.7;
     }
     50% {
-      transform: translate(-50%, -50%) scale(1.5);
+      transform: translate(-50%, -50%) scale(1.8);
       opacity: 0.4;
     }
     100% {
