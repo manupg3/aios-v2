@@ -1,27 +1,26 @@
 import { RiArrowRightUpLine } from "@remixicon/react"
 import Link from "next/link"
-import ThemeSwitch from "../ThemeSwitch"
 import { DatabaseLogo } from "../../../DatabaseLogo"
 const navigation = {
   soluciones: [
-    { name: "Solucion web", href: "#", external: false },
-    { name: "Solucion IA", href: "/pricing", external: false },
-    { name: "Mantenimiento", href: "#", external: false },
+    { name: "Solucion web", href: "#", external: true },
+    { name: "Solucion IA", href: "/pricing", external: true },
+    { name: "Mantenimiento", href: "#", external: true },
   ],
   plantillas: [
-    { name: "Simples", href: "/pricing#faq-title", external: false },
+    { name: "Simples", href: "/pricing#faq-title", external: true },
     { name: "Empresariales", href: "#", external: true },
     { name: "E-Commerce", href: "#", external: true },
   ],
   Asesoramiento: [
-    { name: "General", href: "/about", external: false },
+    { name: "General", href: "/about", external: true },
     { name: "Especifico", href: "#", external: true },
-    { name: "IA", href: "#", external: false },
+    { name: "IA", href: "#", external: true },
   ],
   Planes: [
-    { name: "Sitios web", href: "#", external: false },
-    { name: "Soluciones IA", href: "#", external: false },
-    { name: "Mantenimiento", href: "#", external: false },
+    { name: "Sitios web", href: "#", external: true },
+    { name: "Soluciones IA", href: "#", external: true },
+    { name: "Mantenimiento", href: "#", external: true },
   ],
 }
 
@@ -36,9 +35,7 @@ export default function Footer() {
              Redefiniendo el desarrollo digital, aplicando solucones potenciadas con IA 
              para todos.
             </p>
-            <div className="flex space-x-6">
-              <ThemeSwitch />
-            </div>
+         
             <div></div>
           </div>
           <div className="mt-16 grid grid-cols-1 gap-14 sm:gap-8 md:grid-cols-2 xl:col-span-2 xl:mt-0">
