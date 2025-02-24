@@ -1,17 +1,20 @@
+/* components/CursorTrail.module.css */
 .trail {
     position: absolute;
-    width: 10px;
-    height: 10px;
-    background: rgba(0, 0, 0, 0.5);
+    width: 20px;             /* Más grande */
+    height: 20px;            /* Más grande */
+    background: #4f46e5;      /* Color personalizado */
+    opacity: 0.4;            /* Menor opacidad para que se note menos */
     border-radius: 50%;
     pointer-events: none;
     transform: translate(-50%, -50%);
-    animation: fadeOut 0.5s forwards;
+    animation: fadeOut 0.8s forwards;  /* Duración ajustada */
+    filter: blur(4px);       /* Efecto de difuminado */
   }
   
   @keyframes fadeOut {
     from {
-      opacity: 1;
+      opacity: 0.4;
       transform: translate(-50%, -50%) scale(1);
     }
     to {
