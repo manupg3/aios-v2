@@ -3,29 +3,25 @@ import Link from "next/link"
 import ThemeSwitch from "../ThemeSwitch"
 import { DatabaseLogo } from "../../../DatabaseLogo"
 const navigation = {
-  product: [
-    { name: "Enterprise", href: "#", external: false },
-    { name: "Pricing", href: "/pricing", external: false },
-    { name: "Docs", href: "#", external: false },
-    { name: "Changelog", href: "/changelog", external: false },
+  soluciones: [
+    { name: "Solucion web", href: "#", external: false },
+    { name: "Solucion IA", href: "/pricing", external: false },
+    { name: "Mantenimiento", href: "#", external: false },
   ],
-  resources: [
-    { name: "FAQs", href: "/pricing#faq-title", external: false },
-    { name: "GitHub", href: "#", external: true },
-    { name: "Discord", href: "#", external: true },
-    { name: "YouTube", href: "#", external: true },
+  plantillas: [
+    { name: "Simples", href: "/pricing#faq-title", external: false },
+    { name: "Empresariales", href: "#", external: true },
+    { name: "E-Commerce", href: "#", external: true },
   ],
-  company: [
-    { name: "About", href: "/about", external: false },
-    { name: "Careers", href: "#", external: true },
-    { name: "Contact", href: "#", external: false },
-    { name: "Status", href: "#", external: false },
+  Asesoramiento: [
+    { name: "General", href: "/about", external: false },
+    { name: "Especifico", href: "#", external: true },
+    { name: "IA", href: "#", external: false },
   ],
-  legal: [
-    { name: "Imprint", href: "#", external: false },
-    { name: "Privacy", href: "#", external: false },
-    { name: "Terms", href: "#", external: false },
-    { name: "DPA", href: "#", external: false },
+  Planes: [
+    { name: "Sitios web", href: "#", external: false },
+    { name: "Soluciones IA", href: "#", external: false },
+    { name: "Mantenimiento", href: "#", external: false },
   ],
 }
 
@@ -37,8 +33,8 @@ export default function Footer() {
           <div className="space-y-8">
             <DatabaseLogo className="w-32 sm:w-40" />
             <p className="text-sm leading-6 text-gray-600 dark:text-gray-400">
-              Redefining the way databases are built and managed. Built in
-              Switzerland, made for the world.
+             Redefiniendo el desarrollo digital, aplicando solucones potenciadas con IA 
+             para todos.
             </p>
             <div className="flex space-x-6">
               <ThemeSwitch />
@@ -49,14 +45,14 @@ export default function Footer() {
             <div className="grid grid-cols-2 gap-8">
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-50">
-                  Product
+                  Soluciones
                 </h3>
                 <ul
                   role="list"
                   className="mt-6 space-y-4"
                   aria-label="Quick links Product"
                 >
-                  {navigation.product.map((item) => (
+                  {navigation.soluciones.map((item) => (
                     <li key={item.name} className="w-fit">
                       <Link
                         className="flex rounded-md text-sm text-gray-500 transition hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
@@ -80,14 +76,14 @@ export default function Footer() {
               </div>
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-50">
-                  Resources
+                  Plantillas
                 </h3>
                 <ul
                   role="list"
                   className="mt-6 space-y-4"
                   aria-label="Quick links Resources"
                 >
-                  {navigation.resources.map((item) => (
+                  {navigation.plantillas.map((item) => (
                     <li key={item.name} className="w-fit">
                       <Link
                         className="flex rounded-md text-sm text-gray-500 transition hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
@@ -113,14 +109,14 @@ export default function Footer() {
             <div className="grid grid-cols-2 gap-8">
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-50">
-                  Company
+                  Asesoramiento
                 </h3>
                 <ul
                   role="list"
                   className="mt-6 space-y-4"
                   aria-label="Quick links Company"
                 >
-                  {navigation.company.map((item) => (
+                  {navigation.Asesoramiento.map((item) => (
                     <li key={item.name} className="w-fit">
                       <Link
                         className="flex rounded-md text-sm text-gray-500 transition hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
@@ -144,14 +140,14 @@ export default function Footer() {
               </div>
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-50">
-                  Legal
+                  Planes
                 </h3>
                 <ul
                   role="list"
                   className="mt-6 space-y-4"
                   aria-label="Quick links Legal"
                 >
-                  {navigation.legal.map((item) => (
+                  {navigation.Planes.map((item) => (
                     <li key={item.name} className="w-fit">
                       <Link
                         className="flex rounded-md text-sm text-gray-500 transition hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
@@ -178,7 +174,7 @@ export default function Footer() {
         </div>
         <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-gray-200 pt-8 sm:mt-20 sm:flex-row lg:mt-24 dark:border-gray-800">
           <p className="text-sm leading-5 text-gray-500 dark:text-gray-400">
-            &copy; {new Date().getFullYear()} Database, Inc. All rights
+            &copy; {new Date().getFullYear()} Aios, Inc. All rights
             reserved.
           </p>
           <div className="rounded-full border border-gray-200 py-1 pl-1 pr-2 dark:border-gray-800">
