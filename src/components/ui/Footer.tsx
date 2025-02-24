@@ -3,24 +3,24 @@ import Link from "next/link"
 import { DatabaseLogo } from "../../../DatabaseLogo"
 const navigation = {
   soluciones: [
-    { name: "Solucion web", href: "#", external: true },
-    { name: "Solucion IA", href: "/pricing", external: true },
-    { name: "Mantenimiento", href: "#", external: true },
+    { name: "Solucion web", href: "#", external: false },
+    { name: "Solucion IA", href: "/pricing", external: false },
+    { name: "Mantenimiento", href: "#", external: false },
   ],
   plantillas: [
-    { name: "Simples", href: "/pricing#faq-title", external: true },
-    { name: "Empresariales", href: "#", external: true },
-    { name: "E-Commerce", href: "#", external: true },
+    { name: "Simples", href: "/pricing#faq-title", external: false },
+    { name: "Empresariales", href: "#", external: false },
+    { name: "E-Commerce", href: "#", external: false },
   ],
   Asesoramiento: [
-    { name: "General", href: "/about", external: true },
-    { name: "Especifico", href: "#", external: true },
-    { name: "IA", href: "#", external: true },
+    { name: "General", href: "/about", external: false },
+    { name: "Especifico", href: "#", external: false },
+    { name: "IA", href: "#", external: false },
   ],
   Planes: [
-    { name: "Sitios web", href: "#", external: true },
-    { name: "Soluciones IA", href: "#", external: true },
-    { name: "Mantenimiento", href: "#", external: true },
+    { name: "Sitios web", href: "#", external: false },
+    { name: "Soluciones IA", href: "#", external: false },
+    { name: "Mantenimiento", href: "#", external: false },
   ],
 }
 
