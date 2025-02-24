@@ -9,30 +9,30 @@ import {
 const faqs = [
   {
     question:
-      "How secure is the database software in terms of protecting sensitive data?",
+      "¿Que tipo de soluciones web ofrecen?",
     answer:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
   },
   {
-    question: "Can the database be self-hosted?",
-    answer:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-  },
-  {
-    question:
-      "Does the software support integration with other systems and applications?",
+    question: "¿Cuanto se tarda en tener mi solucion lista?",
     answer:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
   },
   {
     question:
-      "How easy is it to back up and restore data using the database software?",
+      "¿Que soluciones de IA ofrecen?",
     answer:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
   },
   {
     question:
-      "What level of technical support and maintenance is provided for the software?",
+      "¿Cual es el beneficio de crear mi solucion en Aios?",
+    answer:
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
+  },
+  {
+    question:
+      "¿Es personalizable?",
     answer:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
   },
@@ -47,18 +47,17 @@ export function Faqs() {
             id="faq-title"
             className="inline-block scroll-my-24 bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 pr-2 text-2xl font-bold tracking-tighter text-transparent lg:text-3xl dark:from-gray-50 dark:to-gray-300"
           >
-            Frequently Asked Questions
+            Preguntas Frecuentes
           </h2>
           <p className="mt-4 text-base leading-7 text-gray-600 dark:text-gray-400">
-            Can&rsquo;t find the answer you&rsquo;re looking for? Don&rsquo;t
-            hesitate to get in touch with our{" "}
+            ¿Aun tienes dudas sobre lo que podemos ofrecerte? No dudes en contactar a nuestro equipo{" "}
             <a
               href="#"
               className="font-medium text-indigo-600 hover:text-indigo-300 dark:text-indigo-400"
             >
-              customer support
+              Especialistas
             </a>{" "}
-            team.
+            para quitar todas tus dudas.
           </p>
         </div>
         <div className="col-span-full mt-6 lg:col-span-7 lg:mt-0">

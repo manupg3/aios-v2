@@ -58,7 +58,7 @@ export function Navigation({ setModalOpen }: NavigationProps) {
                 Asesoramiento
               </Link>
               <Link className="px-2 py-1 text-gray-900 dark:text-gray-50" href={siteConfig.baseLinks.pricing}>
-                Cotizar
+                Planes
               </Link>
             </div>
           </nav>
