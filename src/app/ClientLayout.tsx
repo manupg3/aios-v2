@@ -27,12 +27,12 @@ export function ClientLayout({ children }: { children: React.ReactNode }) {
       <AnimatePresence mode="wait">
         <motion.div
      key={pathname}
-     initial={{ opacity: 0.95, x: 0 }} // Estado casi final
+     initial={false} // La nueva página se monta ya en su estado final
      animate="enter"
      exit="exit"
      variants={{
        enter: { opacity: 1, x: 0 },
-       exit: { opacity: 1, x: -50 },
+       exit: { opacity: 0, x: -50 },
      }}
      transition={{ duration: 0.3 }}
         >
