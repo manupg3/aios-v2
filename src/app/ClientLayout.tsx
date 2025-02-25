@@ -31,10 +31,10 @@ export function ClientLayout({ children }: { children: React.ReactNode }) {
      animate="enter"
      exit="exit"
      variants={{
-       enter: { opacity: 1, x: 0 },
-       exit: { opacity: 0, x: -50 },
+       enter: { opacity: 0, x: 0 },
+       exit: { opacity: 1, x: -50 },
      }}
-     transition={{ duration: 0.8 }}
+     transition={{ duration: 0.3 }}
         >
           {children}
         </motion.div>
