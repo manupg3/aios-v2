@@ -31,13 +31,16 @@ export function ClientLayout({ children }: { children: React.ReactNode }) {
       <Navigation setModalOpen={setModalOpen} />
       <AnimatePresence mode="wait">
         <motion.div
-            key={pathname}
-            initial={isInitialMount.current ? false : "hidden"}
-            animate="enter"
-            exit="exit"
-            variants={variants}
-            transition={{ duration: 0.5 }}
-          >
+     key={pathname}
+     initial={{ opacity: 0.95, x: 0 }} // Estado casi final
+     animate="enter"
+     exit="exit"
+     variants={{
+       enter: { opacity: 1, x: 0 },
+       exit: { opacity: 0, x: -50 },
+     }}
+     transition={{ duration: 0.3 }}
+        >
           {children}
         </motion.div>
       </AnimatePresence>
