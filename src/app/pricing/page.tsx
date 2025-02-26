@@ -368,6 +368,8 @@ export default function Pricing() {
       </section>
 
       <Faqs />
+      <VerticalTabs />
+
     </div>
   );
 }
@@ -511,7 +513,6 @@ function FormCotizacion({ selectedWorkspace, setSelectedWorkspace }: any) {
               </RadioGroup>
             </div>
           </div>
-          <VerticalTabs />
           <div className="col-span-full mt-2">
             <label
               htmlFor="workspace-description"
