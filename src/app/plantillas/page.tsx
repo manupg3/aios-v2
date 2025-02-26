@@ -5,7 +5,7 @@ import Balancer from "react-wrap-balancer"
 import Bento from "@/components/ui/bento"
 import GridFeatures from "@/components/GridFeatures"
 import Cta from "@/components/ui/Cta"
-import StepsHorizontal from "@/components/ui/StepsHorizontal"
+import VerticalTabs from "@/components/ui/VerticalTabs"
 
 export default function Plantillas() {
   const [activeTab, setActiveTab] = useState(0)
@@ -221,7 +221,7 @@ export default function Plantillas() {
             Nuestro proceso
           </Balancer>
         </h1>
-      <StepsHorizontal />     
+      <VerticalTabs />
       </section>
       <Cta />
      

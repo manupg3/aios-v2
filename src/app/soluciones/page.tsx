@@ -3,7 +3,7 @@ import { Button } from "@/components/Button"
 import Balancer from "react-wrap-balancer"
 import BadgeSolutions from "@/components/BadgesSolutions"
 import Cta from "@/components/ui/Cta"
-
+import StepsHorizontal from "@/components/ui/StepsHorizontal"
 import { Tooltip } from "@/components/Tooltip"
 import { ArrowAnimated } from "@/components/ui/ArrowAnimated"
 import { cx } from "@/lib/utils"
@@ -411,6 +411,17 @@ export default function About() {
             </table>
           </div>
         </div>
+      </section>
+      <section>
+      <h1
+          id="h1-steps-horizontal"
+          className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300"
+        >
+          <Balancer>
+            Nuestro proceso
+          </Balancer>
+        </h1>
+      <StepsHorizontal />     
       </section>
               <Cta />
         

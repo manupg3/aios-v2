@@ -12,7 +12,6 @@ import React from "react"
 import { RadioGroup } from '@headlessui/react';
 import { RiCheckboxCircleFill } from '@remixicon/react';
 import { TextInput, Textarea } from '@tremor/react';
-import VerticalTabs from '@/components/ui/VerticalTabs';
 
 type FixedPrice = string;
 
@@ -368,7 +367,6 @@ export default function Pricing() {
       </section>
 
       <Faqs />
-      <VerticalTabs />
 
     </div>
   );
