@@ -12,6 +12,7 @@ import React from "react"
 import { RadioGroup } from '@headlessui/react';
 import { RiCheckboxCircleFill } from '@remixicon/react';
 import { TextInput, Textarea } from '@tremor/react';
+import VerticalTabs from '@/components/ui/VerticalTabs';
 
 type FixedPrice = string;
 
@@ -510,6 +511,7 @@ function FormCotizacion({ selectedWorkspace, setSelectedWorkspace }: any) {
               </RadioGroup>
             </div>
           </div>
+          <VerticalTabs />
           <div className="col-span-full mt-2">
             <label
               htmlFor="workspace-description"
