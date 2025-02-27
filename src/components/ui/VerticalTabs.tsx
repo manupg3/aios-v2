@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 const tabsData = [
   {
     id: 0,
-    title: 'Favorite Movies',
+    title: 'Admin Personalizado',
     content: (
       <div className="card">
         <h2>Favorite Movies</h2>
@@ -18,7 +18,7 @@ const tabsData = [
   },
   {
     id: 1,
-    title: 'Invoice',
+    title: 'Sales Booster',
     content: (
       <div className="card">
         <h2>Invoice</h2>
@@ -28,7 +28,7 @@ const tabsData = [
   },
   {
     id: 2,
-    title: 'Shopping List',
+    title: 'Integracion IA',
     content: (
       <div className="card">
         <h2>Shopping List</h2>
@@ -38,7 +38,7 @@ const tabsData = [
   },
   {
     id: 3,
-    title: 'Friday Meeting',
+    title: 'Diseños premium',
     content: (
       <div className="card">
         <h2>Friday Meeting</h2>
