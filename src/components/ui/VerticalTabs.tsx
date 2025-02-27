@@ -6,19 +6,24 @@ const tabsData = [
     id: 0,
     title: 'Admin Personalizado',
     content: (
-      <div className="card">
-        <h2>Favorite Movies</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+      <div className="card flex">
+        <div className='col-left-card-img'>
+        <img src='' alt='img-col-left' />   
+        </div>
+        <div className='col-right-card-info'>
+        <h2>Admin intuitivo y moderno</h2>
+        <p>Diseñamos admin unicos y personalizados para cada solucion.</p>
         <ul>
           <li>Movie 1</li>
           <li>Movie 2</li>
         </ul>
+        </div>
       </div>
     ),
   },
   {
     id: 1,
-    title: 'Sales Booster',
+    title: 'Integracion IA',
     content: (
       <div className="card">
         <h2>Invoice</h2>
@@ -28,7 +33,7 @@ const tabsData = [
   },
   {
     id: 2,
-    title: 'Integracion IA',
+    title: 'Potenciador de Ventas',
     content: (
       <div className="card">
         <h2>Shopping List</h2>
@@ -38,7 +43,7 @@ const tabsData = [
   },
   {
     id: 3,
-    title: 'Diseños premium',
+    title: 'Diseños Premium',
     content: (
       <div className="card">
         <h2>Friday Meeting</h2>
