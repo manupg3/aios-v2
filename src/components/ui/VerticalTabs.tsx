@@ -8,7 +8,7 @@ const tabsData = [
     content: (
       <div className="card flex">
         <div className='col-left-card-img'>
-        <img src='' alt='img-col-left' />   
+        <img src='./public/images/img-admin-premium.png' alt='img-col-left' />   
         </div>
         <div className='col-right-card-info'>
         <h2>Admin intuitivo y moderno</h2>
