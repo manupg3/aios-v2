@@ -6,6 +6,7 @@ const tabsData = [
     id: 0,
     title: 'Admin Personalizado',
     content: (
+<div>
       <div className="card flex gap-4">
         <div className='col-left-card-img'>
         <img src='./images/img-admin-premium.png' alt='img-col-left' />   
@@ -19,6 +20,8 @@ const tabsData = [
         </ul>
         </div>
       </div>
+      <div className='div-bottom-card'>Bottom Card</div>
+</div>
     ),
   },
   {
