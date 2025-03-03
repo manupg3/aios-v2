@@ -50,8 +50,6 @@
 
 .content-wrapper {
   background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .card {
@@ -271,6 +269,9 @@ ul.mt-4.space-y-4.ul-steps-modal li h3{
   padding: 29px;
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px; 
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1); 
 }
 
 .container-imgs-hero{
