@@ -282,9 +282,11 @@ ul.mt-4.space-y-4.ul-steps-modal li h3{
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .1);
   border: 1px solid #c2c2c27a;
+  min-width: 70%;
 }
 .col-left-card-img img {
   border-radius: 8px;
+  width: 100%;
 }
 .container-imgs-hero{
   height: 541px;
