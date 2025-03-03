@@ -270,10 +270,12 @@ ul.mt-4.space-y-4.ul-steps-modal li h3{
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px; 
   background-color: #fff;
+}
+.col-right-card-info
+{
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .1); 
 }
-
 .container-imgs-hero{
   height: 541px;
 }
