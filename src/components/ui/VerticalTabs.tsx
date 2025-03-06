@@ -12,15 +12,12 @@ const tabsData = [
         <img src='./images/img-admin-premium.png' alt='img-col-left' />   
         </div>
         <div className='col-right-card-info'>
-        <h2>Admin intuitivo y moderno</h2>
+        <h2>Intuitivo y moderno</h2>
         <p>Diseñamos admin unicos y personalizados para cada solucion.</p>
-        <ul>
-          <li>Movie 1</li>
-          <li>Movie 2</li>
-        </ul>
+    
         </div>
       </div>
-      <div className='div-bottom-card'>Bottom Card</div>
+      
 </div>
     ),
   },
