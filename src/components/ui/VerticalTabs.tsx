@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import ContactSpecialist from './ContactSpecialist'
 
 const tabsData = [
   {
@@ -14,7 +13,7 @@ const tabsData = [
         </div>
         <div className='col-right-card-info'>
         <h2>Intuitivo y moderno</h2>
-        <p>Diseñamos admin unicos y personalizados para cada solucion.</p>
+        <p>Diseñamos admin unicos y personalizadospara cada solucion.</p>
     
         </div>
       </div>
