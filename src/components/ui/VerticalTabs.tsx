@@ -20,8 +20,8 @@ const tabsData = [
       </div>
 
       <div>
-         <span>¿Necesitas esta solucion?</span> <ContactSpecialist/>
-      </div>
+          <span>¿Necesitas un admin personalizado?</span> <a href=''>contacta a un especialista</a>
+     </div>
       
 </div>
     ),
@@ -43,8 +43,8 @@ const tabsData = [
         </div>
         </div>
         <div>
-         <span>¿Necesitas esta solucion?</span> <ContactSpecialist/>
-      </div>
+            <span>¿Necesitas integrar IA en tu negocio?</span> <a href=''>contacta a un especialista</a>
+        </div>
         </div>
      
     ),
@@ -66,8 +66,8 @@ const tabsData = [
         </div>
         </div>
         <div>
-         <span>¿Necesitas esta solucion?</span> <ContactSpecialist/>
-      </div>
+            <span>¿Queres potenciar las ventas de tu negocio?</span> <a href=''>contacta a un especialista</a>
+        </div>
         </div>
     ),
   },
@@ -88,7 +88,7 @@ const tabsData = [
         </div>
         </div>
         <div>
-         <span>¿Necesitas esta solucion?</span> <ContactSpecialist/>
+         <span>¿Necesitas modernizar tu sitio?</span> <a href=''>contacta a un especialista</a>
       </div>
         </div>
     ),
