@@ -45,10 +45,19 @@ const tabsData = [
     id: 2,
     title: 'Potenciador de Ventas',
     content: (
-      <div className="card">
-        <h2>Shopping List</h2>
-        <p>Lista de compras pendiente...</p>
-      </div>
+      <div>
+     
+      <div className="card flex gap-4">
+        <div className='col-left-card-img'>
+        <img src='./images/sales-popup.png' alt='img-col-left' />   
+        </div>
+        <div className='col-right-card-info'>
+        <h2>Aumenta tus ventas</h2>
+        <p>Modulos creados con el unico proposito de aumentar tus ventas.</p>
+    
+        </div>
+        </div>
+        </div>
     ),
   },
   {

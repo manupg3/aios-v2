@@ -31,6 +31,8 @@
   cursor: pointer;
   text-align: left;
   transition: background-color 0.2s;
+  
+  border-left: 2px solid #fff ;
 }
 .col-right-card-info h2 {
   padding-top: 15px;
