@@ -25,10 +25,20 @@ const tabsData = [
     id: 1,
     title: 'Integracion IA',
     content: (
-      <div className="card">
-        <h2>Invoice</h2>
-        <p>Contenido relacionado con facturas...</p>
-      </div>
+      <div>
+     
+      <div className="card flex gap-4">
+        <div className='col-left-card-img'>
+        <img src='./images/img-ia-chatbot-vertical-tabs.png' alt='img-col-left' />   
+        </div>
+        <div className='col-right-card-info'>
+        <h2>Chatbots IA</h2>
+        <p>Asistencia automatizada para todo tipo de solucion.</p>
+    
+        </div>
+        </div>
+        </div>
+     
     ),
   },
   {
