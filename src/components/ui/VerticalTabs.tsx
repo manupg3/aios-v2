@@ -18,7 +18,7 @@ const tabsData = [
         </div>
       </div>
 
-      <div>
+      <div className='flex justify-center py-4 gap-4'>
           <span>¿Necesitas un admin personalizado?</span> <a href=''>contacta a un especialista</a>
      </div>
       
