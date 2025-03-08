@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import ContactSpecialist from './ContactSpecialist'
 
 const tabsData = [
   {
@@ -16,6 +17,10 @@ const tabsData = [
         <p>Diseñamos admin unicos y personalizados para cada solucion.</p>
     
         </div>
+      </div>
+
+      <div>
+         <span>¿Necesitas esta solucion?</span> <ContactSpecialist/>
       </div>
       
 </div>
@@ -37,6 +42,9 @@ const tabsData = [
     
         </div>
         </div>
+        <div>
+         <span>¿Necesitas esta solucion?</span> <ContactSpecialist/>
+      </div>
         </div>
      
     ),
@@ -57,6 +65,9 @@ const tabsData = [
     
         </div>
         </div>
+        <div>
+         <span>¿Necesitas esta solucion?</span> <ContactSpecialist/>
+      </div>
         </div>
     ),
   },
@@ -76,6 +87,9 @@ const tabsData = [
     
         </div>
         </div>
+        <div>
+         <span>¿Necesitas esta solucion?</span> <ContactSpecialist/>
+      </div>
         </div>
     ),
   },
