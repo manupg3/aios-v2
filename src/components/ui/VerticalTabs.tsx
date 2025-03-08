@@ -19,7 +19,7 @@ const tabsData = [
       </div>
 
       <div className='flex justify-center py-6 gap-2'>
-          <span className='font-semibold'>¿Necesitas un admin personalizado?</span> <a className='text-indigo-600 font-bold' href=''>contacta a un especialista</a>
+          <span className='font-medium'>¿Necesitas un admin personalizado?</span> <a className='text-indigo-600 font-bold' href=''>contacta a un especialista</a>
      </div>
       
 </div>
