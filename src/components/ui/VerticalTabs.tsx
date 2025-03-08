@@ -29,7 +29,7 @@ const tabsData = [
      
       <div className="card flex gap-4">
         <div className='col-left-card-img'>
-        <img src='./images/img-ia-chatbot-vertical-tabs.png' alt='img-col-left' />   
+        <img src='./images/img-ia-chatbot-vetical-tabs.png' alt='img-col-left' />   
         </div>
         <div className='col-right-card-info'>
         <h2>Chatbots IA</h2>
