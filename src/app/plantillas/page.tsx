@@ -38,7 +38,7 @@ export default function Plantillas() {
 
       {/* Sección de Tabs con el componente Bento */}
       <section className="container-bento">
-        <div className="tabs flex justify-center space-x-4 mb-4 mt-16">
+        <div className="tabs gap-8 flex justify-center space-x-4 mb-4 mt-16">
           <button
             onClick={() => setActiveTab(0)}
             className={`px-4 py-2 border-b-2 ${activeTab === 0 ? 'btn-tabs-plantillas border-blue-500' : 'text-gray-500 border-transparent'
