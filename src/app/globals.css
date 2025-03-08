@@ -32,7 +32,12 @@
   text-align: left;
   transition: background-color 0.2s;
 }
-
+.col-right-card-info h2 {
+  padding-top: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
 .tab-button:hover {
   background-color: #fff;
   border-left: 2px solid #4f46e5 ;
@@ -42,6 +47,7 @@
   background-color: #fff;
   border-left: 2px solid #4f46e5 ;
     font-weight: bold;
+    color:#4f46e5;
 }
 
 .tab-content {
