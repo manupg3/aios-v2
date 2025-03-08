@@ -162,7 +162,7 @@ h1#h1-steps-horizontal span {
 .btn-tabs-plantillas{
   color: #4f46e5;
   border-bottom: 2px solid #4f46e5 !important;
-  background: #4f46e52e;
+  padding: 0px;
 }
 .container-badges-bento-tabs {
   display: flex
