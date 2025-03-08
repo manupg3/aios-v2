@@ -24,7 +24,7 @@ const tabsData = [
       </div>
 
       <div className='flex justify-center py-6 gap-2'>
-          <span className='font-medium'>¿Necesitas un admin personalizado?</span> <a className='text-indigo-600 font-bold' href=''>contacta a un especialista<RiArrowRightUpLine/></a>
+          <span className='font-medium'>¿Necesitas un admin personalizado?</span> <a className='flex text-indigo-600 font-bold' href=''>contacta a un especialista<RiArrowRightUpLine/></a>
      </div>
       
 </div>
@@ -47,7 +47,7 @@ const tabsData = [
         </div>
         </div>
         <div className='flex justify-center py-6 gap-2'>
-            <span className='font-medium'>¿Necesitas integrar IA en tu negocio?</span> <a  className='text-indigo-600 font-bold' href=''>contacta a un especialista <RiArrowRightUpLine/></a>
+            <span className='font-medium'>¿Necesitas integrar IA en tu negocio?</span> <a  className='flex text-indigo-600 font-bold' href=''>contacta a un especialista <RiArrowRightUpLine/></a>
         </div>
         </div>
      
@@ -70,7 +70,7 @@ const tabsData = [
         </div>
         </div>
         <div className='flex justify-center py-6 gap-2'>
-            <span className='font-medium'>¿Queres potenciar las ventas de tu negocio?</span> <a  className='text-indigo-600 font-bold' href=''>contacta a un especialista <RiArrowRightUpLine/></a>
+            <span className='font-medium'>¿Queres potenciar las ventas de tu negocio?</span> <a  className='flex text-indigo-600 font-bold' href=''>contacta a un especialista <RiArrowRightUpLine/></a>
         </div>
         </div>
     ),
@@ -92,7 +92,7 @@ const tabsData = [
         </div>
         </div>
         <div className='flex justify-center py-6 gap-2'>
-         <span className='font-medium'>¿Necesitas modernizar tu sitio?</span> <a  className='text-indigo-600 font-bold' href=''>contacta a un especialista <RiArrowRightUpLine/></a>
+         <span className='font-medium'>¿Necesitas modernizar tu sitio?</span> <a  className='flex text-indigo-600 font-bold' href=''>contacta a un especialista <RiArrowRightUpLine/></a>
       </div>
         </div>
     ),
