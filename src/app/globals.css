@@ -153,7 +153,7 @@ h1#h1-steps-horizontal span {
   font-weight: 600;
   font-family: Inter;
   padding: 7px 20px;
-  border-radius: 10px;
+  border-bottom: 2px solid #fff;
 }
 .tabs button:hover{
   color: #4f46e5;
