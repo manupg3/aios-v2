@@ -152,7 +152,7 @@ h1#h1-steps-horizontal span {
   font-size: 22px;
   font-weight: 600;
   font-family: Inter;
-  padding: 7px 20px;
+  padding: 0px;
   border-bottom: 2px solid #fff;
 }
 .tabs button:hover{
@@ -162,7 +162,7 @@ h1#h1-steps-horizontal span {
 .btn-tabs-plantillas{
   color: #4f46e5;
   border-bottom: 2px solid #4f46e5 !important;
-  padding: 0px;
+  padding: 0px !important;
 }
 .container-badges-bento-tabs {
   display: flex
