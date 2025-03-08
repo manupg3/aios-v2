@@ -64,10 +64,19 @@ const tabsData = [
     id: 3,
     title: 'Diseños Premium',
     content: (
-      <div className="card">
-        <h2>Friday Meeting</h2>
-        <p>Detalles de la reunión del viernes...</p>
-      </div>
+      <div>
+     
+      <div className="card flex gap-4">
+        <div className='col-left-card-img'>
+        <img src='./images/designs.png' alt='img-col-left' />   
+        </div>
+        <div className='col-right-card-info'>
+        <h2>Diseños Unicos</h2>
+        <p>Ofrecemos diseños unicos y modernos. Pensados para cada necesidad.</p>
+    
+        </div>
+        </div>
+        </div>
     ),
   },
 ]
