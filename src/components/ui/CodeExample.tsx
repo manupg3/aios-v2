@@ -54,7 +54,7 @@ export default function CodeExample() {
 
       <CodeExampleTabs
         tab1={
-          <div className="relative h-[31rem]">
+          <div className="relative h-[31rem] tabs-features-home">
             <Image
               src="/images/premium-designs.png"  // <<-- Use the public path here
               alt="premium designs"
@@ -64,7 +64,7 @@ export default function CodeExample() {
           </div>
         }
         tab2={
-          <div className="relative h-[31rem]">
+          <div className="relative h-[31rem] tabs-features-home">
             <Image
               src="/images/trend-analyzer-2.png" // <<-- Use the public path here
               alt="trend analyzer"
