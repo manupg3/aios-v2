@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { RiPlayCircleFill, RiCloseLine } from "@remixicon/react"
+import {  RiCloseLine, RiQuestionLine } from "@remixicon/react"
 import { Button } from "../Button"
 import HeroImage from "./HeroImage"
 import StepsComponent from './steps';
@@ -88,7 +88,7 @@ export default function Hero() {
             className="ring-1 ring-gray-200 sm:ring-0 dark:ring-gray-900 cursor-pointer"
           >
             <span className="mr-1 flex size-6 items-center justify-center rounded-full bg-gray-50 transition-all group-hover:bg-gray-200 dark:bg-gray-800 dark:group-hover:bg-gray-700">
-              <RiPlayCircleFill
+              <RiQuestionLine
                 aria-hidden="true"
                 className="size-5 shrink-0 text-gray-900 dark:text-gray-50"
               />
