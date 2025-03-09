@@ -56,8 +56,8 @@ export default function CodeExample() {
         tab1={
           <div className="relative h-[31rem]">
             <Image
-              src="/images/chatbot-ai-2.png"  // <<-- Use the public path here
-              alt="Ejemplo de imagen 1"
+              src="/images/premium-designs.png"  // <<-- Use the public path here
+              alt="premium designs"
               fill
               style={{ objectFit: "cover" }}
             />
@@ -66,8 +66,8 @@ export default function CodeExample() {
         tab2={
           <div className="relative h-[31rem]">
             <Image
-              src="/images/trend-analyzer.png" // <<-- Use the public path here
-              alt="Ejemplo de imagen 2"
+              src="/images/trend-analyzer-2.png" // <<-- Use the public path here
+              alt="trend analyzer"
               fill
               style={{ objectFit: "cover" }}
             />

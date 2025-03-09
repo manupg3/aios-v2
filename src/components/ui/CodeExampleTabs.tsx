@@ -37,7 +37,7 @@ export default function CodeExampleTabs({
               <RiShapesLine aria-hidden="true" className="size-5" />
             </div>
             <p className="font-semibold tracking-tight text-gray-700 transition-all group-data-[state=active]:text-indigo-600 sm:text-lg dark:text-gray-400 dark:group-data-[state=active]:text-indigo-400">
-              Model everything
+              Diseños Premium
             </p>
           </div>
           <p className="mt-4 leading-7 text-gray-600 dark:text-gray-400">
@@ -61,7 +61,7 @@ export default function CodeExampleTabs({
               <RiCodeSSlashLine aria-hidden="true" className="size-5" />
             </div>
             <p className="font-semibold tracking-tight text-gray-700 transition-all group-data-[state=active]:text-indigo-600 sm:text-lg dark:text-gray-400 dark:group-data-[state=active]:text-indigo-400">
-              Query efficiently
+              Integracion IA
             </p>
           </div>
           <p className="mt-4 leading-7 text-gray-600 dark:text-gray-400">
