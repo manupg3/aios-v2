@@ -143,6 +143,9 @@ h1#h1-steps-horizontal span {
   font-family: 'Inter';
   margin-bottom: 25px;
 }
+.navigation-container{
+  margin-top:-2px;
+}
 .tabs-features-home img{
   border-radius: 11px;
 }

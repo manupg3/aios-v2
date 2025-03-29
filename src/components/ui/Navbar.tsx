@@ -40,7 +40,7 @@ export function Navigation({ setModalOpen }: NavigationProps) {
           : 'bg-white/0 dark:bg-gray-950/0',
       )}
     >
-      <div className="w-full md:my-auto">
+      <div className="w-full md:my-auto navigation-container">
         <div className="relative flex items-center justify-between">
           <Link href={siteConfig.baseLinks.home} aria-label="Home">
             <span className="sr-only">Company logo</span>
